@@ -8,6 +8,7 @@ const TestimonialCard = ({ text, name, role, logo }) => {
         <p className='testimonial-role'>
           {name} - {role}
         </p>
+        <img src={logo} alt='logo' className='testimonial-logo' />
       </div>
     </div>
   );
