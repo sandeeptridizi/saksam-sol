@@ -1,7 +1,6 @@
 import './ContactPage.css';
 
 const ContactPage = () => {
-<<<<<<< HEAD
   return <div>
     <div className='foundersheading'>
       <span className='foundershead'>Contact Us</span> <br></br>
@@ -125,9 +124,6 @@ const ContactPage = () => {
       </div>
     </div>
   </div>;
-=======
-  return <div>Contact Page</div>;
->>>>>>> b456873e3c57be6b39359b091e937e5f02192a71
 };
 
 export default ContactPage;
