@@ -1,7 +1,6 @@
 import './ContingetStaffing.css';
 
 const ContingetStaffing = () => {
-<<<<<<< HEAD
   return <div>
     <div className='servicehero'>
       <div className='serviceheronotes'>
@@ -73,11 +72,64 @@ const ContingetStaffing = () => {
         <span className='knowmoredesc'>Lorem ipsum dolor sit amet consectetur. Fermentum dolor mauris amet congue egestas. Sodales eu turpis lacus etiam. Aliquam feugiat sit vitae pharetra. Est odio at lacus elit nunc amet mi. Pulvinar sed mi.</span><br></br>
         <button className='knowmorebutton'>Know More</button>
       </div>
+      <div className='knowmorepoints'>
+        <div className='knowmorerow'>
+          <div className='knowmorepoint'>
+            <span className='pointheading'>£399</span> <br></br>
+            <span className='pointdesc'>Annual salary for the position</span>
+          </div>
+          <div className='knowmorepoint'>
+            <span className='pointheading'>10</span> <br></br>
+            <span className='pointdesc'>People do you require</span>
+          </div>
+        </div>
+        <div className='knowmorerow'>
+          <div className='knowmorepoint1'>
+            <span className='pointheading'>£1000</span> <br></br>
+            <span className='pointdesc'>Recruitment Agency Fees</span>
+          </div>
+          <div className='knowmorepoint2'>
+            <span className='pointheading'>£299</span> <br></br>
+            <span className='pointdesc'>Talent Finder Fees</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className='relatedservices'>
+      <div className='relateddesc'>Choose a Service that works best for you</div>
+      <div className='bottomservices'>
+        <div className='founder1'>
+          <span className='relatedservicetitle'>Contract Staffing</span>
+          <ul className='relatedservicepoints'>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Rutrum bibendum laoreet dictum turpis.</li>
+            <li>Non faucibus maecenas rhoncus pellentesque lacinia pellentesque purus quis vitae</li>
+          </ul>
+          <button className='knowmorebutton'>Get Started</button>
+        </div>
+        <div className='founder2'>
+          <span className='relatedservicetitle'>Permenant Staffing</span>
+          <ul className='relatedservicepoints1'>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Rutrum bibendum laoreet dictum turpis. </li>
+            <li>Non faucibus maecenas rhoncus pellentesque lacinia pellentesque purus quis vitae. </li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Rutrum bibendum laoreet dictum turpis.</li>
+          </ul>
+          <button className='knowmorebutton1'>Get Started</button>
+        </div>
+        <div className='founder1'>
+          <span className='relatedservicetitle'>RPO</span>
+          <ul className='relatedservicepoints'>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Rutrum bibendum laoreet dictum turpis.</li>
+            <li>Non faucibus maecenas rhoncus pellentesque lacinia pellentesque purus quis vitae</li>
+          </ul>
+          <button className='knowmorebutton'>Get Started</button>
+        </div>
+      </div>
     </div>
   </div>;
-=======
-  return <div>Continget Staffing</div>;
->>>>>>> b456873e3c57be6b39359b091e937e5f02192a71
 };
 
 export default ContingetStaffing;

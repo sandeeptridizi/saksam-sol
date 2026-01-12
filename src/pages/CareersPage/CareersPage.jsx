@@ -1,7 +1,6 @@
 import './CareersPage.css';
 
 const CareersPage = () => {
-<<<<<<< HEAD
   return <div>
     <div className='careerhero'>
       <div className='careerbanner'>
@@ -182,9 +181,6 @@ const CareersPage = () => {
       </div>
     </div>
   </div>;
-=======
-  return <div>Careers Page</div>;
->>>>>>> b456873e3c57be6b39359b091e937e5f02192a71
 };
 
 export default CareersPage;

@@ -1,9 +1,5 @@
 import './HomePage.css';
 
-<<<<<<< HEAD
-const HomePage = () => {
-  return <div>Home Page</div>;
-=======
 import like from '../../assets/like.png';
 import euro from '../../assets/euro.png';
 import fluentPerson from '../../assets/fluent-person.png';
@@ -148,7 +144,6 @@ const HomePage = () => {
       </div>
     </div>
   );
->>>>>>> b456873e3c57be6b39359b091e937e5f02192a71
 };
 
 export default HomePage;
