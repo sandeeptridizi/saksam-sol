@@ -1,0 +1,237 @@
+.careerhero{
+    height: 1550px;
+    width: 1150px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.careerbanner{
+    height: 360px;
+    width: 1140px;
+    background-color: #E9CEBC;
+}
+
+.careersearchbanner{
+    height: 220px;
+    width: 1100px;
+    border-radius: 10px;
+    background-color: #028D89;
+    border-color: #028D89;
+    background: rgba(2, 141, 137, 0.5);
+    bottom: 130px;
+    left: 130px;
+    position: absolute;
+}
+
+.searchbar{
+    height: 36px;
+    width: 460px;
+    border-radius: 5px;
+    background-color: #E6E5E5;
+    border-color: #E9CEBC;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 10px;
+    color: #495057;
+    font-size: 14px;
+}
+
+.searchfilters{
+    height: 56px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    gap: 105px;
+}
+
+.filtertitle{
+    font-size: 14px;
+    color: #000000;
+}
+
+.filteroption{
+    background-color: none;
+    border-radius: 4px;
+    border: 1px Solid #D0D7DD;
+    padding: 8px;
+    display: inline-block;
+    margin-top: 10px;
+    width: auto;
+}
+
+.viewjobs{
+    height: 33px;
+    width: 102px;
+    border-radius: 3px;
+    background-color: #122134;
+    border-color: #122134;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 8px;
+}
+
+.jobs{
+    height: 1140px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.jobslist{
+    height: 1130px;
+    width: 540px;
+    background-color: #ffffff;
+}
+
+.jobsview{
+    height: 1130px;
+    width: 565px;
+    background-color: #122134;
+    border: 1px Solid #122134;
+    border-radius: 10px;
+}
+
+.singlejob{
+    height: 190px;
+    width: 540px;
+    border: 1px Solid #1797C5;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.jobtitleinfo{
+    height: 35px;
+    width: auto;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobtitle{
+    font-size: 22px;
+    color: #1797C5;
+}
+
+.Applynow{
+    height: 26px;
+    width: 110px;
+    background-color: #028D89;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px Solid #028D89;
+}
+
+.jobtypes{
+    height: 26px;
+    display: flex;
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.jobcat{
+    height: 26px;
+    width: 84px;
+    border-radius: 4px;
+    background-color: #E7EBF1;
+    border: 1px Solid #E7EBF1;
+    color: #4F5665;
+    padding: 4px;
+    text-align: center;
+}
+
+.jobdesc{
+    height: 65px;
+    width: 475px;
+    font-size: 14px;
+    color: #4F5665;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-top: 25px;
+    display: inline-block;
+
+}
+
+.singlejob1{
+    height: 190px;
+    width: 540px;
+    border: 1px Solid #ffffff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.jobviewtitle{
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 26px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.jobviewtypes{
+    height: 26px;
+    display: flex;
+    list-style: none;
+    margin-left: 26px;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.jobdesctitle{
+    font-size: 16px;
+    color: #ACACAC;
+    display: inline-block;
+    margin-left: 26px;
+    margin-top: 20px;
+}
+
+.jobdescpara{
+    font-size: 14px;
+    color: #ACACAC;
+    display: inline-block;
+    margin-left: 26px;
+    margin-top: 4px;
+    width: 465px;
+    line-height: 20px;
+}
+
+.jobcatsection{
+    height: 45px;
+    margin: 24px 0 24px 26px;
+}
+
+.jobcattitle{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.jobcatoption{
+    font-size: 14px;
+    color: #ACACAC;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.jobApplynow{
+    height: 26px;
+    width: 110px;
+    background-color: #028D89;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px Solid #028D89;
+    margin-left: 26px;
+}
