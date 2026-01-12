@@ -1,6 +1,7 @@
 import './ContingetStaffing.css';
 
 const ContingetStaffing = () => {
+<<<<<<< HEAD
   return <div>
     <div className='servicehero'>
       <div className='serviceheronotes'>
@@ -74,6 +75,9 @@ const ContingetStaffing = () => {
       </div>
     </div>
   </div>;
+=======
+  return <div>Continget Staffing</div>;
+>>>>>>> b456873e3c57be6b39359b091e937e5f02192a71
 };
 
 export default ContingetStaffing;

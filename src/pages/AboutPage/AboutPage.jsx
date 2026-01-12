@@ -1,6 +1,7 @@
 import './AboutPage.css';
 
 const AboutPage = () => {
+<<<<<<< HEAD
   return <div>
     <div className='abouthero'>
       <div className='abouthighlights'>
@@ -76,6 +77,9 @@ const AboutPage = () => {
         </div>
       </div>
   </div>;
+=======
+  return <div>About Page</div>;
+>>>>>>> b456873e3c57be6b39359b091e937e5f02192a71
 };
 
 export default AboutPage;
