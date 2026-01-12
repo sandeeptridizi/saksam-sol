@@ -5,7 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
+  top: 0;
+  background-color: #f6f9ff;
 }
 
 .navbar-logo {
@@ -41,7 +43,7 @@ a {
 
 .services-links-container {
   position: absolute;
-  top: 70px;
+  top: 90px;
   right: 85px;
   width: 300px;
   height: fit-content;
@@ -52,6 +54,7 @@ a {
   flex-direction: column;
   gap: 8px;
   display: none;
+  background-color: #f6f9ff;
 }
 
 .services-links-container span {

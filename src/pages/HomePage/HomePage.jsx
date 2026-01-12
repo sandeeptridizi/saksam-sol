@@ -19,6 +19,8 @@ import success from '../../assets/success.png';
 import message from '../../assets/message.png';
 import search from '../../assets/search.png';
 import wechat from '../../assets/wechat.png';
+import logo from '../../assets/logo.png';
+import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 
 const data = [
   {
@@ -67,6 +69,16 @@ const stepsData = [
     id: 4,
     icon: wechat,
     title: 'Arrange an interview',
+  },
+];
+
+const testimonialsData = [
+  {
+    id: 1,
+    text: 'Lorem ipsum dolor sit amet consectetur. Eu tellus viverra cras ipsum metus tellus accumsan. Tincidunt vel eleifend diam amet viverra in ut. Augue sed turpis sed nisi. In vel quisque a purus ipsum fringilla vitae massa pretium. Curabitur sagittis senectus.',
+    name: 'Julie Griffin',
+    role: 'HR Manager',
+    logo: logo,
   },
 ];
 
@@ -139,6 +151,72 @@ const HomePage = () => {
               })}
             </div>
             <button className='step-btn'>Post a Job</button>
+          </div>
+          <div className='home-page-services-container'>
+            <div className='home-page-services-header'>
+              <h3 className='home-page-services-heading'>
+                Core Services For Everyone!
+              </h3>
+              <p className='home-page-services-text'>
+                Choose A Service That Works Best For You
+              </p>
+            </div>
+            <div className='home-page-services-grid-container'>
+              <div className='home-page-services-contract-container'>
+                <h3 className='home-page-contract-heading'>
+                  Contract Staffing
+                </h3>
+                <ul className='home-page-contract-list-container'>
+                  <li>Lorem Ipsum Dolor Sit Amet Consectetur.</li>
+                  <li>Rutrum bibendum laoreet dictum turpis.</li>
+                  <li>
+                    Non faucibus maecenas rhoncus pellentesque lacinia
+                    pellentesque purus quis vitae.
+                  </li>
+                </ul>
+                <button className='contract-btn'>GET STARTED</button>
+              </div>
+              <div className='home-page-services-recommended-container'>
+                <div className='home-page-recommended-header'>
+                  <div className='recommended-container'>Recommended</div>
+                  <h3 className='permanant-heading'>Permanant Staffing</h3>
+                </div>
+                <ul className='recommended-list-container'>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Rutrum bibendum laoreet dictum turpis.</li>
+                  <li>
+                    Non faucibus maecenas rhoncus pellentesque lacinia
+                    pellentesque purus quis vitae.
+                  </li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li> Rutrum bibendum laoreet dictum turpis.</li>
+                </ul>
+                <button className='recommended-btn'>GET STARTED</button>
+              </div>
+              <div className='home-page-services-rpo-container'>
+                <h3 className='home-page-rpo-heading'>RPO</h3>
+                <ul className='home-page-contract-list-container'>
+                  <li>Lorem Ipsum Dolor Sit Amet Consectetur.</li>
+                  <li>Rutrum bibendum laoreet dictum turpis.</li>
+                  <li>
+                    Non faucibus maecenas rhoncus pellentesque lacinia
+                    pellentesque purus quis vitae.
+                  </li>
+                </ul>
+                <button className='contract-btn'>GET STARTED</button>
+              </div>
+            </div>
+          </div>
+          <div className='home-page-testimonial-container'>
+            <div className='home-page-testimonial-header'>
+              <h2 className='testimonial-heading'>Testimonials</h2>
+              <p className='testimonial-text'>
+                Don’t take our word for it, see what our clients have to say.
+              </p>
+            </div>
+            <div className='home-page-testimonial-carousel-container'>
+              <TestimonialCard {...testimonialsData[0]} />
+            </div>
           </div>
         </div>
       </div>

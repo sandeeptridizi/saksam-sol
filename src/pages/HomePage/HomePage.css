@@ -3,6 +3,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 120px;
 }
 
 .home-page-header-container {
@@ -202,4 +203,214 @@
   font-weight: 400;
   color: #fff;
   cursor: pointer;
+}
+
+.home-page-services-container {
+  width: 1097px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.home-page-services-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.home-page-services-heading {
+  font-family: 'Abhaya Libre';
+  font-size: 24px;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+.home-page-services-text {
+  font-size: 14px;
+  font-weight: 300;
+  color: #3a3a3a;
+}
+
+.home-page-services-grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  height: 473px;
+  position: relative;
+}
+
+.home-page-services-contract-container {
+  background: #122134;
+  padding: 38px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 24px;
+  height: 379px;
+  width: 343px;
+  position: absolute;
+  bottom: 0;
+}
+
+.home-page-contract-heading {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Abhaya Libre';
+  color: #fff;
+  text-align: left;
+}
+
+.home-page-contract-list-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 8px;
+  color: #b5b5b5;
+  text-align: left;
+}
+
+.contract-btn {
+  background: #028d89;
+  padding: 16px 51px;
+  border: none;
+  border-radius: 29px;
+  cursor: pointer;
+  width: 189px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.home-page-services-recommended-container {
+  background: #028d89;
+  height: 473px;
+  width: 343px;
+  border-radius: 24px;
+  padding: 38px 26px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 373px;
+}
+
+.home-page-recommended-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.recommended-container {
+  background: #ffffff;
+  padding: 6px 8px;
+  width: 117px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.permanant-heading {
+  font-family: 'Abhaya Libre';
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.recommended-list-container {
+  width: 291px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+.recommended-btn {
+  background: #122134;
+  padding: 16px 51px;
+  border: none;
+  border-radius: 29px;
+  cursor: pointer;
+  width: 189px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.home-page-services-rpo-container {
+  background: #122134;
+  padding: 38px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 24px;
+  height: 379px;
+  width: 343px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 746px;
+}
+
+.home-page-rpo-heading {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Abhaya Libre';
+  color: #fff;
+}
+
+.home-page-testimonial-container {
+  width: 1240px;
+  height: 465px;
+  border-radius: 24px;
+  background-color: #f6f9ff;
+  margin: 64px auto;
+  padding: 48px 0 48px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.home-page-testimonial-header {
+  width: 263px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.testimonial-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  font-weight: 300;
+  color: #3a3a3a;
+}
+
+.home-page-testimonial-carousel-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
