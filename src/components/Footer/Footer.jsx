@@ -6,6 +6,9 @@ import { PiLinkedinLogoBold } from 'react-icons/pi';
 import { BsInstagram } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
+import rectangle11 from '../../assets/left-rectangle11.png';
+import rectangle88 from '../../assets/rectangle88.png';
+
 const Footer = () => {
   return (
     <div className='footer-main-container'>
@@ -27,6 +30,8 @@ const Footer = () => {
             </button>
           </div>
         </div>
+        <img src={rectangle88} alt='rectangle 88' className='rectangle-88' />
+        <img src={rectangle11} alt='rectangle 11' className='rectangle-11' />
       </div>
       <div className='footer-section-two-container'>
         <div className='footer-two-content-social-media-container'>

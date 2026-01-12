@@ -23,10 +23,19 @@ import logo from '../../assets/logo.png';
 import alma from '../../assets/image1.jpg';
 import santos from '../../assets/image2.jpg';
 import rita from '../../assets/image3.jpg';
+import layer from '../../assets/layer.png';
+import group from '../../assets/group.png';
+import leftRectangle from '../../assets/right-rectangle (1).png';
+import rightRectangle from '../../assets/right-rectangle (3).png';
+import rectangle22 from '../../assets/rectangle22.png';
+import peter from '../../assets/peter.png';
+import jacline from '../../assets/jacline.png';
+import jessica from '../../assets/jessica.png';
+import josh from '../../assets/josh.png';
 
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import MeetingCard from '../../components/MeetingCard/MeetingCard';
-import { Link } from 'react-router-dom';
+
 import Accordion from '../../components/Accordion/Accordion';
 import { useState } from 'react';
 
@@ -185,7 +194,14 @@ const HomePage = () => {
           <button className='home-page-btn'>Get Free Employer Account</button>
         </div>
       </div>
-      <div className='home-page-profile-container'></div>
+      <div className='home-page-profile-container'>
+        <img src={layer} alt='layer' className='layer-img' />
+        <img src={group} alt='group' className='group-img' />
+        <img src={peter} alt='peter' className='peter-img' />
+        <img src={jacline} alt='jacline' className='jacline-img' />
+        <img src={jessica} alt='jessica' className='jessica-img' />
+        <img src={josh} alt='josh' className='josh-img' />
+      </div>
       <div className='home-page-grid-container'>
         {data.map((item) => {
           const { id, icon, title, text } = item;
@@ -240,6 +256,16 @@ const HomePage = () => {
           })}
         </div>
         <button className='step-btn'>Post a Job</button>
+        <img
+          src={leftRectangle}
+          alt='left rectangle'
+          className='left-rectangle'
+        />
+        <img
+          src={rightRectangle}
+          alt='left rectangle'
+          className='right-rectangle'
+        />
       </div>
       <div className='home-page-services-container'>
         <div className='home-page-services-header'>
@@ -348,6 +374,7 @@ const HomePage = () => {
             <p className='item-one-text'>Talent Finder Fees</p>
           </div>
         </div>
+        <img src={rectangle22} alt='rectangle 22' className='rectangle-22' />
       </div>
       <div className='home-page-meeting-container'>
         <h3 className='home-page-meeting-heading'>Meet Our Team</h3>
