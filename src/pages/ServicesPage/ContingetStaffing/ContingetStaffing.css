@@ -260,7 +260,7 @@
     font-weight: bold;
     color: #FFFFFF;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     align-items: center;
     width: 100%;
     text-align: center;
@@ -270,7 +270,8 @@
     font-size: 16px;
     color: #B5B5B5;
     font-weight: lighter;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    width: auto;
 }
 
 .knowmorebutton1{
@@ -281,12 +282,11 @@
     color: #ffffff;
     border-color: #122134;
     margin-left: 20px;
-    margin-top: 10px;
 }
 
 .relatedservicepoints1{
     font-size: 16px;
     color: #3A3A3A;
     font-weight: lighter;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
