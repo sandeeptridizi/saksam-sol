@@ -343,88 +343,6 @@
   color: #fff;
 }
 
-/* .home-page-services-recommended-container {
-  background: #028d89;
-  height: 473px;
-  border-radius: 24px;
-  padding: 38px 26px;
-} */
-
-/* .home-page-recommended-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-} */
-
-/* .center {
-  background: #ffffff;
-  padding: 6px 8px;
-  width: 117px;
-  height: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 600;
-  color: #000;
-} */
-
-/* .permanant-heading {
-  font-family: 'Abhaya Libre';
-  font-size: 24px;
-  font-weight: 700;
-  color: #000;
-} */
-
-/* .recommended-list-container {
-  width: 291px;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  text-align: left;
-  font-size: 16px;
-  font-weight: 400;
-  color: #3a3a3a;
-} */
-
-/* .recommended-btn {
-  background: #122134;
-  padding: 16px 51px;
-  border: none;
-  border-radius: 29px;
-  cursor: pointer;
-  width: 189px;
-  height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 400;
-  color: #fff;
-} */
-
-/* .home-page-services-rpo-container {
-  background: #122134;
-  padding: 38px 26px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border-radius: 24px;
-  height: 379px;
-  margin-top: 94px;
-} */
-
-/* .home-page-rpo-heading {
-  font-size: 24px;
-  font-weight: 700;
-  font-family: 'Abhaya Libre';
-  color: #fff;
-  text-align: center;
-} */
-
 .slick-slider {
   overflow: visible;
 }
@@ -438,18 +356,6 @@
 }
 
 .slick-prev,
-.slick-prev {
-  z-index: 20;
-}
-
-/* .slick-prev::before,
-.slick-next::before {
-  font-size: 42px;
-  color: #0aa89e;
-  opacity: 1;
-} */
-
-.slick-prev,
 .slick-next {
   width: 25px !important;
   height: 25px !important;
@@ -461,13 +367,6 @@
   align-items: center;
 }
 
-/* .slick-prev,
-.slick-next {
-  background: red !important;
-  width: 60px !important;
-  height: 60px !important;
-  z-index: 99999 !important;
-} */
 .slick-arrow {
   color: #122134;
 }
