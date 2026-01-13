@@ -12,6 +12,8 @@ import CareersPage from './pages/CareersPage/CareersPage';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions/TermsConditions';
 import ContactPage from './pages/ContactPage/ContactPage';
+import Login from './pages/Login/Login';
+
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
@@ -38,6 +40,7 @@ export default function App() {
           <Route path='terms-conditions' element={<TermsConditions />} />
           <Route path='contact-us' element={<ContactPage />} />
         </Route>
+        <Route path='/login' element={<Login />} />
       </Routes>
       <Footer />
     </BrowserRouter>

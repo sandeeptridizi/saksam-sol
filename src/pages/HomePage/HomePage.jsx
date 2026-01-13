@@ -38,6 +38,11 @@ import MeetingCard from '../../components/MeetingCard/MeetingCard';
 
 import Accordion from '../../components/Accordion/Accordion';
 import { useState } from 'react';
+import useAppContext from '../../context/AppContext';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
 
 const data = [
   {
@@ -123,59 +128,16 @@ const meetingData = [
   },
 ];
 
-const faqs = [
-  {
-    id: 1,
-    question: 'What industries do you serve?',
-    answer:
-      'We provide staffing solutions across all sectors including IT, Non-IT, Healthcare, Manufacturing, Retail, BFSI, and more.',
-    isOpen: false,
-  },
-  {
-    id: 2,
-    question: 'What types of staffing services do you offer?',
-    answer:
-      'We specialize in Permanent Hiring, Contingent Staffing, RPO, Bulk Hiring, and Payroll Management for organizations of all sizes.',
-    isOpen: false,
-  },
-  {
-    id: 3,
-    question: 'How quickly can you provide candidates?',
-    answer:
-      'Depending on the role, we can deliver pre-screened candidates within days for urgent hiring and within weeks for niche positions.',
-    isOpen: false,
-  },
-  {
-    id: 4,
-    question: 'Do you handle compliance and payroll for contract staff?',
-    answer:
-      'Yes, we manage payroll, statutory compliance, and documentation for contingent and contract staffing, ensuring a hassle-free process.',
-    isOpen: false,
-  },
-  {
-    id: 5,
-    question: 'Can you support large-volume hiring projects?',
-    answer:
-      'Absolutely. Our team has experience in bulk hiring and RPO projects, efficiently scaling your workforce as per requirements.',
-    isOpen: false,
-  },
-  {
-    id: 6,
-    question: 'How do you ensure quality candidates?',
-    answer:
-      'We follow a structured process with screening, verification, and skill assessment to ensure every candidate meets your expectations.',
-    isOpen: false,
-  },
-];
-
 const HomePage = () => {
-  const [faqsData, setfaqsData] = useState(faqs);
+  const { faqsData, handleAccordion, carouselData } = useAppContext();
 
-  const handleAccordion = (id) => {
-    const filteredData = faqsData.map((item) =>
-      item.id === id ? { ...item, isOpen: !item.isOpen } : item
-    );
-    setfaqsData(filteredData);
+  const settings = {
+    infinite: true,
+    slidesToShow: 3,
+    speed: 500,
+    dots: false,
+    slidesToScroll: 1,
+    arrows: true,
   };
 
   return (
@@ -207,11 +169,10 @@ const HomePage = () => {
       </div>
       <div className='home-page-company-container'>
         <div>
-          <p className='home-page-company-text'>
-            Our Valued Hiring Partners{' '}
-          </p>
+          <p className='home-page-company-text'>Our Valued Hiring Partners </p>
           <p className='home-page-company-title'>
-            A growing network of trusted partners who count on our expertise to scale their teams with speed and precision.
+            A growing network of trusted partners who count on our expertise to
+            scale their teams with speed and precision.
           </p>
         </div>
         <div className='home-page-company-logos-container'>
@@ -268,39 +229,22 @@ const HomePage = () => {
           </p>
         </div>
         <div className='home-page-services-grid-container'>
-          <div className='home-page-services-contract-container'>
-            <h3 className='home-page-contract-heading'>Contigent Staffing</h3>
-            <ul className='home-page-contract-list-container'>
-              <li>On-demand workforce support.</li>
-              <li>Flexible contract durations.</li>
-              <li>Quick deployment of skilled talent</li>
-              <li>Compliance and payroll handled</li>
-              <li>Ideal for project-based or peak workload needs</li>
-            </ul>
-            <button className='contract-btn'>GET STARTED</button>
-          </div>
-          <div className='home-page-services-recommended-container'>
-            <div className='home-page-recommended-header'>
-              <h3 className='permanant-heading'>Permanant Staffing</h3>
-            </div>
-            <ul className='recommended-list-container'>
-              <li>Focuses on delivering long-term employees who align with both skill expectations and organizational culture..</li>
-              <li>Provides a structured hiring process with expert sourcing, screening, interviews, and final coordination.</li>
-              <li>Uses strong industry networks to speed up closures across IT, Non-IT, and niche roles</li>
-              <li>Dedicated recruiters for each domain.</li>
-              <li> Strong talent pipeline for all industries.</li>
-            </ul>
-            <button className='recommended-btn'>GET STARTED</button>
-          </div>
-          <div className='home-page-services-rpo-container'>
-            <h3 className='home-page-rpo-heading'>Recruitment Process Outsourcing</h3>
-            <ul className='home-page-contract-list-container'>
-              <li>Provides a dedicated recruitment team that manages your full hiring cycle end-to-end.</li>
-              <li>Improves hiring efficiency with scalable support for volume, niche, and multi-level recruitment.</li>
-              <li>Reduces overall hiring costs through streamlined processes and consistent talent delivery. </li>
-            </ul>
-            <button className='contract-btn'>GET STARTED</button>
-          </div>
+          <Slider {...settings}>
+            {carouselData.map((item) => {
+              const { id, title, list } = item;
+              return (
+                <div className='home-page-services-contract-container' key={id}>
+                  <h3 className='home-page-contract-heading'>{title}</h3>
+                  <ul className='home-page-contract-list-container'>
+                    {list.map((text) => (
+                      <li key={text}>{text}</li>
+                    ))}
+                  </ul>
+                  <button className='contract-btn'>GET STARTED</button>
+                </div>
+              );
+            })}
+          </Slider>
         </div>
       </div>
       <div className='home-page-testimonial-container'>
@@ -320,11 +264,12 @@ const HomePage = () => {
       </div>
       <div className='home-page-money-container'>
         <div className='home-page-money-content-container'>
-          <h3 className='home-page-money-heading'>
-            Our Success in Numbers{' '}
-          </h3>
+          <h3 className='home-page-money-heading'>Our Success in Numbers </h3>
           <p className='home-page-money-text'>
-            At SakSam Sol, our growth and impact are measured not just by the clients we serve but by the results we deliver. These numbers reflect our commitment to excellence, speed, and trust in the staffing industry.
+            At SakSam Sol, our growth and impact are measured not just by the
+            clients we serve but by the results we deliver. These numbers
+            reflect our commitment to excellence, speed, and trust in the
+            staffing industry.
           </p>
           <button className='home-page-money-btn'>Post a Job</button>
         </div>
@@ -340,7 +285,7 @@ const HomePage = () => {
           <div className='home-page-money-item-one-container'>
             <h3 className='item-one-heading'>95%</h3>
             <div className='item-one-range-container'>
-              <div className='item-one-range-child-container'></div>
+              <div className='item-one-range-child-two-container'></div>
               <div className='item-one-range-point-container'></div>
             </div>
             <p className='item-one-text'>Client Satisfaction Rate</p>
@@ -372,7 +317,8 @@ const HomePage = () => {
         <div className='home-page-faqs-content-container'>
           <h3 className='faqs-heading'>Frequently Asked Questions</h3>
           <p className='faqs-text'>
-            Helping you understand how SakSam Sol makes hiring seamless and efficient.
+            Helping you understand how SakSam Sol makes hiring seamless and
+            efficient.
           </p>
         </div>
         <div className='home-page-faqs'>

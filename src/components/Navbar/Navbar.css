@@ -20,6 +20,10 @@
   color: #3a3a3a;
 }
 
+.nav-links-container li {
+  cursor: pointer;
+}
+
 a {
   padding: 10px;
   cursor: pointer;
@@ -27,6 +31,10 @@ a {
   font-weight: 400;
   text-decoration: none;
   color: #3a3a3a;
+}
+
+a.active {
+  color: #028d89;
 }
 
 .contact-link {
@@ -56,10 +64,6 @@ a {
 
 .services-links-container span {
   cursor: pointer;
-}
-
-a.active {
-  color: #028d89;
 }
 
 .services-link {

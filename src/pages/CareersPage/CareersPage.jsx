@@ -1,6 +1,10 @@
+import Accordion from '../../components/Accordion/Accordion';
+import useAppContext from '../../context/AppContext';
 import './CareersPage.css';
 
 const CareersPage = () => {
+  const { faqsData, handleAccordion } = useAppContext();
+
   return (
     <div>
       <div className='careerhero'>
@@ -221,63 +225,74 @@ const CareersPage = () => {
           </div>
         </div>
       </div>
-      <div className='faq'>
-        <div className='faq1'>
-          <div className='question'>
-            <span>Lorem ipsum dolor sit amet consectetur. Arcu.</span>
-            <span className='minimize'></span>
-          </div>
-          <div className='answer'>
-            Lorem ipsum dolor sit amet consectetur. Porttitor in senectus
-            vulputate tempor phasellus. Potenti at placerat duis felis bibendum
-            pulvinar velit. Nascetur in at tellus pellentesque placerat egestas
-            vulputate. Semper sagittis vestibulum tempor mauris lectus maecenas
-            sed dignissim. Quam.
-          </div>
-        </div>
-        <div className='faqborder'></div>
-        <div className='faq1'>
-          <div className='question'>
-            <span>Lorem ipsum dolor sit amet consectetur. Arcu.</span>
-            <span className='minimize'></span>
-          </div>
-          <div className='answer'>
-            Lorem ipsum dolor sit amet consectetur. Porttitor in senectus
-            vulputate tempor phasellus. Potenti at placerat duis felis bibendum
-            pulvinar velit. Nascetur in at tellus pellentesque placerat egestas
-            vulputate. Semper sagittis vestibulum tempor mauris lectus maecenas
-            sed dignissim. Quam.
-          </div>
-        </div>
-        <div className='faqborder'></div>
-        <div className='faq1'>
-          <div className='question'>
-            <span>Lorem ipsum dolor sit amet consectetur. Arcu.</span>
-            <span className='minimize'></span>
-          </div>
-          <div className='answer'>
-            Lorem ipsum dolor sit amet consectetur. Porttitor in senectus
-            vulputate tempor phasellus. Potenti at placerat duis felis bibendum
-            pulvinar velit. Nascetur in at tellus pellentesque placerat egestas
-            vulputate. Semper sagittis vestibulum tempor mauris lectus maecenas
-            sed dignissim. Quam.
-          </div>
-        </div>
-        <div className='faqborder'></div>
-        <div className='faq1'>
-          <div className='question'>
-            <span>Lorem ipsum dolor sit amet consectetur. Arcu.</span>
-            <span className='minimize'></span>
-          </div>
-          <div className='answer'>
-            Lorem ipsum dolor sit amet consectetur. Porttitor in senectus
-            vulputate tempor phasellus. Potenti at placerat duis felis bibendum
-            pulvinar velit. Nascetur in at tellus pellentesque placerat egestas
-            vulputate. Semper sagittis vestibulum tempor mauris lectus maecenas
-            sed dignissim. Quam.
-          </div>
+      <div className='career-page-faqs-container'>
+        <div className='career-page-faqs'>
+          {faqsData.map((item) => (
+            <Accordion
+              key={item.id}
+              {...item}
+              handleAccordion={handleAccordion}
+            />
+          ))}
         </div>
       </div>
+      {/* <div className='faq'>
+        <div className='faq1'>
+          <div className='question'>
+            <span>Lorem ipsum dolor sit amet consectetur. Arcu.</span>
+            <span className='minimize'></span>
+          </div>
+          <div className='answer'>
+            Lorem ipsum dolor sit amet consectetur. Porttitor in senectus
+            vulputate tempor phasellus. Potenti at placerat duis felis bibendum
+            pulvinar velit. Nascetur in at tellus pellentesque placerat egestas
+            vulputate. Semper sagittis vestibulum tempor mauris lectus maecenas
+            sed dignissim. Quam.
+          </div>
+        </div>
+        <div className='faqborder'></div>
+        <div className='faq1'>
+          <div className='question'>
+            <span>Lorem ipsum dolor sit amet consectetur. Arcu.</span>
+            <span className='minimize'></span>
+          </div>
+          <div className='answer'>
+            Lorem ipsum dolor sit amet consectetur. Porttitor in senectus
+            vulputate tempor phasellus. Potenti at placerat duis felis bibendum
+            pulvinar velit. Nascetur in at tellus pellentesque placerat egestas
+            vulputate. Semper sagittis vestibulum tempor mauris lectus maecenas
+            sed dignissim. Quam.
+          </div>
+        </div>
+        <div className='faqborder'></div>
+        <div className='faq1'>
+          <div className='question'>
+            <span>Lorem ipsum dolor sit amet consectetur. Arcu.</span>
+            <span className='minimize'></span>
+          </div>
+          <div className='answer'>
+            Lorem ipsum dolor sit amet consectetur. Porttitor in senectus
+            vulputate tempor phasellus. Potenti at placerat duis felis bibendum
+            pulvinar velit. Nascetur in at tellus pellentesque placerat egestas
+            vulputate. Semper sagittis vestibulum tempor mauris lectus maecenas
+            sed dignissim. Quam.
+          </div>
+        </div>
+        <div className='faqborder'></div>
+        <div className='faq1'>
+          <div className='question'>
+            <span>Lorem ipsum dolor sit amet consectetur. Arcu.</span>
+            <span className='minimize'></span>
+          </div>
+          <div className='answer'>
+            Lorem ipsum dolor sit amet consectetur. Porttitor in senectus
+            vulputate tempor phasellus. Potenti at placerat duis felis bibendum
+            pulvinar velit. Nascetur in at tellus pellentesque placerat egestas
+            vulputate. Semper sagittis vestibulum tempor mauris lectus maecenas
+            sed dignissim. Quam.
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };

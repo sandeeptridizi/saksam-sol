@@ -269,6 +269,7 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
+  overflow: visible;
 }
 
 .home-page-services-header {
@@ -292,21 +293,21 @@
 
 .home-page-services-grid-container {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 34px;
-  /* height: 473px; */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: visible;
 }
 
 .home-page-services-contract-container {
+  width: 343px;
   background: #122134;
   padding: 38px 26px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   border-radius: 24px;
-  /* height: 379px; */
-  margin-top: 94px;
+  margin: 32px;
 }
 
 .home-page-contract-heading {
@@ -342,22 +343,22 @@
   color: #fff;
 }
 
-.home-page-services-recommended-container {
+/* .home-page-services-recommended-container {
   background: #028d89;
-  /* height: 473px; */
+  height: 473px;
   border-radius: 24px;
   padding: 38px 26px;
-}
+} */
 
-.home-page-recommended-header {
+/* .home-page-recommended-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
-}
+} */
 
-.recommended-container {
+/* .center {
   background: #ffffff;
   padding: 6px 8px;
   width: 117px;
@@ -368,16 +369,16 @@
   font-size: 14px;
   font-weight: 600;
   color: #000;
-}
+} */
 
-.permanant-heading {
+/* .permanant-heading {
   font-family: 'Abhaya Libre';
   font-size: 24px;
   font-weight: 700;
   color: #000;
-}
+} */
 
-.recommended-list-container {
+/* .recommended-list-container {
   width: 291px;
   padding: 16px;
   display: flex;
@@ -387,9 +388,9 @@
   font-size: 16px;
   font-weight: 400;
   color: #3a3a3a;
-}
+} */
 
-.recommended-btn {
+/* .recommended-btn {
   background: #122134;
   padding: 16px 51px;
   border: none;
@@ -403,25 +404,80 @@
   font-size: 12px;
   font-weight: 400;
   color: #fff;
-}
+} */
 
-.home-page-services-rpo-container {
+/* .home-page-services-rpo-container {
   background: #122134;
   padding: 38px 26px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   border-radius: 24px;
-  /* height: 379px; */
+  height: 379px;
   margin-top: 94px;
-}
+} */
 
-.home-page-rpo-heading {
+/* .home-page-rpo-heading {
   font-size: 24px;
   font-weight: 700;
   font-family: 'Abhaya Libre';
   color: #fff;
   text-align: center;
+} */
+
+.slick-slider {
+  overflow: visible;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-slide > div {
+  margin: 0 16px;
+}
+
+.slick-prev,
+.slick-prev {
+  z-index: 20;
+}
+
+/* .slick-prev::before,
+.slick-next::before {
+  font-size: 42px;
+  color: #0aa89e;
+  opacity: 1;
+} */
+
+.slick-prev,
+.slick-next {
+  width: 25px !important;
+  height: 25px !important;
+  background: #0aa89e !important;
+  border-radius: 50% !important;
+  z-index: 99999 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .slick-prev,
+.slick-next {
+  background: red !important;
+  width: 60px !important;
+  height: 60px !important;
+  z-index: 99999 !important;
+} */
+.slick-arrow {
+  color: #122134;
+}
+
+.slick-prev {
+  left: -55px !important;
+}
+
+.slick-next {
+  right: -55px !important;
 }
 
 .home-page-testimonial-container {
@@ -562,7 +618,14 @@
 }
 
 .item-one-range-child-container {
-  width: 107px;
+  width: 50%;
+  height: 4px;
+  border-radius: 4px;
+  background: #028d89;
+}
+
+.item-one-range-child-two-container {
+  width: 90%;
   height: 4px;
   border-radius: 4px;
   background: #028d89;
@@ -886,7 +949,6 @@
 
   .home-page-services-grid-container {
     width: 100%;
-    grid-template-columns: 1fr;
   }
 
   .home-page-services-contract-container {
