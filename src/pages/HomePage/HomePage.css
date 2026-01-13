@@ -1069,7 +1069,8 @@
   }
 
   .home-page-meeting-btn {
-    margin-top: 0;
+    margin-top: 32px;
+    margin-bottom: 0;
   }
 
   .home-page-faqs-container {
