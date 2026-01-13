@@ -58,19 +58,19 @@ const Navbar = () => {
       </div>
       {isHamburgerOpen && (
         <ul className='nav-mobile-links-container'>
-          <NavLink to='/'>
+          <NavLink to='/' onClick={() => setIsHamburgerOpen(false)}>
             <li>Home</li>
           </NavLink>
-          <NavLink to='about-us'>
+          <NavLink to='about-us' onClick={() => setIsHamburgerOpen(false)}>
             <li>About Us</li>
           </NavLink>
-          <NavLink to='services'>
+          <NavLink to='services' onClick={() => setIsHamburgerOpen(false)}>
             <li className='services-link'>Services</li>
           </NavLink>
-          <NavLink to='careers'>
+          <NavLink to='careers' onClick={() => setIsHamburgerOpen(false)}>
             <li>Careers</li>
           </NavLink>
-          <NavLink to='contact-us'>
+          <NavLink to='contact-us' onClick={() => setIsHamburgerOpen(false)}>
             <li className='contact-link'>Contact Us</li>
           </NavLink>
         </ul>
