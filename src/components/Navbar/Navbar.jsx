@@ -55,9 +55,6 @@ const Navbar = () => {
         <NavLink to='/services/recruitment-process'>
           <span>Recruitment Process</span>
         </NavLink>
-        <NavLink to='/services/rpo'>
-          <span>RPO</span>
-        </NavLink>
       </div>
       {isHamburgerOpen && (
         <ul className='nav-mobile-links-container'>

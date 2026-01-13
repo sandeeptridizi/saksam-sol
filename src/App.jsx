@@ -14,7 +14,6 @@ import TermsConditions from './pages/TermsConditions/TermsConditions';
 import ContactPage from './pages/ContactPage/ContactPage';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import RPO from './pages/ServicesPage/RPO/RPO';
 
 export default function App() {
   return (
@@ -29,7 +28,6 @@ export default function App() {
             <Route path='permenant-staffing' element={<PermenantStaffing />} />
             <Route path='bulk-hiring' element={<BulkHiring />} />
             <Route path='payroll-services' element={<PayrollServices />} />
-            <Route path='rpo' element={<RPO />} />
             <Route
               path='recruitment-process'
               element={<RecruitmentProcess />}
