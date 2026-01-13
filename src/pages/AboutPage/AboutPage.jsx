@@ -8,8 +8,7 @@ const AboutPage = () => {
           <ul className='aboutinfo'>
             <li className='aboutheading'>About Us</li>
             <li className='aboutdesc'>
-              At Besnik Consultancy, we take pride in our values – service,
-              integrity, and excellence.{' '}
+              Building High-Performing Teams for Businesses Nationwide with Trusted Staffing Solutions{' '}
             </li>
             <br></br>
             <button className='aboutbutton'>Get a Quote</button>
@@ -17,33 +16,32 @@ const AboutPage = () => {
           <div className='aboutrow'>
             <ul className='abouthighlight'>
               <li className='highlightnum'>1.</li>
-              <li className='highlightheading'>Who We Are</li>
+              <li className='highlightheading'>Commitment to Excellence</li>
               <li className='highlightdesc'>
-                You get a 2-week free trial to kick the Smarty tries. We want
-                you to.
+                We consistently deliver high-quality staffing solutions and ensure the right talent is matched with every client’s needs.
               </li>
             </ul>
             <ul className='abouthighlight'>
               <li className='highlightnum'>2.</li>
-              <li className='highlightheading'>What Do We Do</li>
+              <li className='highlightheading'>Client-Centric Approach</li>
               <li className='highlightdesc'>
-                We give you a free course that guides you through the process.
+                Your business goals guide our strategies. We tailor our recruitment process to provide the best fit for your organization.
               </li>
             </ul>
           </div>
           <div className='aboutrow'>
             <ul className='abouthighlight'>
               <li className='highlightnum'>3.</li>
-              <li className='highlightheading'>How Do We Help</li>
+              <li className='highlightheading'>Speed & Efficiency</li>
               <li className='highlightdesc'>
-                Use our multimedia lecturers, videos, and coaching sessions.
+                We provide fast turnaround times without compromising on quality, helping your business stay agile and competitive.
               </li>
             </ul>
             <ul className='abouthighlight'>
               <li className='highlightnum'>4.</li>
-              <li className='highlightheading'>Create Success Story</li>
+              <li className='highlightheading'>Integrity & Trust</li>
               <li className='highlightdesc'>
-                With access to online learning resources anyone can transfrm.
+                Transparent processes, ethical practices, and long-term partnerships form the foundation of everything we do.
               </li>
             </ul>
           </div>
@@ -56,8 +54,7 @@ const AboutPage = () => {
             <li className='visionicon'></li>
             <li className='visionheading'>Vision</li>
             <li className='visiondesc'>
-              Project planning, engineering design, technical implementation,
-              and quality assurance of waste management facilities
+              To become India’s most trusted and innovative staffing partner, empowering companies across industries to build high-performing teams and achieve long-term business excellence.
             </li>
           </ul>
         </div>
@@ -66,8 +63,7 @@ const AboutPage = () => {
             <li className='visionicon'></li>
             <li className='visionheading'>Mission</li>
             <li className='visiondesc'>
-              Administrative operations, human resources, policy coordination,
-              and overall organizational management
+              To provide businesses with efficient, reliable, and customized staffing solutions that connect the right talent with the right opportunities, enabling organizational growth and success.
             </li>
           </ul>
         </div>
