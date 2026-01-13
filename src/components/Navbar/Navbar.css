@@ -70,9 +70,27 @@ a.active {
   display: flex;
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.hamburger-container {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.nav-mobile-links-container {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   .navbar-container {
     width: 100%;
+    padding: 18px;
+    position: relative;
   }
 
   .navbar-logo {
@@ -81,5 +99,30 @@ a.active {
 
   .nav-links-container {
     display: none;
+  }
+
+  .hamburger-container {
+    display: flex;
+  }
+
+  .nav-mobile-links-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    list-style-type: none;
+    top: 80px;
+    width: 90%;
+    background-color: #f6f9ff;
+    padding: 16px;
+    border-radius: 4px;
+    z-index: 9;
+  }
+
+  .contact-link {
+    width: 172px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
   }
 }

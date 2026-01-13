@@ -3,29 +3,42 @@ import './Navbar.css';
 import companyLogo from '../../assets/company-logo.png';
 import { Link, NavLink } from 'react-router-dom';
 
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { useState } from 'react';
+
 const Navbar = () => {
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+
   return (
     <div className='navbar-container'>
       <Link to='/'>
         <img src={companyLogo} alt='company logo' className='navbar-logo' />
       </Link>
-      <ul className='nav-links-container'>
-        <NavLink to='/'>
-          <li>Home</li>
-        </NavLink>
-        <NavLink to='about-us'>
-          <li>About Us</li>
-        </NavLink>
-        <NavLink to='services'>
-          <li className='services-link'>Services</li>
-        </NavLink>
-        <NavLink to='careers'>
-          <li>Careers</li>
-        </NavLink>
-        <NavLink to='contact-us'>
-          <li className='contact-link'>Contact Us</li>
-        </NavLink>
-      </ul>
+      <div className='nav-container'>
+        <ul className='nav-links-container'>
+          <NavLink to='/'>
+            <li>Home</li>
+          </NavLink>
+          <NavLink to='about-us'>
+            <li>About Us</li>
+          </NavLink>
+          <NavLink to='services'>
+            <li className='services-link'>Services</li>
+          </NavLink>
+          <NavLink to='careers'>
+            <li>Careers</li>
+          </NavLink>
+          <NavLink to='contact-us'>
+            <li className='contact-link'>Contact Us</li>
+          </NavLink>
+        </ul>
+        <div
+          className='hamburger-container'
+          onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}
+        >
+          <GiHamburgerMenu />
+        </div>
+      </div>
       <div className='services-links-container'>
         <NavLink to='/services'>
           <span>Continget Staffing</span>
@@ -43,6 +56,25 @@ const Navbar = () => {
           <span>Recruitment Process</span>
         </NavLink>
       </div>
+      {isHamburgerOpen && (
+        <ul className='nav-mobile-links-container'>
+          <NavLink to='/'>
+            <li>Home</li>
+          </NavLink>
+          <NavLink to='about-us'>
+            <li>About Us</li>
+          </NavLink>
+          <NavLink to='services'>
+            <li className='services-link'>Services</li>
+          </NavLink>
+          <NavLink to='careers'>
+            <li>Careers</li>
+          </NavLink>
+          <NavLink to='contact-us'>
+            <li className='contact-link'>Contact Us</li>
+          </NavLink>
+        </ul>
+      )}
     </div>
   );
 };
