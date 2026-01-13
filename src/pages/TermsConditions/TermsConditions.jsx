@@ -5,67 +5,87 @@ const TermsConditions = () => {
     <div className='background'>
       <div className='textlayer'>
         <div className='policytext'>
-          Terms and Conditions 
+          Effective Date: January 2026 
           <div className='introduction'>
           <span> Introduction</span> <br></br>
-          <span className='privacybrief'>This Privacy Policy describes how JobsNextDoor from Taskify collects, uses, and protects the personal information you provide when joining our job seeker network. We are committed to ensuring your privacy and handling your data with care and respect.</span>
+          <span className='privacybrief'>Welcome to SakSam Sol (“we,” “our,” or “us”). By accessing or using our website (www.saksamsol.com
+) or our services, you agree to comply with and be bound by the following Terms & Conditions. Please read them carefully.</span>
           </div>
           <div className='introduction'>
-          <span> Information We Collect</span> <br></br>
-          <span className='privacybrief'>We collect the following types of information:</span>
+          <span> Use of Website</span> <br></br>
           <ul className='privacynotes'>
-            <li>Personal identification information (name, email address, phone number)</li>
-            <li>Professional information (resume, work experience, skills, education)</li>
-            <li>Job preferences and career goals</li>
-            <li>Any other information you voluntarily provide in the application form</li>
+            <li>You may use this website for lawful purposes only.</li>
+            <li>You agree not to use the website in a way that violates any applicable laws or regulations.</li>
+            <li>Unauthorized access, misuse, or interference with the website is strictly prohibited.</li>
           </ul>
           </div>
           <div className='introduction'>
-          <span> How We Use Your Information</span> <br></br>
-          <span className='privacybrief'>We use your information to:</span>
+          <span>Services</span> <br></br>
           <ul className='privacynotes'>
-            <li>Match you with relevant job opportunities</li>
-            <li>Communicate with you about potential positions</li>
-            <li>Share your profile with potential employers (with your consent)</li>
-            <li>Provide career guidance and support services</li>
-            <li>Improve our services and understand our network members needs</li>
+            <li>SakSam Sol provides staffing, recruitment, payroll, RPO, bulk hiring, and related services.</li>
+            <li>We make reasonable efforts to ensure accuracy of information on our website, but we do not guarantee completeness or suitability for a specific purpose.</li>
+            <li>We reserve the right to modify, suspend, or discontinue services at any time without prior notice.</li>
           </ul>
           </div>
           <div className='introduction'>
-          <span> Information Sharing</span> <br></br>
-          <span className='privacybrief'>We may share your information with:</span>
+          <span> User Responsibilities</span> <br></br>
           <ul className='privacynotes'>
-            <li>Potential employers who have job opportunities matching your profile</li>
-            <li>Service providers who assist us in operating our network</li>
-            <li>Legal authorities when required by law</li>
-          </ul>
-          <span className='privacybrief'>We will never sell your personal information to third parties for marketing purposes.</span>
-          </div>
-          <div className='introduction'>
-          <span> Data Security</span> <br></br>
-          <span className='privacybrief'>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</span>
-          </div>
-          <div className='introduction'>
-          <span> Your Rights</span> <br></br>
-          <span className='privacybrief'>You have the right to:</span>
-          <ul className='privacynotes'>
-            <li>Access the personal information we hold about you</li>
-            <li>Request correction of inaccurate information</li>
-            <li>Request deletion of your information</li>
-            <li>Opt-out of receiving communications from us</li>
-            <li>Withdraw consent for us to share your information with employers</li>
+            <li>You agree to provide accurate, complete, and up-to-date information when submitting forms, applications, or inquiries.</li>
+            <li>You are responsible for maintaining the confidentiality of any account information and for all activities under your account.</li>
+            <li>You must not submit content that is illegal, harmful, offensive, or infringes the rights of others.</li>
           </ul>
           </div>
           <div className='introduction'>
-          <span> Data Retention</span> <br></br>
-          <span className='privacybrief'>We will retain your information for as long as you remain an active member of our network or as needed to provide you with our services. If you wish to be removed from our network, please contact us and we will delete your information within 30 days.</span>
+          <span> Intellectual Property</span> <br></br>
+          <ul className='privacynotes'>
+            <li>All content on this website, including text, images, logos, graphics, and software, is the property of SakSam Sol or its licensors.</li>
+            <li>You may not copy, reproduce, or distribute any content without our prior written permission.</li>
+          </ul>
           </div>
           <div className='introduction'>
-          <span> Changes to This Policy</span> <br></br>
-          <span className='privacybrief'>We may update this Privacy Policy from time to time. We will notify you of any significant changes by email or through our website. The latest version will always be available on this page.</span>
+          <span> Limitation of Liability</span> <br></br>
+          <ul className='privacynotes'>
+            <li>SakSam Sol is not liable for any direct, indirect, incidental, or consequential damages arising from the use of our website or services.</li>
+            <li>We do not guarantee uninterrupted access, error-free operation, or accuracy of third-party content.</li>
+          </ul>
+          </div>
+          <div className='introduction'>
+          <span> Third-Party Links</span> <br></br>
+          <ul className='privacynotes'>
+            <li>Our website may contain links to third-party websites.</li>
+            <li>We do not endorse or assume responsibility for the content, privacy, or practices of these external sites.</li>
+          </ul>
+          </div>
+          <div className='introduction'>
+          <span> Privacy</span> <br></br>
+          <span className='privacybrief'>Your use of the website is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal information.</span>
+          </div>
+          <div className='introduction'>
+          <span> Governing Law</span> <br></br>
+          <ul className='privacynotes'>
+            <li>These Terms & Conditions are governed by the laws of India.</li>
+            <li>Any disputes arising from the use of this website or services shall be subject to the exclusive jurisdiction of the courts in Hyderabad, India.</li>
+          </ul>
+          </div>
+          <div className='introduction'>
+          <span> Changes to Terms & Conditions</span> <br></br>
+          <ul className='privacynotes'>
+            <li>We may update these Terms & Conditions from time to time.</li>
+            <li>Changes will be posted on this page with the effective date. Continued use of the website constitutes acceptance of the updated terms.</li>
+          </ul>
+          </div>
+          <div className='introduction'>
+          <span> Contact Us</span> <br></br>
+          <span className='privacybrief'>If you have questions regarding these Terms & Conditions, please contact us:</span>
+          <ul className='privacynotes'>
+            <li>Saksam Sol</li>
+            <li>Email: info@saksamsol.com</li>
+            <li>Phone: +91 9398906639</li>
+            <li>Address: Hyderabad, India</li>
+          </ul>
           </div> 
           <div className='bottomline'></div>
-          <div className='finalnote'>Last updated: October 31, 2025</div> 
+          <div className='finalnote'>Last updated: January, 2026</div> 
         </div>
       </div>
     </div>

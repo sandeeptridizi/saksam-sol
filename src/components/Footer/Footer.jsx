@@ -14,10 +14,9 @@ const Footer = () => {
     <div className='footer-main-container'>
       <div className='footer-section-one-container'>
         <div className='footer-one-content-container'>
-          <h3 className='footer-one-heading'>Fill Job Roles Instantly!</h3>
+          <h3 className='footer-one-heading'>Let’s Build Your Dream Team Together</h3>
           <p className='footer-one-text'>
-            Lorem ipsum dolor sit amet consectetur. Euismod faucibus tincidunt
-            elementum cras mus amet fusce consectetur. Condimentum nisl proin.
+            Whether you’re looking to hire top talent, scale your workforce quickly, or streamline recruitment processes, SakSam Sol is your trusted staffing partner. Stay updated with the latest hiring solutions, industry insights, and workforce strategies by subscribing to our newsletter.
           </p>
           <div className='footer-one-email-btn-container'>
             <input

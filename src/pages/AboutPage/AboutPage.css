@@ -53,8 +53,8 @@
 }
 
 .aboutrow{
-    height: 190px;
-    width: 650px;
+    height: 260px;
+    width: 710px;
     display: flex;
 
 }
@@ -88,6 +88,7 @@
     height: 400px;
     width: auto;
     display: flex;
+    margin-top: 150px;
 }
 
 .vision{

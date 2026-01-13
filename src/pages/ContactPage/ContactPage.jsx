@@ -10,7 +10,7 @@ const ContactPage = () => {
       <div className='contactinfo'>
         <div className='contactheading'>
           <span className='contacttitle'>Contact Information</span> <br></br>
-          <span className='contacctdesc'>Say Something to start live chat</span>
+          <span className='contacctdesc'>Say Something to connect with us directly</span>
 
           <ul className='contactdetails'>
             <li className='contactplace'>

@@ -128,7 +128,6 @@
 
 .subjectdiv{
     height: 60px;
-    padding: 40px;
 }
 
 .subjectselector{
@@ -137,12 +136,13 @@
     font-weight: bold;
     display: inline-block;
     margin-bottom: 20px;
+    margin-left: 40px;
 }
 
 .subjects{
     list-style: none;
     display: flex;
-    width: 700px;
+    width: auto;
 }
 
 .subjectname{
