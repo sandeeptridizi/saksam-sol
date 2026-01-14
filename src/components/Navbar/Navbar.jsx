@@ -22,9 +22,26 @@ const Navbar = () => {
           <NavLink to='about-us'>
             <li>About Us</li>
           </NavLink>
-          <NavLink to='services'>
-            <li className='services-link'>Services</li>
-          </NavLink>
+          <li className='services-link'>
+            <NavLink to='services'>Services</NavLink>
+            <div className='services-links-container'>
+              <NavLink to='/services'>
+                <span>Continget Staffing</span>
+              </NavLink>
+              <NavLink to='/services/permenant-staffing'>
+                <span>permenant-staffing</span>
+              </NavLink>
+              <NavLink to='/services/bulk-hiring'>
+                <span>Bulk Hiring</span>
+              </NavLink>
+              <NavLink to='/services/payroll-services'>
+                <span>Payroll Services</span>
+              </NavLink>
+              <NavLink to='/services/recruitment-process'>
+                <span>Recruitment Process</span>
+              </NavLink>
+            </div>
+          </li>
           <NavLink to='careers'>
             <li>Careers</li>
           </NavLink>
@@ -39,23 +56,7 @@ const Navbar = () => {
           <GiHamburgerMenu />
         </div>
       </div>
-      <div className='services-links-container'>
-        <NavLink to='/services'>
-          <span>Continget Staffing</span>
-        </NavLink>
-        <NavLink to='/services/permenant-staffing'>
-          <span>permenant-staffing</span>
-        </NavLink>
-        <NavLink to='/services/bulk-hiring'>
-          <span>Bulk Hiring</span>
-        </NavLink>
-        <NavLink to='/services/payroll-services'>
-          <span>Payroll Services</span>
-        </NavLink>
-        <NavLink to='/services/recruitment-process'>
-          <span>Recruitment Process</span>
-        </NavLink>
-      </div>
+
       {isHamburgerOpen && (
         <ul className='nav-mobile-links-container'>
           <NavLink to='/' onClick={() => setIsHamburgerOpen(false)}>

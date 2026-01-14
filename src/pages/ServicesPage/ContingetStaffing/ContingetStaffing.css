@@ -289,3 +289,118 @@
   font-weight: lighter;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  .servicehero {
+    width: 100%;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .serviceheronotes {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .serviceherotitle {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  .serivcehighlight {
+    width: 100%;
+  }
+
+  .serviceicon {
+    height: 40px;
+    width: 40px;
+    background-color: #028d89;
+  }
+
+  .servicepoint {
+    width: 100%;
+    height: auto;
+  }
+
+  .servicetitle {
+    font-size: 20px;
+    color: black;
+  }
+
+  .servicedesc {
+    font-size: 14px;
+    color: #666266;
+    margin-top: 2px;
+  }
+
+  .serviceherobutton {
+    height: 31px;
+    width: 128px;
+    background-color: #028d89;
+    border-radius: 24px;
+    border-color: #028d89;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .serviceimage {
+    height: 350px;
+    width: 100%;
+    background-color: #028d89;
+  }
+
+  .servicebodydesc {
+    width: 100%;
+    background-color: #122134;
+    padding: 24px;
+  }
+
+  .servicebodynote {
+    width: 100%;
+    line-height: 28px;
+    color: #ffffff;
+    font-size: 12px;
+  }
+
+  .serviceadvantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantageimagesection {
+    width: 100%;
+    height: 450px;
+    padding: 24px;
+  }
+
+  .advantagetitle {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1a131a;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .advantagedesc {
+    font-size: 12px;
+    color: #666266;
+    margin-bottom: 15px;
+  }
+
+  .advantageimage {
+    height: 287px;
+    width: 100%;
+    background-color: #028d89;
+  }
+
+  .advantagepoint {
+    width: 100%;
+    height: auto;
+  }
+}

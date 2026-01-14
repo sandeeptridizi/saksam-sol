@@ -37,7 +37,6 @@ import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import MeetingCard from '../../components/MeetingCard/MeetingCard';
 
 import Accordion from '../../components/Accordion/Accordion';
-import { useState } from 'react';
 import useAppContext from '../../context/AppContext';
 
 import 'slick-carousel/slick/slick.css';
@@ -134,10 +133,9 @@ const HomePage = () => {
   const settings = {
     infinite: true,
     slidesToShow: 3,
-    speed: 500,
     dots: false,
     slidesToScroll: 1,
-    arrows: true,
+    speed: 500,
     responsive: [
       {
         breakpoint: 1024,
@@ -151,9 +149,9 @@ const HomePage = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -281,6 +279,10 @@ const HomePage = () => {
           </p>
         </div>
         <div className='home-page-testimonial-carousel-container'>
+          <TestimonialCard {...testimonialsData[0]} />
+          <TestimonialCard {...testimonialsData[0]} />
+          <TestimonialCard {...testimonialsData[0]} />
+          <TestimonialCard {...testimonialsData[0]} />
           <TestimonialCard {...testimonialsData[0]} />
           <TestimonialCard {...testimonialsData[0]} />
           <TestimonialCard {...testimonialsData[0]} />

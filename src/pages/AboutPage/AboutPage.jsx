@@ -119,32 +119,6 @@ const AboutPage = () => {
           ))}
         </div>
       </div>
-      {/* <div className='founders'>
-        <div className='foundersheading'>
-          <span className='foundershead'>Our Success Founders</span> <br></br>
-          <span className='foundersdesc'>
-            At Saksam Sol, we take pride in offering more than just products; we
-            offer an experience. Here's what makes us unique:
-          </span>
-        </div>
-        <div className='foundersbrief'>
-          <div className='founder1'>
-            <span className='founderimage1'></span> <br></br>
-            <span className='foundername'>Sowmya P</span> <br></br>
-            <span className='foundertitle'>Co Founder</span>
-          </div>
-          <div className='founder2'>
-            <span className='founderimage2'></span> <br></br>
-            <span className='foundername'>Raghavendra Chary</span> <br></br>
-            <span className='foundertitle'>Founder and CEO</span>
-          </div>
-          <div className='founder1'>
-            <span className='founderimage1'></span> <br></br>
-            <span className='foundername'>Another Founder</span> <br></br>
-            <span className='foundertitle'>Founder Title</span>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

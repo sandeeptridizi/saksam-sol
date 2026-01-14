@@ -1,52 +1,97 @@
-.background{
-    height: 2380px;
-    width: 1280px;
-    margin: 50px auto 80px auto;
-    background-color: #122134;
-    padding-top: 60px;
+.background {
+  height: 2380px;
+  width: 1280px;
+  margin: 50px auto 80px auto;
+  background-color: #122134;
+  padding-top: 60px;
 }
 
-.textlayer{
-    height: 2227px;
-    width: 1131px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 18px;
+.textlayer {
+  height: 2227px;
+  width: 1131px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
 }
 
-.policytext{
-    font-size: 18px;
-    color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    width: 857px;
-    line-height: 26px;
-    margin-top: 30px;
+.policytext {
+  font-size: 18px;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 857px;
+  line-height: 26px;
+  margin-top: 30px;
 }
 
-.introduction{
+.introduction {
+  margin-top: 40px;
+}
+
+.privacybrief {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.privacynotes {
+  list-style: none;
+}
+
+.bottomline {
+  background-color: #bdbdbd;
+  height: 1px;
+  width: 850px;
+  margin-top: 40px;
+}
+
+.finalnote {
+  font-size: 16px;
+  color: #bdbdbd;
+  margin-top: 45px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .background {
+    width: 100%;
+    padding: 24px;
+    height: 100%;
+  }
+
+  .textlayer {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+  }
+
+  .policytext {
+    width: 100%;
+    height: auto;
+  }
+
+  .introduction {
     margin-top: 40px;
-}
+  }
 
-.privacybrief{
-    display: inline-block;
+  .privacybrief {
     margin-top: 15px;
-}
+  }
 
-.privacynotes{
+  .privacynotes {
     list-style: none;
-}
+  }
 
-.bottomline{
-    background-color: #BDBDBD;
+  .bottomline {
+    background-color: #bdbdbd;
     height: 1px;
-    width: 850px;
-    margin-top: 40px;
-}
+    width: 100%;
+    margin-top: 20px;
+  }
 
-.finalnote{
+  .finalnote {
     font-size: 16px;
-    color: #BDBDBD;
+    color: #bdbdbd;
     margin-top: 45px;
     text-align: center;
+  }
 }

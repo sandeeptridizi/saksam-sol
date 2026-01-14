@@ -122,90 +122,109 @@
   width: 345px;
 }
 
-.founders {
-  height: 740px;
-  width: 1325px;
-}
+@media screen and (max-width: 600px) {
+  .abouthero {
+    width: 100%;
+    padding: 32px 18px;
+  }
 
-.foundersheading {
-  height: 150px;
-  width: auto;
-  text-align: center;
-}
+  .abouthighlights {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
 
-.foundershead {
-  font-size: 48px;
-  color: #000000;
-  font-weight: bold;
-  display: inline-block;
-  margin-bottom: 20px;
-}
+  .aboutinfo {
+    width: 100%;
+  }
 
-.foundersdesc {
-  font-size: 18px;
-  color: #676767;
-  font-weight: lighter;
-  width: 600px;
-  display: inline-block;
-}
+  .aboutmedia {
+    width: 100%;
+  }
 
-.foundersbrief {
-  height: 265px;
-  width: auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
-}
+  .aboutheading {
+    font-size: 25px;
+    text-align: center;
+  }
 
-.founder1 {
-  height: 360px;
-  width: 360px;
-  background-color: #122134;
-  border-radius: 12px;
-  border-color: #122134;
-  margin-left: 60px;
-  margin-top: 40px;
-  padding: 36px;
-}
+  .aboutdesc {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
 
-.founderimage1 {
-  height: 200px;
-  width: 280px;
-  background-color: #028d89;
-  border-radius: 10px;
-  display: inline-block;
-  margin-bottom: 15px;
-}
+  .aboutbutton {
+    background-color: #028d89;
+    height: auto;
+    width: 160px;
+    border-radius: 30px;
+    border-color: #028d89;
+    color: #ffffff;
+    font-size: 14px;
+  }
 
-.foundername {
-  font-size: 24px;
-  color: #ffffff;
-  font-weight: bold;
-  display: inline-block;
-  margin-bottom: 15px;
-}
+  .aboutrow {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 18px;
+    gap: 24px;
+  }
 
-.foundertitle {
-  font-size: 16px;
-  color: #b5b5b5;
-  font-weight: lighter;
-}
+  .abouthighlight {
+    width: 100%;
+    text-align: left;
+    list-style: none;
+  }
 
-.founder2 {
-  height: 400px;
-  width: 360px;
-  background-color: #028d89;
-  border-radius: 12px;
-  border-color: #028d89;
-  margin-left: 60px;
-  padding: 36px;
-}
+  .highlightnum {
+    font-size: 25px;
+    color: #244d4d;
+    margin-bottom: 10px;
+  }
 
-.founderimage2 {
-  height: 240px;
-  width: 280px;
-  background-color: #122134;
-  border-radius: 10px;
-  display: inline-block;
-  margin-bottom: 15px;
+  .highlightheading {
+    font-size: 20px;
+    color: #244d4d;
+    margin-bottom: 10px;
+  }
+
+  .highlightdesc {
+    font-size: 14px;
+    color: #64717c;
+  }
+
+  .visionmission {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .vision {
+    width: 100%;
+    padding: 28px;
+    overflow: hidden;
+  }
+
+  .visionicon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .visionheading {
+    font-size: 20px;
+    color: #101828;
+    margin-bottom: 15px;
+  }
+
+  .visiondesc {
+    font-size: 14px;
+    color: #4a5565;
+    width: 345px;
+  }
 }

@@ -196,6 +196,7 @@
   align-items: center;
   gap: 38px;
   position: relative;
+  overflow: hidden;
 }
 
 .left-rectangle {
@@ -352,19 +353,16 @@
 }
 
 .slick-slide > div {
-  margin: 0 16px;
+  margin: 0 8px;
 }
 
 .slick-prev,
 .slick-next {
   width: 25px !important;
   height: 25px !important;
-  background: #0aa89e !important;
+  background: #94e1dc !important;
   border-radius: 50% !important;
   z-index: 99999 !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .slick-arrow {
@@ -387,6 +385,7 @@
   padding: 48px 0 48px 48px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   gap: 24px;
 }
 
@@ -415,6 +414,7 @@
   display: flex;
   align-items: center;
   gap: 24px;
+
   animation: testimonial 4s linear 2s infinite;
 }
 
@@ -595,23 +595,6 @@
   margin-top: 18px;
 }
 
-.home-page-meeting-btn {
-  background: #028d89;
-  padding: 16px 51px;
-  border-radius: 29px;
-  border: none;
-  width: 172px;
-  height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 400;
-  color: #fff;
-  margin-top: -150px;
-}
-
 .home-page-faqs-container {
   width: 85%;
   margin: 80px auto;
@@ -678,6 +661,11 @@
   .home-page-main-container {
     width: 100%;
     padding: 32px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
 
   .home-page-header-container {
@@ -687,7 +675,7 @@
   }
 
   .home-page-heading {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     text-align: center;
     color: #3a3a3a;
@@ -697,75 +685,67 @@
     color: #fff;
   }
 
-  .home-page-email-btn-container {
-    width: 100%;
-    height: 40px;
-    padding: 6px;
-    background: #0000001a;
-    border: 1px solid #0a0a0a0d;
-    backdrop-filter: blur(8px);
-    border-radius: 99px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .home-page-email-input {
-    flex: 1;
-    border: none;
-    outline: none;
-    padding: 5px 12px;
-    background-color: transparent;
-  }
-
-  .home-page-btn {
-    background: #122134;
-    padding: 5px 16px;
-    border-radius: 29px;
-    border: none;
-    font-size: 12px;
-    font-weight: 400;
-    color: #fff;
-    cursor: pointer;
-    height: 36px;
-  }
-
   .home-page-profile-container {
     width: 100%;
+    height: 200px;
     position: relative;
     margin: 32px auto;
   }
 
   .layer-img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .group-img {
-    height: 200%;
+    height: 150%;
     position: absolute;
-    top: -100%;
-    left: 18%;
+    top: -70%;
+    left: 14%;
+    object-fit: contain;
   }
 
-  .home-page-profile-container {
+  .peter-img,
+  .jacline-img,
+  .jessica-img,
+  .josh-img {
     display: none;
   }
 
   .home-page-grid-container {
     width: 100%;
     grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+
+  .home-page-item-container {
+    width: 100%;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .item-icon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .item-title {
+    font-size: 18px;
+  }
+
+  .item-text {
+    font-size: 12px;
   }
 
   .home-page-company-container {
     width: 100%;
-    margin: 24px auto;
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    gap: 12px;
+    padding: 16px;
   }
 
   .home-page-company-text {
@@ -775,7 +755,8 @@
   }
 
   .home-page-company-title {
-    font-size: 20px;
+    width: 100%;
+    font-size: 18px;
     font-weight: 600;
     color: #3a3a3a;
   }
@@ -788,13 +769,16 @@
 
   .home-page-company-logos-one-grid-container,
   .home-page-company-logos-two-grid-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .home-page-how-it-works-section {
     width: 100%;
-    margin: 18px 0;
     background: #122134;
     padding: 31px 18px;
     border-radius: 24px;
@@ -838,6 +822,8 @@
 
   .home-page-services-container {
     width: 100%;
+    text-align: center;
+    overflow: hidden;
   }
 
   .home-page-services-header {
@@ -854,6 +840,15 @@
     width: 100%;
   }
 
+  .slick-prev {
+    left: -5px !important;
+  }
+
+  .slick-next {
+    right: -5px !important;
+    z-index: 9999;
+  }
+
   .home-page-contract-heading {
     font-size: 24px;
     font-weight: 700;
@@ -863,6 +858,7 @@
   }
 
   .home-page-contract-list-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -887,17 +883,9 @@
     color: #fff;
   }
 
-  .recommended-list-container {
-    width: 100%;
-  }
-
-  .home-page-services-rpo-container {
-    width: 100%;
-  }
-
   .home-page-testimonial-container {
     width: 100%;
-    padding: 32px 16px;
+    padding: 16px;
   }
 
   .home-page-testimonial-carousel-container {
@@ -919,8 +907,8 @@
     padding: 32px 18px;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
     position: relative;
+    overflow: hidden;
   }
 
   .rectangle-22 {
@@ -953,6 +941,7 @@
   .home-page-money-grid-container {
     width: 100%;
     grid-template-columns: 1fr;
+    z-index: 9;
   }
 
   .home-page-money-item-one-container {
@@ -975,7 +964,7 @@
   }
 
   .item-one-range-child-container {
-    width: 107px;
+    width: 50%;
     height: 4px;
     border-radius: 4px;
     background: #028d89;
@@ -1053,6 +1042,7 @@
     font-size: 24px;
     font-weight: 600;
     color: #3a3a3a;
+    text-align: center;
   }
 
   .faqs-text {

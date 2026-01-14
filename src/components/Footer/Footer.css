@@ -178,6 +178,11 @@
 .footer-section-two-links-container {
   display: flex;
   align-items: center;
+  gap: 5px;
+}
+
+.footer-section-two-links-container a {
+  text-decoration: none;
 }
 
 .line-container {

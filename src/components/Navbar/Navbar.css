@@ -20,11 +20,7 @@
   color: #3a3a3a;
 }
 
-.nav-links-container li {
-  cursor: pointer;
-}
-
-a {
+.nav-links-container a {
   padding: 10px;
   cursor: pointer;
   font-size: 16px;
@@ -33,7 +29,7 @@ a {
   color: #3a3a3a;
 }
 
-a.active {
+.nav-links-container a.active {
   color: #028d89;
 }
 
@@ -48,8 +44,8 @@ a.active {
 
 .services-links-container {
   position: absolute;
-  top: 90px;
-  right: 85px;
+  top: 60px;
+  right: -200px;
   width: 300px;
   height: fit-content;
   padding: 24px;
@@ -114,12 +110,26 @@ a.active {
     position: absolute;
     flex-direction: column;
     list-style-type: none;
-    top: 80px;
+    top: 90px;
     width: 90%;
+    right: 10px;
     background-color: #f6f9ff;
     padding: 16px;
     border-radius: 4px;
     z-index: 9;
+    gap: 16px;
+  }
+
+  .nav-mobile-links-container a {
+    text-decoration: none;
+    color: #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-mobile-links-container li {
+    padding: 12px auto;
   }
 
   .contact-link {

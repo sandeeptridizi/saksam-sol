@@ -1,6 +1,6 @@
 .meeting-card-container {
   width: 404px;
-  /* height: 458px; */
+  height: 458px;
   range: 0 deg;
   opacity: 1;
   gap: 24.28px;
@@ -16,7 +16,7 @@
 .meeting-card-gradient-container {
   background: linear-gradient(180deg, rgba(246, 249, 255, 0) 0%, #f6f9ff 62.5%);
   width: 403px;
-  /* height: 284px; */
+  height: 284px;
   padding: 23.5px;
   display: flex;
   flex-direction: column;
