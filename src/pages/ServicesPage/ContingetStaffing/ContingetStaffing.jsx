@@ -7,6 +7,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import useAppContext from '../../../context/AppContext';
 
+import contingentmain from '../../../assets/contingentmain.png';
+import contingentsub from '../../../assets/contingentsub.jpg';
+
 const ContingetStaffing = () => {
   const { carouselData } = useAppContext();
 
@@ -85,7 +88,13 @@ const ContingetStaffing = () => {
           </div>
           <button className='serviceherobutton'>Get in touch</button>
         </div>
-        <div className='serviceimage'></div>
+        <div className='serviceimage'>
+          <img
+            src={contingentmain}
+            alt='contingent main image'
+            className='main-img'
+          />
+        </div>
       </div>
       <div className='servicebodydesc'>
         <span className='servicebodynote'>
@@ -115,7 +124,13 @@ const ContingetStaffing = () => {
             business needs.
           </span>
           <br></br>
-          <span className='advantageimage'></span>
+          <span className='advantageimage'>
+            <img
+              src={contingentsub}
+              alt='advantages image'
+              className='sub-img'
+            />
+          </span>
         </div>
         <div className='advantagepoint'>
           <div className='aboutrow'>

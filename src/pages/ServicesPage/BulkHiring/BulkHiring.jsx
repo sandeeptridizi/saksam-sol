@@ -7,6 +7,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import useAppContext from '../../../context/AppContext';
 
+import bulkhiringmain from '../../../assets/bulkhiringmain.png';
+import bulkhiringsub from '../../../assets/bulkhiringsub.png';
+
 const BulkHiring = () => {
   const { carouselData } = useAppContext();
 
@@ -82,7 +85,9 @@ const BulkHiring = () => {
           </div>
           <button className='serviceherobutton'>Get in touch</button>
         </div>
-        <div className='serviceimage'></div>
+        <div className='serviceimage'>
+          <img src={bulkhiringmain} alt='bulk hiring' className='main-img' />
+        </div>
       </div>
       <div className='servicebodydesc'>
         <span className='servicebodynote'>
@@ -111,7 +116,9 @@ const BulkHiring = () => {
             requirements efficiently.
           </span>
           <br></br>
-          <span className='advantageimage'></span>
+          <span className='advantageimage'>
+            <img src={bulkhiringsub} alt='bulk hiring' className='sub-img' />
+          </span>
         </div>
         <div className='advantagepoint'>
           <div className='aboutrow'>

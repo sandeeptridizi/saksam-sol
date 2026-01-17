@@ -7,6 +7,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
+import payrollmain from '../../../assets/payrollmain.png';
+import payrollsub from '../../../assets/payrollsub.png';
+
 const PayrollServices = () => {
   const { carouselData } = useAppContext();
 
@@ -84,7 +87,9 @@ const PayrollServices = () => {
           </div>
           <button className='serviceherobutton'>Get in touch</button>
         </div>
-        <div className='serviceimage'></div>
+        <div className='serviceimage'>
+          <img src={payrollmain} alt='payroll' className='main-img' />
+        </div>
       </div>
       <div className='servicebodydesc'>
         <span className='servicebodynote'>
@@ -111,7 +116,9 @@ const PayrollServices = () => {
             workforce.
           </span>
           <br></br>
-          <span className='advantageimage'></span>
+          <span className='advantageimage'>
+            <img src={payrollsub} alt='bulk hiring' className='sub-img' />
+          </span>
         </div>
         <div className='advantagepoint'>
           <div className='aboutrow'>

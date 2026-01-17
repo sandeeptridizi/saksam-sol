@@ -3,6 +3,9 @@ import './PermenantStaffing.css';
 import rectangle22 from '../../../assets/rectangle22.png';
 import useAppContext from '../../../context/AppContext';
 
+import permanantmain from '../../../assets/permanantmain.jpg';
+import permanantsub from '../../../assets/permanantsub.png';
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
@@ -85,7 +88,9 @@ const PermenantStaffing = () => {
           </div>
           <button className='serviceherobutton'>Get in touch</button>
         </div>
-        <div className='serviceimage'></div>
+        <div className='serviceimage'>
+          <img src={permanantmain} alt='permanant image' className='main-img' />
+        </div>
       </div>
       <div className='servicebodydesc'>
         <span className='servicebodynote'>
@@ -115,7 +120,9 @@ const PermenantStaffing = () => {
             sustained success.
           </span>
           <br></br>
-          <span className='advantageimage'></span>
+          <span className='advantageimage'>
+            <img src={permanantsub} alt='advantage image' className='sub-img' />
+          </span>
         </div>
         <div className='advantagepoint'>
           <div className='aboutrow'>

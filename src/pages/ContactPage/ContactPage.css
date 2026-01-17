@@ -1,3 +1,19 @@
+.foundersheading {
+  width: 85%;
+  margin: 48px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.foundershead {
+  text-align: center;
+}
+
+.foundersdesc {
+  text-align: center;
+}
+
 .contactus {
   height: 670px;
   width: 1200px;
@@ -234,16 +250,38 @@
 }
 
 @media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .foundersheading {
     width: 100%;
-    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+
+  .foundershead {
+    text-align: center;
+  }
+
+  .foundersdesc {
+    text-align: center;
+  }
+
   .contactus {
-    width: 100%;
-    padding: 32px 16px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin: 16px auto;
   }
 
   .contactinfo {
@@ -321,22 +359,25 @@
     margin-right: 20px;
   }
 
-  .contactrow {
-    width: 600px;
-    height: 60px;
+  .contactform {
+    width: 100%;
+    height: auto;
+    padding: 18px;
     display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    gap: 40px;
-    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 24px;
+    margin: 32px auto;
+  }
+
+  .contactrow {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .input-box {
     width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
   }
 
   .input-box label {
@@ -346,15 +387,6 @@
 
   .input-box input {
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #8d8d8d;
-    padding: 5px 0;
-    font-size: 14px;
-    width: 280px;
-    outline: none;
-    font-weight: lighter;
-    background-color: #f6f9ff;
-    color: #8d8d8d;
   }
 
   .input-box input:focus {
@@ -362,16 +394,12 @@
   }
 
   .subjectdiv {
-    height: 60px;
+    height: auto;
   }
 
   .subjectselector {
     color: #011c2a;
     font-size: 14px;
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-left: 40px;
   }
 
   .subjects {
@@ -384,17 +412,10 @@
     color: #011c2a;
     font-size: 12px;
     font-weight: lighter;
-    margin-right: 10px;
   }
 
   .message-box {
     width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 40px;
-    margin-top: 45px;
   }
 
   .message-box label {
@@ -404,27 +425,15 @@
 
   .message-box input {
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #8d8d8d;
-    padding: 5px 0;
-    font-size: 14px;
-    width: 600px;
-    outline: none;
-    font-weight: lighter;
-    background-color: #f6f9ff;
-    color: #8d8d8d;
   }
 
   .submitbutton {
-    height: 55px;
+    height: 30px;
     width: 215px;
     background-color: #028d89;
     border-radius: 10px;
     border-color: #028d89;
     color: #ffffff;
-    font-size: 16px;
-    margin-left: auto;
-    display: block;
-    margin-right: 50px;
+    font-size: 14px;
   }
 }

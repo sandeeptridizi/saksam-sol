@@ -7,6 +7,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
+import recruitmain from '../../../assets/recruitmain.png';
+import recruitsub from '../../../assets/recruitsub.png';
+
 const RecruitmentProcess = () => {
   const { carouselData } = useAppContext();
 
@@ -82,7 +85,9 @@ const RecruitmentProcess = () => {
           </div>
           <button className='serviceherobutton'>Get in touch</button>
         </div>
-        <div className='serviceimage'></div>
+        <div className='serviceimage'>
+          <img src={recruitmain} alt='recruit' className='main-img' />
+        </div>
       </div>
       <div className='servicebodydesc'>
         <span className='servicebodynote'>
@@ -111,7 +116,9 @@ const RecruitmentProcess = () => {
             recruitment support tailored to your business needs.
           </span>
           <br></br>
-          <span className='advantageimage'></span>
+          <span className='advantageimage'>
+            <img src={recruitsub} alt='recruit' className='main-img' />
+          </span>
         </div>
         <div className='advantagepoint'>
           <div className='aboutrow'>

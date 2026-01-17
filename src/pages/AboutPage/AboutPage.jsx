@@ -5,6 +5,8 @@ import alma from '../../assets/image1.jpg';
 import santos from '../../assets/image2.jpg';
 import rita from '../../assets/image3.jpg';
 
+import aboutImg from '../../assets/about.png';
+
 const meetingData = [
   {
     id: 1,
@@ -81,7 +83,9 @@ const AboutPage = () => {
             </ul>
           </div>
         </div>
-        <div className='aboutmedia'>ImagesSection</div>
+        <div className='aboutmedia'>
+          <img src={aboutImg} alt='about image' className='main-img' />
+        </div>
       </div>
       <div className='visionmission'>
         <div>
