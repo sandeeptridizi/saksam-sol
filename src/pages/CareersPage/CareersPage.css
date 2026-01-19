@@ -4,13 +4,14 @@
   background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 120px;
 }
 
 .careerbanner {
   height: 360px;
   width: 1140px;
   background-color: #e9cebc;
+  position: relative;
 }
 
 .careersearchbanner {
@@ -21,7 +22,7 @@
   border-color: #028d89;
   background: rgba(2, 141, 137, 0.5);
   bottom: 130px;
-  left: 130px;
+  left: 20px;
   position: absolute;
 }
 
@@ -78,7 +79,7 @@
 }
 
 .jobs {
-  height: 1140px;
+  height: auto;
   width: auto;
   margin-left: auto;
   margin-right: auto;
@@ -94,11 +95,12 @@
 }
 
 .jobsview {
-  height: 1130px;
+  height: auto;
   width: 565px;
   background-color: #122134;
   border: 1px Solid #122134;
   border-radius: 10px;
+  padding: 16px;
 }
 
 .singlejob {

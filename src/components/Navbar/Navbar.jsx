@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 const Navbar = () => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+  const [link, setLink] = useState('');
 
   return (
     <div className='navbar-container'>
@@ -16,38 +17,46 @@ const Navbar = () => {
       </Link>
       <div className='nav-container'>
         <ul className='nav-links-container'>
-          <NavLink to='/'>
-            <li>Home</li>
-          </NavLink>
-          <NavLink to='about-us'>
-            <li>About Us</li>
-          </NavLink>
-          <li className='services-link'>
-            <NavLink to='services'>Services</NavLink>
-            <div className='services-links-container'>
-              <NavLink to='/services'>
-                <span>Continget Staffing</span>
-              </NavLink>
-              <NavLink to='/services/permenant-staffing'>
-                <span>permenant-staffing</span>
-              </NavLink>
-              <NavLink to='/services/bulk-hiring'>
-                <span>Bulk Hiring</span>
-              </NavLink>
-              <NavLink to='/services/payroll-services'>
-                <span>Payroll Services</span>
-              </NavLink>
-              <NavLink to='/services/recruitment-process'>
-                <span>Recruitment Process</span>
-              </NavLink>
-            </div>
+          <li onClick={() => setLink('home')}>
+            <NavLink to='/'>Home</NavLink>
           </li>
-          <NavLink to='careers'>
-            <li>Careers</li>
-          </NavLink>
-          <NavLink to='contact-us'>
-            <li className='contact-link'>Contact Us</li>
-          </NavLink>
+          <li onClick={() => setLink('about-us')}>
+            <NavLink to='about-us'>About Us</NavLink>
+          </li>
+          <li className='services-link' onClick={() => setLink('services')}>
+            <NavLink to='services'>Services</NavLink>
+            {link && (
+              <div
+                className={
+                  link === 'services'
+                    ? 'services-links-container show-links'
+                    : 'services-links-container'
+                }
+              >
+                <NavLink to='/services'>
+                  <span>Continget Staffing</span>
+                </NavLink>
+                <NavLink to='/services/permenant-staffing'>
+                  <span>permenant-staffing</span>
+                </NavLink>
+                <NavLink to='/services/bulk-hiring'>
+                  <span>Bulk Hiring</span>
+                </NavLink>
+                <NavLink to='/services/payroll-services'>
+                  <span>Payroll Services</span>
+                </NavLink>
+                <NavLink to='/services/recruitment-process'>
+                  <span>Recruitment Process</span>
+                </NavLink>
+              </div>
+            )}
+          </li>
+          <li onClick={() => setLink('careers')}>
+            <NavLink to='careers'>Careers</NavLink>
+          </li>
+          <li className='contact-link' onClick={() => setLink('contact-us')}>
+            <NavLink to='contact-us'>Contact Us</NavLink>
+          </li>
         </ul>
         <div
           className='hamburger-container'

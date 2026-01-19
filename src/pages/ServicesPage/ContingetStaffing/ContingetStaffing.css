@@ -6,11 +6,13 @@
   margin-left: 120px;
   margin-right: 40px;
   gap: 40px;
+  margin-bottom: 64px;
 }
 
 .serviceheronotes {
   height: 520px;
   width: 550px;
+  margin-top: 80px;
 }
 
 .serviceherotitle {
@@ -68,6 +70,7 @@
   height: 530px;
   width: 490px;
   background-color: #028d89;
+  margin-top: 80px;
 }
 
 .main-img {
@@ -92,14 +95,14 @@
 }
 
 .serviceadvantages {
-  height: 450px;
+  height: auto;
   width: auto;
   display: flex;
 }
 
 .advantageimagesection {
   width: 500px;
-  height: 450px;
+  height: auto;
   padding: 24px;
   margin-left: 50px;
 }
@@ -120,7 +123,7 @@
 }
 
 .advantageimage {
-  height: 287px;
+  height: auto;
   width: 490px;
   background-color: #028d89;
   display: inline-block;
@@ -138,168 +141,6 @@
   margin-left: 65px;
 }
 
-.knowmoreaboutus {
-  height: 350px;
-  width: 1240px;
-  border-radius: 24px;
-  background-color: #122134;
-  border-color: #122134;
-  margin-left: 80px;
-  margin-top: 130px;
-  display: flex;
-}
-
-.knowmoreinfo {
-  width: 410px;
-  height: 260px;
-  margin-left: 40px;
-}
-
-.knowmoretitle {
-  font-size: 28px;
-  color: #fff8ff;
-  font-weight: bold;
-  margin-left: 20px;
-  margin-top: 80px;
-  display: inline-block;
-}
-
-.knowmoredesc {
-  font-size: 16px;
-  width: 410px;
-  color: #ffffff;
-  line-height: 24px;
-  margin-left: 20px;
-  margin-top: 16px;
-  display: inline-block;
-  font-weight: lighter;
-}
-
-.knowmorebutton {
-  height: 42px;
-  width: 178px;
-  border-radius: 29px;
-  background-color: #028d89;
-  color: #ffffff;
-  border-color: #028d89;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-.knowmorepoints {
-  height: 260px;
-  width: 616px;
-  margin-top: 60px;
-  margin-left: 86px;
-}
-
-.knowmorerow {
-  width: 616px;
-  height: 124px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
-
-.knowmorepoint {
-  width: 302px;
-  height: 124px;
-  border-radius: 16px;
-  background-color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-}
-
-.knowmorepoint1 {
-  width: 302px;
-  height: 124px;
-  border-radius: 16px;
-  background-color: #6f7987;
-}
-
-.knowmorepoint2 {
-  width: 302px;
-  height: 124px;
-  border-radius: 16px;
-  background-color: #02938c;
-}
-
-.pointheading {
-  font-size: 28px;
-  color: #ffffff;
-  display: inline-block;
-  margin-left: 12px;
-  margin-top: 24px;
-}
-
-.pointdesc {
-  font-size: 16px;
-  color: #ffffff;
-  display: inline-block;
-  margin-left: 12px;
-  margin-top: 24px;
-}
-
-.relatedservices {
-  height: 524px;
-  width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 40px;
-}
-
-.relateddesc {
-  font-size: 14px;
-  color: #3a3a3a;
-  font-weight: lighter;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-.bottomservices {
-  height: 524px;
-  width: 1100px;
-  margin-top: 40px;
-  display: flex;
-}
-
-.relatedservicetitle {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-  display: inline-block;
-  margin-bottom: 10px;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-}
-
-.relatedservicepoints {
-  font-size: 16px;
-  color: #b5b5b5;
-  font-weight: lighter;
-  margin-bottom: 10px;
-  width: auto;
-}
-
-.knowmorebutton1 {
-  height: 42px;
-  width: 178px;
-  border-radius: 29px;
-  background-color: #122134;
-  color: #ffffff;
-  border-color: #122134;
-  margin-left: 20px;
-}
-
-.relatedservicepoints1 {
-  font-size: 16px;
-  color: #3a3a3a;
-  font-weight: lighter;
-  margin-bottom: 10px;
-}
-
 @media screen and (max-width: 600px) {
   * {
     margin: 0;
@@ -314,6 +155,7 @@
 
   .servicehero {
     width: 100%;
+    height: auto;
     padding: 32px 16px;
     display: flex;
     flex-direction: column;
@@ -324,6 +166,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    height: auto;
+    margin-bottom: 32px;
   }
 
   .serviceherotitle {
@@ -381,7 +225,7 @@
 
   .servicebodydesc {
     width: 90%;
-    margin: 0 auto;
+    margin: 48px auto;
     padding: 12px;
     height: auto;
   }
@@ -428,5 +272,10 @@
   .advantagepoint {
     width: 100%;
     height: auto;
+  }
+
+  .home-page-money-container {
+    width: 90%;
+    margin: 0 auto;
   }
 }

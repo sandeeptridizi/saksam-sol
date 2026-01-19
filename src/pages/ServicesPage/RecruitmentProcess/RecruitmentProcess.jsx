@@ -20,6 +20,10 @@ const RecruitmentProcess = () => {
     dots: false,
     slidesToScroll: 1,
     arrows: true,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 5000,
+    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 1024,

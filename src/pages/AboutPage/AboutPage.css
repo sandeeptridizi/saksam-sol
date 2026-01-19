@@ -1,5 +1,5 @@
 .abouthero {
-  height: 650px;
+  height: auto;
   width: auto;
   background-color: #ffffff;
   display: flex;
@@ -8,9 +8,10 @@
 }
 
 .abouthighlights {
-  height: 600px;
+  height: auto;
   width: 700px;
   padding: 40px;
+  margin-top: 80px;
 }
 
 .aboutmedia {
@@ -19,12 +20,14 @@
   padding: 100px;
   color: #244d4d;
   font-size: 50px;
+  margin-top: 50px;
 }
 
 .aboutinfo {
   height: 180px;
   text-align: left;
   list-style: none;
+  margin-bottom: 32px;
 }
 
 .aboutheading {
@@ -52,13 +55,13 @@
 }
 
 .aboutrow {
-  height: 190px;
+  height: auto;
   width: 650px;
   display: flex;
 }
 
 .abouthighlight {
-  height: 190px;
+  height: auto;
   width: 320px;
   text-align: left;
   list-style: none;
@@ -86,12 +89,13 @@
   height: 400px;
   width: auto;
   display: flex;
+  margin: 64px 0 0 0;
 }
 
 .vision {
   list-style: none;
   width: 575px;
-  height: 230px;
+  height: auto;
   margin-left: 60px;
   margin-top: 20px;
   border-left: 4px solid #028d89;
@@ -148,7 +152,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin: 0;
+    margin-top: 48px;
   }
 
   .aboutinfo {
@@ -156,6 +160,12 @@
   }
 
   .aboutmedia {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-img {
     width: 100%;
   }
 
@@ -187,7 +197,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 32px auto;
     gap: 24px;
   }
 
@@ -195,6 +204,7 @@
     width: 100%;
     text-align: left;
     list-style: none;
+    margin: 0;
   }
 
   .highlightnum {
@@ -219,7 +229,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin: 0;
+    margin-bottom: 64px;
   }
 
   .vision {

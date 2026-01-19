@@ -6,6 +6,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: #f6f9ff;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
 }
 
 .navbar-logo {
@@ -17,7 +20,6 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  color: #3a3a3a;
 }
 
 .nav-links-container a {
@@ -29,18 +31,18 @@
   color: #3a3a3a;
 }
 
-.nav-links-container a.active {
-  color: #028d89;
-}
-
 .contact-link {
   background: #028d89;
   padding: 10px 16px;
   border-radius: 24px;
   font-size: 16px;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
 }
+
+/* a.active {
+  color: #028d89;
+} */
 
 .services-links-container {
   position: absolute;
@@ -66,7 +68,11 @@
   position: relative;
 }
 
-.services-link:hover .services-links-container {
+/* .services-link:hover .services-links-container {
+  display: flex;
+} */
+
+.show-links {
   display: flex;
 }
 
@@ -90,7 +96,8 @@
   .navbar-container {
     width: 100%;
     padding: 18px;
-    position: relative;
+    position: fixed;
+    top: 0;
   }
 
   .navbar-logo {

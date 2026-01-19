@@ -135,7 +135,10 @@ const HomePage = () => {
     slidesToShow: 3,
     dots: false,
     slidesToScroll: 1,
-    speed: 500,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 5000,
+    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 1024,
