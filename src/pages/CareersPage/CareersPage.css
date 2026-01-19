@@ -21,7 +21,7 @@
   background-color: #028d89;
   border-color: #028d89;
   background: rgba(2, 141, 137, 0.5);
-  bottom: 130px;
+  bottom: 45px;
   left: 20px;
   position: absolute;
 }
@@ -48,7 +48,7 @@
   margin-top: 20px;
   list-style: none;
   display: flex;
-  gap: 105px;
+  gap: 55px;
 }
 
 .filtertitle {
@@ -145,12 +145,12 @@
 
 .jobcat {
   height: 26px;
-  width: 84px;
+  width: 100px;
   border-radius: 4px;
   background-color: #e7ebf1;
   border: 1px Solid #e7ebf1;
   color: #4f5665;
-  padding: 4px;
+  padding: 2px;
   text-align: center;
 }
 
@@ -275,6 +275,7 @@
     background: rgba(2, 141, 137, 0.5);
     bottom: 15px;
     left: 0;
+    margin-top: 100px;
     position: absolute;
     padding: 16px;
   }
@@ -313,7 +314,7 @@
     padding: 8px;
     display: inline-block;
     margin-top: 10px;
-    width: auto;
+    width: 180px;
     font-size: 12px;
   }
 

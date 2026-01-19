@@ -22,7 +22,7 @@ const ContactPage = () => {
             </span>
             <ul className='contactdetails'>
               <li className='contactplace'>
-                <div className='contacticon'></div> <span>+91 8989897878</span>
+                <div className='contacticon'></div> <span>+91 9398906639 | +91 9849668819</span>
               </li>
               <li className='contactplace'>
                 <div className='contacticon'></div>{' '}

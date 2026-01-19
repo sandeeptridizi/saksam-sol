@@ -20,10 +20,19 @@
   font-weight: 600;
   text-align: center;
   color: #3a3a3a;
+  width: 950px;
 }
 
 .home-page-heading span {
   color: #fff;
+}
+
+.headerline{
+  color: #028d89;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  width: 1090px;
 }
 
 .home-page-email-btn-container {

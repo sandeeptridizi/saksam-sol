@@ -37,7 +37,7 @@ const Navbar = () => {
                   <span>Continget Staffing</span>
                 </NavLink>
                 <NavLink to='/services/permenant-staffing'>
-                  <span>permenant-staffing</span>
+                  <span>Permenant Staffing</span>
                 </NavLink>
                 <NavLink to='/services/bulk-hiring'>
                   <span>Bulk Hiring</span>

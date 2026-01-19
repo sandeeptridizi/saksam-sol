@@ -41,18 +41,17 @@ const Footer = () => {
               className='company-logo'
             />
             <p className='footer-two-content-text'>
-              Lorem ipsum dolor sit amet consectetur. Eget habitant luctus at
-              urna vitae non nunc elementum.
+              Building careers. Delivering talent. Powering growth for your business.
             </p>
             <div className='footer-two-links-container'>
-              <span>About</span>
-              <span>How it Works</span>
-              <span>Reviews</span>
-              <span>Pricing</span>
-              <span>FAQ's</span>
-              <span>Blog</span>
+              <span>About Us</span>
+              <span>Contingent Staffing</span>
+              <span>Permenant Staffing</span>
+              <span>Bulk Hiring</span>
+              <span>Payroll Services</span>
+              <span>RPO</span>
               <span>Careers</span>
-              <span>Partnership</span>
+              <span>Contact Us</span>
             </div>
           </div>
           <div className='footer-two-social-media-container'>

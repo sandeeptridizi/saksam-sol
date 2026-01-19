@@ -6,7 +6,6 @@ import useAppContext from '../../../context/AppContext';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-
 import recruitmain from '../../../assets/recruitmain.png';
 import recruitsub from '../../../assets/recruitsub.png';
 

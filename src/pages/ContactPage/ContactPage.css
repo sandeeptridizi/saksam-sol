@@ -158,14 +158,15 @@
 .subjects {
   list-style: none;
   display: flex;
-  width: auto;
+  width: 700px;
+  margin-left: 40px;
 }
 
 .subjectname {
   color: #011c2a;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: lighter;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .message-box {

@@ -171,8 +171,8 @@ const HomePage = () => {
     <div className='home-page-main-container'>
       <div className='home-page-header-container'>
         <h1 className='home-page-heading'>
-          Hyderabad’s Most Trusted Talent Powerhouse - We Hire, You Grow.
-        </h1>
+          India's most trusted talent power house. </h1><span className='headerline'>Building careers. Delivering talent. Powering growth for your business.</span>
+        
       </div>
       <div className='home-page-profile-container'>
         <img src={layer} alt='layer' className='layer-img' />
