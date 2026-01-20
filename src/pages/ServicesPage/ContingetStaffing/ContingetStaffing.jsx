@@ -10,13 +10,14 @@ import useAppContext from '../../../context/AppContext';
 import contingentmain from '../../../assets/contingentmain.png';
 import contingentsub from '../../../assets/contingentsub.jpg';
 
+import { IoMdCheckmark } from 'react-icons/io';
+
 const ContingetStaffing = () => {
   const { carouselData } = useAppContext();
 
   const settings = {
     infinite: true,
     slidesToShow: 3,
-    speed: 500,
     dots: false,
     slidesToScroll: 1,
     arrows: true,
@@ -54,7 +55,9 @@ const ContingetStaffing = () => {
         <div className='serviceheronotes'>
           <h1 className='serviceherotitle'>Contigent Staffing</h1>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>
                 Scale Your Workforce On Demand
@@ -67,7 +70,9 @@ const ContingetStaffing = () => {
             </div>
           </div>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>
                 Compliance & Payroll Made Easy
@@ -80,7 +85,9 @@ const ContingetStaffing = () => {
             </div>
           </div>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>Flexible Staffing Solutions</span>{' '}
               <br></br>

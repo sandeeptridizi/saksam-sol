@@ -64,13 +64,13 @@
   cursor: pointer;
 }
 
+.services-links-container span:hover {
+  color: #028d89;
+}
+
 .services-link {
   position: relative;
 }
-
-/* .services-link:hover .services-links-container {
-  display: flex;
-} */
 
 .show-links {
   display: flex;

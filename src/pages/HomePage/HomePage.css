@@ -27,7 +27,7 @@
   color: #fff;
 }
 
-.headerline{
+.headerline {
   color: #028d89;
   font-size: 32px;
   font-weight: 400;
@@ -69,45 +69,21 @@
 
 .home-page-profile-container {
   width: 100%;
-  height: 457px;
+  height: 800px;
   position: relative;
   margin: 64px auto;
+  background-image: url('../../assets/layer.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
 
-.peter-img {
-  position: absolute;
-  top: 63%;
-  left: 13%;
-}
-
-.jacline-img {
-  position: absolute;
-  top: 72%;
-  left: 31%;
-}
-
-.jessica-img {
-  position: absolute;
-  top: 68%;
-  right: 24%;
-}
-
-.josh-img {
-  position: absolute;
-  top: 55%;
-  right: 17%;
-}
-
-.layer-img {
-  width: 100%;
-  height: 100%;
-}
-
-.group-img {
-  height: 200%;
-  position: absolute;
-  top: -100%;
-  left: 18%;
+.home-page-profile-video {
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 2px solid #028d89;
 }
 
 .home-page-grid-container {
@@ -177,6 +153,7 @@
 .home-page-company-logos-one-grid-container {
   margin: 32px auto 16px auto;
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
   gap: 24px;
@@ -185,13 +162,16 @@
 .home-page-company-logos-two-grid-container {
   width: 100%;
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(6, 1fr);
   gap: 24px;
 }
 
 .grid-image {
-  opacity: 0.35;
+  opacity: 0.4;
   color: grey;
+  height: auto;
+  width: 150px;
 }
 
 .home-page-how-it-works-section {
@@ -707,30 +687,22 @@
 
   .home-page-profile-container {
     width: 100%;
-    height: 200px;
+    height: 500px;
     position: relative;
-    margin: 32px auto;
+    background-image: url('../../assets/layer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
   }
 
-  .layer-img {
+  .home-page-profile-video {
     width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
-  .group-img {
-    height: 150%;
+    margin: 0 auto;
+    border-radius: 28px;
+    overflow: hidden;
+    border: 2px solid #028d89;
     position: absolute;
-    top: -70%;
-    left: 14%;
-    object-fit: contain;
-  }
-
-  .peter-img,
-  .jacline-img,
-  .jessica-img,
-  .josh-img {
-    display: none;
+    top: 35%;
   }
 
   .home-page-grid-container {

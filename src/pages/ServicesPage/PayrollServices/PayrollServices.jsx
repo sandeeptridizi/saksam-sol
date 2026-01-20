@@ -10,13 +10,14 @@ import Slider from 'react-slick';
 import payrollmain from '../../../assets/payrollmain.png';
 import payrollsub from '../../../assets/payrollsub.png';
 
+import { IoMdCheckmark } from 'react-icons/io';
+
 const PayrollServices = () => {
   const { carouselData } = useAppContext();
 
   const settings = {
     infinite: true,
     slidesToShow: 3,
-    speed: 500,
     dots: false,
     slidesToScroll: 1,
     arrows: true,
@@ -55,7 +56,9 @@ const PayrollServices = () => {
         <div className='serviceheronotes'>
           <h1 className='serviceherotitle'>Payroll Services</h1>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>Accurate & Timely Payroll</span>{' '}
               <br></br>
@@ -66,7 +69,9 @@ const PayrollServices = () => {
             </div>
           </div>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>Compliance Made Easy</span>{' '}
               <br></br>
@@ -77,7 +82,9 @@ const PayrollServices = () => {
             </div>
           </div>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>
                 Hassle-Free Payroll Management

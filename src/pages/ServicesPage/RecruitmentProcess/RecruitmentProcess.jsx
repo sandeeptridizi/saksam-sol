@@ -9,13 +9,14 @@ import Slider from 'react-slick';
 import recruitmain from '../../../assets/recruitmain.png';
 import recruitsub from '../../../assets/recruitsub.png';
 
+import { IoMdCheckmark } from 'react-icons/io';
+
 const RecruitmentProcess = () => {
   const { carouselData } = useAppContext();
 
   const settings = {
     infinite: true,
     slidesToShow: 3,
-    speed: 500,
     dots: false,
     slidesToScroll: 1,
     arrows: true,
@@ -54,7 +55,9 @@ const RecruitmentProcess = () => {
         <div className='serviceheronotes'>
           <h1 className='serviceherotitle'>Recruiment Process</h1>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>Dedicated Recruitment Team</span>{' '}
               <br></br>
@@ -65,7 +68,9 @@ const RecruitmentProcess = () => {
             </div>
           </div>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>Scalable Hiring Solutions</span>{' '}
               <br></br>
@@ -76,7 +81,9 @@ const RecruitmentProcess = () => {
             </div>
           </div>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>Streamlined & Cost-Effective</span>{' '}
               <br></br>

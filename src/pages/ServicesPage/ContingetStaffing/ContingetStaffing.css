@@ -33,6 +33,11 @@
   height: 60px;
   width: 60px;
   background-color: #028d89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
 }
 
 .servicepoint {
@@ -139,6 +144,10 @@
   height: 450px;
   padding: 36px;
   margin-left: 65px;
+}
+
+.home-page-money-container {
+  margin-top: 120px;
 }
 
 @media screen and (max-width: 600px) {

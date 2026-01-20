@@ -23,15 +23,12 @@ import logo from '../../assets/logo.png';
 import alma from '../../assets/image1.jpg';
 import santos from '../../assets/image2.jpg';
 import rita from '../../assets/image3.jpg';
-import layer from '../../assets/layer.png';
-import group from '../../assets/group.png';
+
+import video from '../../assets/SakSamSol.mp4';
+
 import leftRectangle from '../../assets/right-rectangle (1).png';
 import rightRectangle from '../../assets/right-rectangle (3).png';
 import rectangle22 from '../../assets/rectangle22.png';
-import peter from '../../assets/peter.png';
-import jacline from '../../assets/jacline.png';
-import jessica from '../../assets/jessica.png';
-import josh from '../../assets/josh.png';
 
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import MeetingCard from '../../components/MeetingCard/MeetingCard';
@@ -171,16 +168,19 @@ const HomePage = () => {
     <div className='home-page-main-container'>
       <div className='home-page-header-container'>
         <h1 className='home-page-heading'>
-          India's most trusted talent power house. </h1><span className='headerline'>Building careers. Delivering talent. Powering growth for your business.</span>
-        
+          India's most trusted talent power house.{' '}
+        </h1>
+        <span className='headerline'>
+          Building careers. Delivering talent. Powering growth for your
+          business.
+        </span>
       </div>
       <div className='home-page-profile-container'>
-        <img src={layer} alt='layer' className='layer-img' />
-        <img src={group} alt='group' className='group-img' />
-        <img src={peter} alt='peter' className='peter-img' />
-        <img src={jacline} alt='jacline' className='jacline-img' />
-        <img src={jessica} alt='jessica' className='jessica-img' />
-        <img src={josh} alt='josh' className='josh-img' />
+        <div className='home-page-profile-video'>
+          <video controls width='100%' height='100%'>
+            <source src={video} type='video/mp4' />
+          </video>
+        </div>
       </div>
       <div className='home-page-grid-container'>
         {data.map((item) => {
@@ -204,19 +204,83 @@ const HomePage = () => {
         </div>
         <div className='home-page-company-logos-container'>
           <div className='home-page-company-logos-one-grid-container'>
-            <img src={library} alt='library' className='grid-image' />
-            <img src={monster} alt='monster' className='grid-image' />
-            <img src={indeed} alt='indeed' className='grid-image' />
-            <img src={totaljobs} alt='totaljobs' className='grid-image' />
-            <img src={glassdoor} alt='glassdoor' className='grid-image' />
+            <img
+              src={
+                'https://corporate.medibank.com.au/content/dam/medibank/Client/logos/Worley_Logo_HOR_No_Tag.jpg'
+              }
+              alt='library'
+              className='grid-image'
+            />
+            <img
+              src={
+                'https://www.greatplacetowork.in/great/api/assets/uploads/9708/logo/logo.jpg'
+              }
+              alt='monster'
+              className='grid-image'
+            />
+            <img
+              src={
+                'https://tse3.mm.bing.net/th/id/OIP.B86i8wYYoQOrm-KLUIpwDAHaBe?pid=Api&P=0&h=180'
+              }
+              alt='indeed'
+              className='grid-image'
+            />
+            <img
+              src={'https://g.foolcdn.com/art/companylogos/square/prft.png'}
+              alt='totaljobs'
+              className='grid-image'
+            />
+            <img
+              src={
+                'https://tse2.mm.bing.net/th/id/OIP.-mHDgxmP3V_YAJPUtgEKXwHaBO?pid=Api&P=0&h=180'
+              }
+              alt='glassdoor'
+              className='grid-image'
+            />
           </div>
           <div className='home-page-company-logos-two-grid-container'>
-            <img src={jobcenterplus} alt='library' className='grid-image' />
-            <img src={adzuna} alt='monster' className='grid-image' />
-            <img src={trovit} alt='indeed' className='grid-image' />
-            <img src={jobsite} alt='totaljobs' className='grid-image' />
-            <img src={reed} alt='glassdoor' className='grid-image' />
-            <img src={jobcenterplus} alt='library' className='grid-image' />
+            <img
+              src={
+                'https://tse1.mm.bing.net/th/id/OIP.SWQ9tBc7e6bwXye9FQc3jAHaEK?pid=Api&P=0&h=180'
+              }
+              alt='library'
+              className='grid-image'
+            />
+            <img
+              src={
+                'https://tse1.mm.bing.net/th/id/OIP.kDEaWkJlrgUwPL8jhoU0AgAAAA?pid=Api&P=0&h=180'
+              }
+              alt='monster'
+              className='grid-image'
+            />
+            <img
+              src={
+                'https://nestaway-website-kkv4x6ba3-nestaway.vercel.app/images/logo.png'
+              }
+              alt='indeed'
+              className='grid-image'
+            />
+            <img
+              src={
+                'https://mir-s3-cdn-cf.behance.net/projects/404/72ff0271081123.Y3JvcCw1NTMsNDMyLDYwMCwxOTE.jpg'
+              }
+              alt='totaljobs'
+              className='grid-image'
+            />
+            <img
+              src={
+                'https://companieslogo.com/img/orig/RCM_BIG-d0c11098.png?t=1602007417'
+              }
+              alt='glassdoor'
+              className='grid-image'
+            />
+            <img
+              src={
+                'https://av-eks-jobs.s3.amazonaws.com/media/company_logo/2019/10/17/saven_tech_M8j2lfO.jpeg'
+              }
+              alt='library'
+              className='grid-image'
+            />
           </div>
         </div>
       </div>

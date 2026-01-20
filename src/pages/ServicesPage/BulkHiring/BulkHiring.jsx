@@ -10,13 +10,14 @@ import useAppContext from '../../../context/AppContext';
 import bulkhiringmain from '../../../assets/bulkhiringmain.png';
 import bulkhiringsub from '../../../assets/bulkhiringsub.png';
 
+import { IoMdCheckmark } from 'react-icons/io';
+
 const BulkHiring = () => {
   const { carouselData } = useAppContext();
 
   const settings = {
     infinite: true,
     slidesToShow: 3,
-    speed: 500,
     dots: false,
     slidesToScroll: 1,
     arrows: true,
@@ -54,7 +55,9 @@ const BulkHiring = () => {
         <div className='serviceheronotes'>
           <h1 className='serviceherotitle'>Bulk Hiring</h1>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>Rapid Volume Hiring</span>{' '}
               <br></br>
@@ -65,7 +68,9 @@ const BulkHiring = () => {
             </div>
           </div>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>
                 Streamlined Recruitment Process
@@ -78,7 +83,9 @@ const BulkHiring = () => {
             </div>
           </div>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>Quality at Scale</span> <br></br>
               <span className='servicedesc'>

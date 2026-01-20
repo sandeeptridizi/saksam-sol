@@ -10,13 +10,14 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
+import { IoMdCheckmark } from 'react-icons/io';
+
 const PermenantStaffing = () => {
   const { carouselData } = useAppContext();
 
   const settings = {
     infinite: true,
     slidesToShow: 3,
-    speed: 500,
     dots: false,
     slidesToScroll: 1,
     arrows: true,
@@ -54,7 +55,9 @@ const PermenantStaffing = () => {
         <div className='serviceheronotes'>
           <h1 className='serviceherotitle'>Permenant Staffing</h1>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>
                 Hire Full-Time Talent with Ease
@@ -67,7 +70,9 @@ const PermenantStaffing = () => {
             </div>
           </div>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>
                 Structured Recruitment Process
@@ -80,7 +85,9 @@ const PermenantStaffing = () => {
             </div>
           </div>
           <div className='serivcehighlight'>
-            <div className='serviceicon'></div>
+            <div className='serviceicon'>
+              <IoMdCheckmark />
+            </div>
             <div className='servicepoint'>
               <span className='servicetitle'>Long-Term Employee Success</span>{' '}
               <br></br>
