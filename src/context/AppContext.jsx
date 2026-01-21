@@ -105,6 +105,8 @@ const carouselData = [
 
 export const AppContextProvider = ({ children }) => {
   const [faqsData, setfaqsData] = useState(faqs);
+  const [isGetInTouchModalOpen, setIsGetInTouchModalOpen] = useState(false);
+  const [isGetQuoteModalOpen, setIsGetQuoteModalOpen] = useState(false);
 
   const handleAccordion = (id) => {
     const filteredData = faqsData.map((item) =>
@@ -114,7 +116,17 @@ export const AppContextProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider value={{ faqsData, handleAccordion, carouselData }}>
+    <AppContext.Provider
+      value={{
+        faqsData,
+        handleAccordion,
+        carouselData,
+        isGetInTouchModalOpen,
+        setIsGetInTouchModalOpen,
+        isGetQuoteModalOpen,
+        setIsGetQuoteModalOpen,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );

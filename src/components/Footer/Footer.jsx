@@ -14,9 +14,15 @@ const Footer = () => {
     <div className='footer-main-container'>
       <div className='footer-section-one-container'>
         <div className='footer-one-content-container'>
-          <h3 className='footer-one-heading'>Let’s Build Your Dream Team Together</h3>
+          <h3 className='footer-one-heading'>
+            Let’s Build Your Dream Team Together
+          </h3>
           <p className='footer-one-text'>
-            Whether you’re looking to hire top talent, scale your workforce quickly, or streamline recruitment processes, SakSam Sol is your trusted staffing partner. Stay updated with the latest hiring solutions, industry insights, and workforce strategies by subscribing to our newsletter.
+            Whether you’re looking to hire top talent, scale your workforce
+            quickly, or streamline recruitment processes, SakSam Sol is your
+            trusted staffing partner. Stay updated with the latest hiring
+            solutions, industry insights, and workforce strategies by
+            subscribing to our newsletter.
           </p>
           <div className='footer-one-email-btn-container'>
             <input
@@ -41,17 +47,38 @@ const Footer = () => {
               className='company-logo'
             />
             <p className='footer-two-content-text'>
-              Building careers. Delivering talent. Powering growth for your business.
+              Building careers. Delivering talent. Powering growth for your
+              business.
             </p>
             <div className='footer-two-links-container'>
-              <span>About Us</span>
-              <span>Contingent Staffing</span>
-              <span>Permenant Staffing</span>
-              <span>Bulk Hiring</span>
-              <span>Payroll Services</span>
-              <span>RPO</span>
-              <span>Careers</span>
-              <span>Contact Us</span>
+              <span>
+                <Link to='about-us'>About Us</Link>
+              </span>
+              <span>
+                <Link to='/services/continget-staffing'>
+                  Contingent Staffing
+                </Link>
+              </span>
+              <span>
+                <Link to='/services/permenant-staffing'>
+                  Permenant Staffing
+                </Link>
+              </span>
+              <span>
+                <Link to='/services/bulk-hiring'>Bulk Hiring</Link>
+              </span>
+              <span>
+                <Link to='/services/payroll-services'>Payroll Services</Link>
+              </span>
+              <span>
+                <Link to='/services/recruitment-process'>RPO</Link>
+              </span>
+              <span>
+                <Link to='careers'>Careers</Link>
+              </span>
+              <span>
+                <Link to='contact-us'>Contact Us</Link>
+              </span>
             </div>
           </div>
           <div className='footer-two-social-media-container'>

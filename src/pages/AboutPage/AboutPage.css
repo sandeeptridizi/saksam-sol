@@ -4,6 +4,7 @@
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 24px 0 24px;
 }
 
@@ -15,12 +16,17 @@
 }
 
 .aboutmedia {
-  height: 600px;
-  width: 600px;
+  height: 700px;
+  width: 700px;
   padding: 100px;
   color: #244d4d;
   font-size: 50px;
   margin-top: 50px;
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
 }
 
 .aboutinfo {
@@ -87,9 +93,9 @@
 
 .visionmission {
   height: 400px;
-  width: auto;
+  width: 90%;
   display: flex;
-  margin: 64px 0 0 0;
+  margin: 32px auto;
 }
 
 .vision {

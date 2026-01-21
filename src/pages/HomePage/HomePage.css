@@ -69,7 +69,7 @@
 
 .home-page-profile-container {
   width: 100%;
-  height: 800px;
+  height: 600px;
   position: relative;
   margin: 64px auto;
   background-image: url('../../assets/layer.png');
@@ -79,11 +79,26 @@
 }
 
 .home-page-profile-video {
-  width: 85%;
+  width: 75%;
+  height: 100%;
   margin: 0 auto;
-  border-radius: 28px;
+  border-radius: 18px;
   overflow: hidden;
   border: 2px solid #028d89;
+  opacity: 0.1;
+}
+
+.play-video {
+  opacity: 1;
+}
+
+.play-icon {
+  font-size: 150px;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  color: #bb4343;
+  cursor: pointer;
 }
 
 .home-page-grid-container {
@@ -147,7 +162,6 @@
 .home-page-company-logos-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .home-page-company-logos-one-grid-container {
@@ -156,7 +170,7 @@
   align-items: center;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
-  gap: 24px;
+  column-gap: 24px;
 }
 
 .home-page-company-logos-two-grid-container {
@@ -164,7 +178,7 @@
   display: grid;
   align-items: center;
   grid-template-columns: repeat(6, 1fr);
-  gap: 24px;
+  column-gap: 24px;
 }
 
 .grid-image {
@@ -292,11 +306,12 @@
 
 .home-page-services-contract-container {
   width: 343px;
+  height: 400px;
   background: #122134;
   padding: 38px 26px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  justify-content: space-between;
   border-radius: 24px;
 }
 
@@ -402,9 +417,8 @@
   width: 85%;
   display: flex;
   align-items: center;
-  gap: 24px;
-
-  animation: testimonial 4s linear 2s infinite;
+  gap: 16px;
+  animation: testimonial 5s linear infinite;
 }
 
 @keyframes testimonial {
@@ -693,16 +707,29 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .home-page-profile-video {
     width: 100%;
     margin: 0 auto;
+    height: auto;
     border-radius: 28px;
     overflow: hidden;
     border: 2px solid #028d89;
     position: absolute;
-    top: 35%;
+    top: 40%;
+  }
+
+  .play-icon {
+    font-size: 80px;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    color: #bb4343;
+    cursor: pointer;
   }
 
   .home-page-grid-container {
@@ -830,6 +857,7 @@
 
   .home-page-services-contract-container {
     width: 100%;
+    height: fit-content;
   }
 
   .slick-prev {

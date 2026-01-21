@@ -132,13 +132,19 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  color: #fff;
 }
 
-.footer-two-links-container span {
+.footer-two-links-container a {
+  text-decoration: none;
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
   cursor: pointer;
+  color: #fff;
+}
+
+.footer-two-links-container a:hover {
+  color: #02938c;
 }
 
 .footer-two-social-media-container {

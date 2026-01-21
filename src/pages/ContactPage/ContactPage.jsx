@@ -2,6 +2,13 @@ import Accordion from '../../components/Accordion/Accordion';
 import useAppContext from '../../context/AppContext';
 import './ContactPage.css';
 
+import { FaPhoneVolume } from 'react-icons/fa6';
+import { MdMail } from 'react-icons/md';
+import { FaLocationDot } from 'react-icons/fa6';
+import { ImTwitter } from 'react-icons/im';
+import { FaInstagram } from 'react-icons/fa6';
+import { FaDiscord } from 'react-icons/fa6';
+
 const ContactPage = () => {
   const { faqsData, handleAccordion } = useAppContext();
 
@@ -22,21 +29,34 @@ const ContactPage = () => {
             </span>
             <ul className='contactdetails'>
               <li className='contactplace'>
-                <div className='contacticon'></div> <span>+91 9398906639 | +91 9849668819</span>
+                <div className='contacticon'>
+                  <FaPhoneVolume />
+                </div>{' '}
+                <span>+91 9398906639 | +91 9849668819</span>
               </li>
               <li className='contactplace'>
-                <div className='contacticon'></div>{' '}
+                <div className='contacticon'>
+                  <MdMail />
+                </div>{' '}
                 <span>info@saksamsol.com</span>
               </li>
               <li className='contactplace'>
-                <div className='contacticon'></div>{' '}
+                <div className='contacticon'>
+                  <FaLocationDot />
+                </div>{' '}
                 <span>Hitech City, Madhapur, Hyderabad - 500084</span>
               </li>
             </ul>
             <ul className='socialmedia'>
-              <li className='socialmediaicon1'></li>
-              <li className='socialmediaicon2'></li>
-              <li className='socialmediaicon1'></li>
+              <li className='socialmediaicon1'>
+                <ImTwitter />
+              </li>
+              <li className='socialmediaicon2'>
+                <FaInstagram />
+              </li>
+              <li className='socialmediaicon1'>
+                <FaDiscord />
+              </li>
             </ul>
           </div>
         </div>

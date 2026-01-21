@@ -6,6 +6,8 @@ import santos from '../../assets/image2.jpg';
 import rita from '../../assets/image3.jpg';
 
 import aboutImg from '../../assets/about.png';
+import useAppContext from '../../context/AppContext';
+import GetQuoteModal from '../../components/Modals/GetQuoteModal/GetQuoteModal';
 
 const meetingData = [
   {
@@ -32,6 +34,8 @@ const meetingData = [
 ];
 
 const AboutPage = () => {
+  const { isGetQuoteModalOpen, setIsGetQuoteModalOpen } = useAppContext();
+
   return (
     <div>
       <div className='abouthero'>
@@ -43,7 +47,12 @@ const AboutPage = () => {
               Trusted Staffing Solutions{' '}
             </li>
             <br></br>
-            <button className='aboutbutton'>Get a Quote</button>
+            <button
+              className='aboutbutton'
+              onClick={() => setIsGetQuoteModalOpen(!isGetQuoteModalOpen)}
+            >
+              Get a Quote
+            </button>
           </ul>
           <div className='aboutrow'>
             <ul className='abouthighlight'>
@@ -123,6 +132,10 @@ const AboutPage = () => {
           ))}
         </div>
       </div>
+      <GetQuoteModal
+        isOpen={isGetQuoteModalOpen}
+        onClose={() => setIsGetQuoteModalOpen(false)}
+      />
     </div>
   );
 };

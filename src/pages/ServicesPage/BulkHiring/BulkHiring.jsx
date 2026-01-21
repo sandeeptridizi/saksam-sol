@@ -11,9 +11,11 @@ import bulkhiringmain from '../../../assets/bulkhiringmain.png';
 import bulkhiringsub from '../../../assets/bulkhiringsub.png';
 
 import { IoMdCheckmark } from 'react-icons/io';
+import GetInTouchModal from '../../../components/Modals/GetInTouchModal/GetInTouchModal';
 
 const BulkHiring = () => {
-  const { carouselData } = useAppContext();
+  const { carouselData, isGetInTouchModalOpen, setIsGetInTouchModalOpen } =
+    useAppContext();
 
   const settings = {
     infinite: true,
@@ -94,7 +96,12 @@ const BulkHiring = () => {
               </span>
             </div>
           </div>
-          <button className='serviceherobutton'>Get in touch</button>
+          <button
+            className='serviceherobutton'
+            onClick={() => setIsGetInTouchModalOpen(!isGetInTouchModalOpen)}
+          >
+            Get in touch
+          </button>
         </div>
         <div className='serviceimage'>
           <img src={bulkhiringmain} alt='bulk hiring' className='main-img' />
@@ -232,6 +239,10 @@ const BulkHiring = () => {
           </Slider>
         </div>
       </div>
+      <GetInTouchModal
+        isOpen={isGetInTouchModalOpen}
+        onClose={() => setIsGetInTouchModalOpen(false)}
+      />
     </div>
   );
 };

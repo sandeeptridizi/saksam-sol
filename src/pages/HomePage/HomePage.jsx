@@ -40,6 +40,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
+import { MdOutlinePlayCircle } from 'react-icons/md';
+import { useState } from 'react';
+
 const data = [
   {
     id: 1,
@@ -98,6 +101,55 @@ const testimonialsData = [
     role: 'HR Manager, IT Services Company',
     logo: logo,
   },
+  {
+    id: 2,
+    text: 'With over 10 years of experience in recruitment and talent management, Raghavendra leads SakSam Sol with a vision to deliver quality staffing solutions across industries.',
+    name: 'Raghavendra Chary',
+    role: 'Founder & Managing Director',
+    logo: logo,
+  },
+  {
+    id: 3,
+    text: 'Sowmya brings expertise in operations and workforce strategy, ensuring seamless execution of recruitment processes and client satisfaction.',
+    name: 'Sowmya P',
+    role: 'Co Founder & CHRO',
+    logo: logo,
+  },
+  {
+    id: 4,
+    text: 'Rajesh drives innovation through technology-driven recruitment solutions, optimizing sourcing, screening, and talent management workflows.',
+    name: 'Rajesh Verma',
+    role: 'Co Founder & COO',
+    logo: logo,
+  },
+  {
+    id: 5,
+    text: 'SakSam Sol helped us close multiple niche positions within tight deadlines. Their process is smooth, transparent, and extremely professional. They understand exactly what the business needs and deliver candidates who fit perfectly.',
+    name: 'Rohit Sharma',
+    role: 'HR Manager, IT Services Company',
+    logo: logo,
+  },
+  {
+    id: 6,
+    text: 'With over 10 years of experience in recruitment and talent management, Raghavendra leads SakSam Sol with a vision to deliver quality staffing solutions across industries.',
+    name: 'Raghavendra Chary',
+    role: 'Founder & Managing Director',
+    logo: logo,
+  },
+  {
+    id: 7,
+    text: 'Sowmya brings expertise in operations and workforce strategy, ensuring seamless execution of recruitment processes and client satisfaction.',
+    name: 'Sowmya P',
+    role: 'Co Founder & CHRO',
+    logo: logo,
+  },
+  {
+    id: 8,
+    text: 'Rajesh drives innovation through technology-driven recruitment solutions, optimizing sourcing, screening, and talent management workflows.',
+    name: 'Rajesh Verma',
+    role: 'Co Founder & COO',
+    logo: logo,
+  },
 ];
 
 const meetingData = [
@@ -126,6 +178,7 @@ const meetingData = [
 
 const HomePage = () => {
   const { faqsData, handleAccordion, carouselData } = useAppContext();
+  const [playVideo, setPlayVideo] = useState(false);
 
   const settings = {
     infinite: true,
@@ -176,11 +229,23 @@ const HomePage = () => {
         </span>
       </div>
       <div className='home-page-profile-container'>
-        <div className='home-page-profile-video'>
+        <div
+          className={
+            playVideo
+              ? 'home-page-profile-video play-video'
+              : 'home-page-profile-video'
+          }
+        >
           <video controls width='100%' height='100%'>
             <source src={video} type='video/mp4' />
           </video>
         </div>
+        {!playVideo && (
+          <MdOutlinePlayCircle
+            className='play-icon'
+            onClick={() => setPlayVideo(!playVideo)}
+          />
+        )}
       </div>
       <div className='home-page-grid-container'>
         {data.map((item) => {
@@ -346,15 +411,9 @@ const HomePage = () => {
           </p>
         </div>
         <div className='home-page-testimonial-carousel-container'>
-          <TestimonialCard {...testimonialsData[0]} />
-          <TestimonialCard {...testimonialsData[0]} />
-          <TestimonialCard {...testimonialsData[0]} />
-          <TestimonialCard {...testimonialsData[0]} />
-          <TestimonialCard {...testimonialsData[0]} />
-          <TestimonialCard {...testimonialsData[0]} />
-          <TestimonialCard {...testimonialsData[0]} />
-          <TestimonialCard {...testimonialsData[0]} />
-          <TestimonialCard {...testimonialsData[0]} />
+          {testimonialsData.map((item) => (
+            <TestimonialCard key={item.id} {...item} />
+          ))}
         </div>
       </div>
       <div className='home-page-money-container'>

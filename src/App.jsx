@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage/LandingPage';
 import HomePage from './pages/HomePage/HomePage';
 import AboutPage from './pages/AboutPage/AboutPage';
-import ServicesPage from './pages/ServicesPage/ServicesPage';
+
 import ContingetStaffing from './pages/ServicesPage/ContingetStaffing/ContingetStaffing';
 import PermenantStaffing from './pages/ServicesPage/PermenantStaffing/PermenantStaffing';
 import BulkHiring from './pages/ServicesPage/BulkHiring/BulkHiring';
@@ -25,16 +25,25 @@ export default function App() {
         <Route path='/' element={<LandingPage />}>
           <Route index element={<HomePage />} />
           <Route path='about-us' element={<AboutPage />} />
-          <Route path='services' element={<ServicesPage />}>
-            <Route index element={<ContingetStaffing />} />
-            <Route path='permenant-staffing' element={<PermenantStaffing />} />
-            <Route path='bulk-hiring' element={<BulkHiring />} />
-            <Route path='payroll-services' element={<PayrollServices />} />
-            <Route
-              path='recruitment-process'
-              element={<RecruitmentProcess />}
-            />
-          </Route>
+
+          <Route
+            path='/services/continget-staffing'
+            element={<ContingetStaffing />}
+          />
+          <Route
+            path='/services/permenant-staffing'
+            element={<PermenantStaffing />}
+          />
+          <Route path='/services/bulk-hiring' element={<BulkHiring />} />
+          <Route
+            path='/services/payroll-services'
+            element={<PayrollServices />}
+          />
+          <Route
+            path='/services/recruitment-process'
+            element={<RecruitmentProcess />}
+          />
+
           <Route path='careers' element={<CareersPage />} />
           <Route path='privacy-policy' element={<PrivacyPolicy />} />
           <Route path='terms-conditions' element={<TermsConditions />} />

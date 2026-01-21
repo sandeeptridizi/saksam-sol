@@ -2,6 +2,8 @@ import Accordion from '../../components/Accordion/Accordion';
 import useAppContext from '../../context/AppContext';
 import './CareersPage.css';
 
+import career from '../../assets/career.png';
+
 const CareersPage = () => {
   const { faqsData, handleAccordion } = useAppContext();
 

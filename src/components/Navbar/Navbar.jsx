@@ -24,8 +24,8 @@ const Navbar = () => {
             <NavLink to='about-us'>About Us</NavLink>
           </li>
           <li className='services-link' onClick={() => setLink('services')}>
-            <NavLink to='services'>Services</NavLink>
-            {link && (
+            Services
+            {link === 'services' && (
               <div
                 className={
                   link === 'services'
@@ -33,7 +33,7 @@ const Navbar = () => {
                     : 'services-links-container'
                 }
               >
-                <NavLink to='/services'>
+                <NavLink to='/services/continget-staffing'>
                   <span>Continget Staffing</span>
                 </NavLink>
                 <NavLink to='/services/permenant-staffing'>
@@ -69,19 +69,61 @@ const Navbar = () => {
       {isHamburgerOpen && (
         <ul className='nav-mobile-links-container'>
           <NavLink to='/' onClick={() => setIsHamburgerOpen(false)}>
-            <li>Home</li>
+            <li onClick={() => setLink('/')}>Home</li>
           </NavLink>
           <NavLink to='about-us' onClick={() => setIsHamburgerOpen(false)}>
-            <li>About Us</li>
+            <li onClick={() => setLink('about-us')}>About Us</li>
           </NavLink>
-          <NavLink to='services' onClick={() => setIsHamburgerOpen(false)}>
-            <li className='services-link'>Services</li>
-          </NavLink>
+          <li
+            className='services-link'
+            onClick={() => {
+              setLink('services');
+            }}
+          >
+            Services
+            {link === 'services' ? (
+              <div
+                className={
+                  link === 'services'
+                    ? 'services-links-container show-links'
+                    : 'services-links-container'
+                }
+              >
+                <NavLink to='/services/continget-staffing'>
+                  <span onClick={() => setIsHamburgerOpen(false)}>
+                    Continget Staffing
+                  </span>
+                </NavLink>
+                <NavLink to='/services/permenant-staffing'>
+                  <span onClick={() => setIsHamburgerOpen(false)}>
+                    Permenant Staffing
+                  </span>
+                </NavLink>
+                <NavLink to='/services/bulk-hiring'>
+                  <span onClick={() => setIsHamburgerOpen(false)}>
+                    Bulk Hiring
+                  </span>
+                </NavLink>
+                <NavLink to='/services/payroll-services'>
+                  <span onClick={() => setIsHamburgerOpen(false)}>
+                    Payroll Services
+                  </span>
+                </NavLink>
+                <NavLink to='/services/recruitment-process'>
+                  <span onClick={() => setIsHamburgerOpen(false)}>
+                    Recruitment Process
+                  </span>
+                </NavLink>
+              </div>
+            ) : null}
+          </li>
           <NavLink to='careers' onClick={() => setIsHamburgerOpen(false)}>
-            <li>Careers</li>
+            <li onClick={() => setLink('careers')}>Careers</li>
           </NavLink>
           <NavLink to='contact-us' onClick={() => setIsHamburgerOpen(false)}>
-            <li className='contact-link'>Contact Us</li>
+            <li className='contact-link' onClick={() => setLink('contact-us')}>
+              Contact Us
+            </li>
           </NavLink>
         </ul>
       )}

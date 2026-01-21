@@ -11,9 +11,11 @@ import contingentmain from '../../../assets/contingentmain.png';
 import contingentsub from '../../../assets/contingentsub.jpg';
 
 import { IoMdCheckmark } from 'react-icons/io';
+import GetInTouchModal from '../../../components/Modals/GetInTouchModal/GetInTouchModal';
 
 const ContingetStaffing = () => {
-  const { carouselData } = useAppContext();
+  const { carouselData, isGetInTouchModalOpen, setIsGetInTouchModalOpen } =
+    useAppContext();
 
   const settings = {
     infinite: true,
@@ -97,7 +99,12 @@ const ContingetStaffing = () => {
               </span>
             </div>
           </div>
-          <button className='serviceherobutton'>Get in touch</button>
+          <button
+            className='serviceherobutton'
+            onClick={() => setIsGetInTouchModalOpen(!isGetInTouchModalOpen)}
+          >
+            Get in touch
+          </button>
         </div>
         <div className='serviceimage'>
           <img
@@ -243,6 +250,10 @@ const ContingetStaffing = () => {
           </Slider>
         </div>
       </div>
+      <GetInTouchModal
+        isOpen={isGetInTouchModalOpen}
+        onClose={() => setIsGetInTouchModalOpen(false)}
+      />
     </div>
   );
 };

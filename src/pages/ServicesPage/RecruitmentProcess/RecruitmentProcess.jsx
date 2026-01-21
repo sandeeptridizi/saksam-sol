@@ -10,9 +10,11 @@ import recruitmain from '../../../assets/recruitmain.png';
 import recruitsub from '../../../assets/recruitsub.png';
 
 import { IoMdCheckmark } from 'react-icons/io';
+import GetInTouchModal from '../../../components/Modals/GetInTouchModal/GetInTouchModal';
 
 const RecruitmentProcess = () => {
-  const { carouselData } = useAppContext();
+  const { carouselData, isGetInTouchModalOpen, setIsGetInTouchModalOpen } =
+    useAppContext();
 
   const settings = {
     infinite: true,
@@ -93,7 +95,12 @@ const RecruitmentProcess = () => {
               </span>
             </div>
           </div>
-          <button className='serviceherobutton'>Get in touch</button>
+          <button
+            className='serviceherobutton'
+            onClick={() => setIsGetInTouchModalOpen(!isGetInTouchModalOpen)}
+          >
+            Get in touch
+          </button>
         </div>
         <div className='serviceimage'>
           <img src={recruitmain} alt='recruit' className='main-img' />
@@ -232,6 +239,10 @@ const RecruitmentProcess = () => {
           </Slider>
         </div>
       </div>
+      <GetInTouchModal
+        isOpen={isGetInTouchModalOpen}
+        onClose={() => setIsGetInTouchModalOpen(false)}
+      />
     </div>
   );
 };
