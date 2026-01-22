@@ -9,6 +9,7 @@ import { useState } from 'react';
 const Navbar = () => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const [link, setLink] = useState('');
+  const [isLinkOpen, setIsLinkOpen] = useState(false);
 
   return (
     <div className='navbar-container'>
@@ -23,9 +24,15 @@ const Navbar = () => {
           <li onClick={() => setLink('about-us')}>
             <NavLink to='about-us'>About Us</NavLink>
           </li>
-          <li className='services-link' onClick={() => setLink('services')}>
+          <li
+            className='services-link'
+            onClick={() => {
+              setLink('services');
+              setIsLinkOpen(!isLinkOpen);
+            }}
+          >
             Services
-            {link === 'services' && (
+            {isLinkOpen && (
               <div
                 className={
                   link === 'services'
@@ -78,10 +85,11 @@ const Navbar = () => {
             className='services-link'
             onClick={() => {
               setLink('services');
+              setIsLinkOpen(!isLinkOpen);
             }}
           >
             Services
-            {link === 'services' ? (
+            {isLinkOpen ? (
               <div
                 className={
                   link === 'services'

@@ -107,6 +107,7 @@ export const AppContextProvider = ({ children }) => {
   const [faqsData, setfaqsData] = useState(faqs);
   const [isGetInTouchModalOpen, setIsGetInTouchModalOpen] = useState(false);
   const [isGetQuoteModalOpen, setIsGetQuoteModalOpen] = useState(false);
+  const [isPostJobModalOpen, setIsPostJobModalOpen] = useState(false);
 
   const handleAccordion = (id) => {
     const filteredData = faqsData.map((item) =>
@@ -125,6 +126,8 @@ export const AppContextProvider = ({ children }) => {
         setIsGetInTouchModalOpen,
         isGetQuoteModalOpen,
         setIsGetQuoteModalOpen,
+        isPostJobModalOpen,
+        setIsPostJobModalOpen,
       }}
     >
       {children}

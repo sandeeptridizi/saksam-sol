@@ -12,10 +12,16 @@ import Slider from 'react-slick';
 
 import { IoMdCheckmark } from 'react-icons/io';
 import GetInTouchModal from '../../../components/Modals/GetInTouchModal/GetInTouchModal';
+import PostJobModal from '../../../components/Modals/PostJobModal/PostJobModal';
 
 const PermenantStaffing = () => {
-  const { carouselData, isGetInTouchModalOpen, setIsGetInTouchModalOpen } =
-    useAppContext();
+  const {
+    carouselData,
+    isGetInTouchModalOpen,
+    setIsGetInTouchModalOpen,
+    isPostJobModalOpen,
+    setIsPostJobModalOpen,
+  } = useAppContext();
 
   const settings = {
     infinite: true,
@@ -190,7 +196,12 @@ const PermenantStaffing = () => {
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.
           </p>
-          <button className='home-page-money-btn'>Post a Job</button>
+          <button
+            className='home-page-money-btn'
+            onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+          >
+            Post a Job
+          </button>
         </div>
         <div className='home-page-money-grid-container'>
           <div className='home-page-money-item-one-container'>
@@ -243,6 +254,10 @@ const PermenantStaffing = () => {
       <GetInTouchModal
         isOpen={isGetInTouchModalOpen}
         onClose={() => setIsGetInTouchModalOpen(false)}
+      />
+      <PostJobModal
+        isOpen={isPostJobModalOpen}
+        onClose={() => setIsPostJobModalOpen(false)}
       />
     </div>
   );

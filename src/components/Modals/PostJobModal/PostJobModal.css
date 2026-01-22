@@ -1,0 +1,38 @@
+.modal-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.modal-submit-btn {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 32px;
+  background: #028d89;
+  box-shadow: 0px 0px 14px 0px #0000001f;
+  font-family: 'Poppins';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  width: 150px;
+}
+
+.modal-cancel-btn {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 32px;
+  background: #122134;
+
+  box-shadow: 0px 0px 14px 0px #0000001f;
+  font-family: 'Poppins';
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  width: 150px;
+}

@@ -29,6 +29,8 @@ import video from '../../assets/SakSamSol.mp4';
 import leftRectangle from '../../assets/right-rectangle (1).png';
 import rightRectangle from '../../assets/right-rectangle (3).png';
 import rectangle22 from '../../assets/rectangle22.png';
+import ichorLogo from '../../assets/ichorLogo.jpeg';
+import EQLogo from '../../assets/EQLogo.jpeg';
 
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import MeetingCard from '../../components/MeetingCard/MeetingCard';
@@ -42,6 +44,7 @@ import Slider from 'react-slick';
 
 import { MdOutlinePlayCircle } from 'react-icons/md';
 import { useState } from 'react';
+import PostJobModal from '../../components/Modals/PostJobModal/PostJobModal';
 
 const data = [
   {
@@ -177,7 +180,13 @@ const meetingData = [
 ];
 
 const HomePage = () => {
-  const { faqsData, handleAccordion, carouselData } = useAppContext();
+  const {
+    faqsData,
+    handleAccordion,
+    carouselData,
+    isPostJobModalOpen,
+    setIsPostJobModalOpen,
+  } = useAppContext();
   const [playVideo, setPlayVideo] = useState(false);
 
   const settings = {
@@ -302,6 +311,12 @@ const HomePage = () => {
               alt='glassdoor'
               className='grid-image'
             />
+            <img
+              src='https://dynamic.exportersindia.com/company_logo/6638845.jpg'
+              alt='indian eagle'
+              className='grid-image'
+            />
+            <img src={EQLogo} alt='glassdoor' className='grid-image' />
           </div>
           <div className='home-page-company-logos-two-grid-container'>
             <img
@@ -346,6 +361,7 @@ const HomePage = () => {
               alt='library'
               className='grid-image'
             />
+            <img src={ichorLogo} alt='glassdoor' className='grid-image' />
           </div>
         </div>
       </div>
@@ -363,7 +379,12 @@ const HomePage = () => {
             );
           })}
         </div>
-        <button className='step-btn'>Post a Job</button>
+        <button
+          className='step-btn'
+          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+        >
+          Post a Job
+        </button>
         <img
           src={leftRectangle}
           alt='left rectangle'
@@ -425,7 +446,12 @@ const HomePage = () => {
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.
           </p>
-          <button className='home-page-money-btn'>Post a Job</button>
+          <button
+            className='home-page-money-btn'
+            onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+          >
+            Post a Job
+          </button>
         </div>
         <div className='home-page-money-grid-container'>
           <div className='home-page-money-item-one-container'>
@@ -485,6 +511,10 @@ const HomePage = () => {
           ))}
         </div>
       </div>
+      <PostJobModal
+        isOpen={isPostJobModalOpen}
+        onClose={() => setIsPostJobModalOpen(false)}
+      />
     </div>
   );
 };

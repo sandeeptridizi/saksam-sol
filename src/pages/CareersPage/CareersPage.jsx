@@ -10,31 +10,36 @@ const CareersPage = () => {
   return (
     <div>
       <div className='careerhero'>
-        <div className='careerbanner'>
-          <div className='careersearchbanner'>
-            <div className='searchbar'> Search for Jobs </div>
-            <ul className='searchfilters'>
-              <li>
-                <span className='filtertitle'>Experience Level</span> <br></br>
-                <span className='filteroption'> All Experience Level</span>
-              </li>
+        <div className='careerbackground'>
+          <div className='careerbanner'>
+            <img src={career} alt='career image' className='career-img' />
+            <div className='careersearchbanner'>
+              <div className='searchbar'> Search for Jobs </div>
+              <ul className='searchfilters'>
+                <li>
+                  <span className='filtertitle'>Experience Level</span>{' '}
+                  <br></br>
+                  <span className='filteroption'> All Experience Level</span>
+                </li>
 
-              <li>
-                <span className='filtertitle'>Location</span> <br></br>
-                <span className='filteroption'> All Locations</span>
-              </li>
+                <li>
+                  <span className='filtertitle'>Location</span> <br></br>
+                  <span className='filteroption'> All Locations</span>
+                </li>
 
-              <li>
-                <span className='filtertitle'>Categories</span> <br></br>
-                <span className='filteroption'> All Categories</span>
-              </li>
+                <li>
+                  <span className='filtertitle'>Categories</span> <br></br>
+                  <span className='filteroption'> All Categories</span>
+                </li>
 
-              <li>
-                <button className='viewjobs'>View Jobs</button>
-              </li>
-            </ul>
+                <li>
+                  <button className='viewjobs'>View Jobs</button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+
         <div className='jobs'>
           <div className='jobslist'>
             <div className='singlejob'>
