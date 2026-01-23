@@ -245,7 +245,7 @@ const HomePage = () => {
               : 'home-page-profile-video'
           }
         >
-          <video controls width='100%' height='100%'>
+          <video controls width='100%' height='100%' autoPlay>
             <source src={video} type='video/mp4' />
           </video>
         </div>

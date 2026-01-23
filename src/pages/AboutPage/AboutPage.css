@@ -3,7 +3,7 @@
   width: auto;
   background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  gap: 48px;
   align-items: center;
   padding: 0 24px 0 24px;
 }
@@ -16,8 +16,8 @@
 }
 
 .aboutmedia {
-  height: 700px;
-  width: 700px;
+  height: 800px;
+  width: 800px;
   padding: 100px;
   color: #244d4d;
   font-size: 50px;

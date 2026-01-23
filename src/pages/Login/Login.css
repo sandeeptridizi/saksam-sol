@@ -99,5 +99,8 @@
   .btn-login {
     padding: 12px;
     font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

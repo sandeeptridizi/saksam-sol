@@ -59,9 +59,6 @@ const Login = () => {
 
           {error && <p className='error-message'>{error}</p>}
 
-          {/* <button type="submit" className="btn-login">
-            Login
-          </button> */}
           <div className='btn-login'>
             <Button
               name='Login'
