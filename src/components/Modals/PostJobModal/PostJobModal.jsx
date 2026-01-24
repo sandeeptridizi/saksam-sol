@@ -1,8 +1,26 @@
+import { useState } from 'react';
 import './PostJobModal.css';
 
 import { FaRegCircleXmark } from 'react-icons/fa6';
 
 const PostJobModal = ({ isOpen, onClose }) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    jobDescription: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // console.log(formData);
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -15,29 +33,38 @@ const PostJobModal = ({ isOpen, onClose }) => {
           </button>
         </div>
         <h2 className='overlay-heading'>Post A Job</h2>
-        <form className='modal-form'>
+        <form className='modal-form' onSubmit={handleSubmit}>
           <div className='modal-label-input-container'>
             <label className='label'>Name</label>
             <input
               type='text'
+              name='name'
+              value={formData.name}
               placeholder='Enter Your Name'
               className='modal-input'
+              onChange={handleChange}
             />
           </div>
           <div className='modal-label-input-container'>
             <label className='label'>Email</label>
             <input
               type='email'
+              name='email'
+              value={FormData.email}
               placeholder='Enter Your Email'
               className='modal-input'
+              onChange={handleChange}
             />
           </div>
           <div className='modal-label-input-container'>
             <label className='label'>Phone</label>
             <input
               type='text'
+              name='phone'
+              value={FormData.phone}
               placeholder='Enter Your Phone Number'
               className='modal-input'
+              onChange={handleChange}
             />
           </div>
           <div className='modal-label-input-container'>
@@ -45,15 +72,20 @@ const PostJobModal = ({ isOpen, onClose }) => {
             <textarea
               rows={6}
               type='text'
+              name='jobDescription'
+              value={FormData.jobDescription}
               placeholder='Job Description...'
               className='modal-text-input'
+              onChange={handleChange}
             ></textarea>
           </div>
           <div className='modal-btn-container'>
             <button className='modal-cancel-btn' onClick={onClose}>
               Cancel
             </button>
-            <button className='modal-submit-btn'>Submit</button>
+            <button type='submit' className='modal-submit-btn'>
+              Submit
+            </button>
           </div>
         </form>
       </div>

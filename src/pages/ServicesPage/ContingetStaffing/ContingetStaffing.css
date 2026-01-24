@@ -226,6 +226,7 @@
     width: 100%;
     background-color: #028d89;
     margin: 0;
+    display: none;
   }
 
   .main-img {
