@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../../Firebase/firebase';
 import './Login.css';
 
 import Button from '../../components/Button/Button';
@@ -11,8 +14,39 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
-  const handleLogin = () => {};
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    
+    if (loading) return; // Prevent multiple submissions
+    
+    setError('');
+    setLoading(true);
+
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      // Redirect to managingcareers page after successful login
+      navigate('/managecareers');
+    } catch (err) {
+      // Provide user-friendly error messages
+      let errorMessage = 'Failed to login. Please check your credentials.';
+      if (err.code === 'auth/invalid-email') {
+        errorMessage = 'Invalid email address.';
+      } else if (err.code === 'auth/user-not-found') {
+        errorMessage = 'No account found with this email.';
+      } else if (err.code === 'auth/wrong-password') {
+        errorMessage = 'Incorrect password.';
+      } else if (err.code === 'auth/invalid-credential') {
+        errorMessage = 'Invalid email or password.';
+      }
+      setError(errorMessage);
+      console.error('Login error:', err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const togglePasswordVisibility = () => {
     setShowPassword((prev) => !prev);
@@ -61,7 +95,7 @@ const Login = () => {
 
           <div className='btn-login'>
             <Button
-              name='Login'
+              name={loading ? 'Logging in...' : 'Login'}
               type='submit'
               paddingXL='5vw'
               paddingXM='5.5vw'

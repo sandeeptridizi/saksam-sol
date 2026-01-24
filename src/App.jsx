@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage/LandingPage';
 import HomePage from './pages/HomePage/HomePage';
 import AboutPage from './pages/AboutPage/AboutPage';
@@ -8,8 +8,9 @@ import PermenantStaffing from './pages/ServicesPage/PermenantStaffing/PermenantS
 import BulkHiring from './pages/ServicesPage/BulkHiring/BulkHiring';
 import PayrollServices from './pages/ServicesPage/PayrollServices/PayrollServices';
 import RecruitmentProcess from './pages/ServicesPage/RecruitmentProcess/RecruitmentProcess';
-import CareersPage from './pages/CareersPage/CareersPage';
-import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
+// import CareersPage from './pages/CareersPage/CareersPage';
+import Careers from "./components/Career/Careers";
+// import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions/TermsConditions';
 import ContactPage from './pages/ContactPage/ContactPage';
 import Login from './pages/Login/Login';
@@ -17,7 +18,16 @@ import Login from './pages/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
+import CareerCreation from "./components/careerCreation/careerCreation";
+import SmallCard from "./components/managingCareers/managingCareers";
+import CareerUpdate from "./components/careerCreation/updationCareerpage";
+
 export default function App() {
+  const openContact = () => {
+    // Implement your contact popup logic here
+    console.log("Contact form opened");
+  };
+
   return (
     <BrowserRouter>
       <Navbar />
@@ -44,10 +54,20 @@ export default function App() {
             element={<RecruitmentProcess />}
           />
 
-          <Route path='careers' element={<CareersPage />} />
-          <Route path='privacy-policy' element={<PrivacyPolicy />} />
+          {/* <Route path='careers' element={<CareersPage />} /> */}
+          {/* <Route path='privacy-policy' element={<PrivacyPolicy />} /> */}
+
+          <Route
+            path="/careers"
+            element={<Careers onOpenContact={openContact} />}
+          />
           <Route path='terms-conditions' element={<TermsConditions />} />
           <Route path='contact-us' element={<ContactPage />} />
+          <Route element={<AdminLayout />}>
+            <Route path="/createCareer" element={<CareerCreation />} />
+            <Route path="/managecareers" element={<SmallCard />} />
+            <Route path="/career-update" element={<CareerUpdate />} />
+          </Route>
         </Route>
         <Route path='/login' element={<Login />} />
       </Routes>
@@ -55,6 +75,14 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+const AdminLayout = () => {
+  return (
+    <div style={{ padding: '6rem 0 0 0' }}>
+      <Outlet />
+    </div>
+  );
+};
 
 // psowmya543@gmail.com
 // tambulam@125

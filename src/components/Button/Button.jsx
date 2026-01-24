@@ -2,7 +2,7 @@ import './Button.css';
 
 import { FaArrowRight } from 'react-icons/fa';
 
-const Button = ({
+export const Button = ({
   name,
   paddingXL = '8.6vw',
   paddingXM = '24.5vw',
