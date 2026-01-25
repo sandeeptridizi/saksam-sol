@@ -1,7 +1,9 @@
 import Accordion from '../../components/Accordion/Accordion';
 import useAppContext from '../../context/AppContext';
 import './ContactPage.css';
-
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 import { FaPhoneVolume } from 'react-icons/fa6';
 import { MdMail } from 'react-icons/md';
 import { FaLocationDot } from 'react-icons/fa6';
@@ -11,7 +13,41 @@ import { FaDiscord } from 'react-icons/fa6';
 
 const ContactPage = () => {
   const { faqsData, handleAccordion } = useAppContext();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      time: new Date().toLocaleString(),
+      reference: "Contact Page Form Submission",
+    };
+    emailjs.send(
+      "default_service",
+      "template_jyvqfum",
+      templateParams,
+    ).then((result) => {
+      console.log(result.text);
+      toast.success('Message sent successfully');
+    }).catch((error) => {
+      console.log(error.text);
+      toast.error('Message sending failed');
+    });
+  };
+    
   return (
     <div>
       <div className='foundersheading'>
@@ -60,28 +96,28 @@ const ContactPage = () => {
             </ul>
           </div>
         </div>
-        <div className='contactform'>
+        <form className='contactform' onSubmit={handleSubmit}>
           <div className='contactrow'>
             <div className='input-box'>
               <label>First Name</label>
-              <input type='text' placeholder='Enter your First Name' />
+              <input type='text' placeholder='Enter your First Name' name='name' value={formData.name} onChange={handleChange} />
             </div>
 
             <div className='input-box'>
               <label>Last Name</label>
-              <input type='text' placeholder='Enter your Last Name' />
+              <input type='text' placeholder='Enter your Last Name' name='name' value={formData.name} onChange={handleChange} />
             </div>
           </div>
 
           <div className='contactrow'>
             <div className='input-box'>
               <label>Email Address</label>
-              <input type='text' placeholder='Enter your Email Address' />
+              <input type='text' placeholder='Enter your Email Address' name='email' value={formData.email} onChange={handleChange} />
             </div>
 
             <div className='input-box'>
               <label>Phone Number</label>
-              <input type='text' placeholder='Enter your Phone Number' />
+              <input type='text' placeholder='Enter your Phone Number' name='phone' value={formData.phone} onChange={handleChange} />
             </div>
           </div>
 
@@ -109,11 +145,11 @@ const ContactPage = () => {
           </div>
           <div className='message-box'>
             <label>Message</label>
-            <input type='text' placeholder='Write your Message..' />
+            <input type='text' placeholder='Write your Message..' name='message' value={formData.message} onChange={handleChange} />
           </div>
 
           <button className='submitbutton'>Send Message</button>
-        </div>
+        </form>
       </div>
       <div className='career-page-faqs-container'>
         <div className='career-page-faqs'>

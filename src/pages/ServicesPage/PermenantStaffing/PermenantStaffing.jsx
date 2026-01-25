@@ -244,7 +244,7 @@ const PermenantStaffing = () => {
                       <li key={text}>{text}</li>
                     ))}
                   </ul>
-                  <button className='contract-btn'>GET STARTED</button>
+                  <button className='contract-btn' onClick={() => setIsGetInTouchModalOpen(!isGetInTouchModalOpen)}>GET STARTED</button>
                 </div>
               );
             })}

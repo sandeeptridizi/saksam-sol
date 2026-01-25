@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './PostJobModal.css';
-
+import emailjs from '@emailjs/browser';
 import { FaRegCircleXmark } from 'react-icons/fa6';
+import { toast } from 'react-toastify';
 
 const PostJobModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -18,7 +19,26 @@ const PostJobModal = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(formData);
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      jobDescription: formData.jobDescription,
+      time: new Date().toLocaleString(),
+      reference: "Post Job Modal",
+    };
+    emailjs
+      .send("default_service", "template_jyvqfum", templateParams)
+      .then((result) => {
+        console.log(result.text);
+        toast.success("Job posted successfully");
+        onClose();
+      })
+      .catch((error) => {
+        console.log(error.text);
+        toast.error("Job posting failed");
+        onClose();
+      });
   };
 
   if (!isOpen) return null;

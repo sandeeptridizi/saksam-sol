@@ -21,6 +21,8 @@ import Footer from './components/Footer/Footer';
 import CareerCreation from "./components/careerCreation/careerCreation";
 import SmallCard from "./components/managingCareers/managingCareers";
 import CareerUpdate from "./components/careerCreation/updationCareerpage";
+import { initEmailjs } from './lib';
+import { useEffect } from 'react';
 
 export default function App() {
   const openContact = () => {
@@ -28,9 +30,12 @@ export default function App() {
     console.log("Contact form opened");
   };
 
+  useEffect(() => {
+    initEmailjs();
+  }, []);
+
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
         <Route path='/' element={<LandingPage />}>
           <Route index element={<HomePage />} />
@@ -63,22 +68,21 @@ export default function App() {
           />
           <Route path='terms-conditions' element={<TermsConditions />} />
           <Route path='contact-us' element={<ContactPage />} />
-          <Route element={<AdminLayout />}>
+        </Route>
+        <Route path='/login' element={<Login />} />
+        <Route element={<AdminLayout />}>
             <Route path="/createCareer" element={<CareerCreation />} />
             <Route path="/managecareers" element={<SmallCard />} />
             <Route path="/career-update" element={<CareerUpdate />} />
           </Route>
-        </Route>
-        <Route path='/login' element={<Login />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
 
 const AdminLayout = () => {
   return (
-    <div style={{ padding: '6rem 0 0 0' }}>
+    <div style={{ }}>
       <Outlet />
     </div>
   );

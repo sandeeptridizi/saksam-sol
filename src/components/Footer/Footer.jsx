@@ -5,13 +5,47 @@ import { RiFacebookCircleLine } from 'react-icons/ri';
 import { PiLinkedinLogoBold } from 'react-icons/pi';
 import { BsInstagram } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 import rectangle11 from '../../assets/left-rectangle11.png';
 import rectangle88 from '../../assets/rectangle88.png';
+import { useState } from 'react';
 
 const Footer = () => {
+  const [formData, setFormData] = useState({
+    email: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const templateParams = {
+      email: formData.email,
+      name: "NA",
+      phone: "NA",
+      message: "NA",
+      time: new Date().toLocaleString(),
+      reference: "Footer Email Subscription",
+    };
+    emailjs
+      .send("default_service", "template_jyvqfum", templateParams)
+      .then((result) => {
+        console.log(result.text);
+        toast.success("Email subscribed successfully");
+        setFormData({ email: "" });
+      })
+      .catch((error) => {
+        console.log(error.text);
+        toast.error("Email subscription failed");
+        setFormData({ email: "" });
+      });
+  };
+
   return (
-    <div className='footer-main-container'>
+    <form className='footer-main-container' onSubmit={handleSubmit}>
       <div className='footer-section-one-container'>
         <div className='footer-one-content-container'>
           <h3 className='footer-one-heading'>
@@ -29,6 +63,9 @@ const Footer = () => {
               type='text'
               placeholder='Your Email address'
               className='email-input'
+              name='email'
+              value={formData.email}
+              onChange={handleChange}
             />
             <button className='footer-one-btn'>
               Get Free Employer Account
@@ -105,7 +142,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </form>
   );
 };
 

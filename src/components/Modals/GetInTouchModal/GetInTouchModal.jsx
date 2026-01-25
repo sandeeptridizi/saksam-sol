@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './GetInTouchModal.css';
-
+import emailjs from '@emailjs/browser';
 import { FaRegCircleXmark } from 'react-icons/fa6';
+import { toast } from 'react-toastify';
 
 const GetInTouchModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -18,7 +19,27 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // console.log(formData);
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      time: new Date().toLocaleString(),
+      reference: "Get In Touch Modal",
+    };
+
+    emailjs
+      .send("default_service", "template_jyvqfum", templateParams)
+      .then((result) => {
+        console.log(result.text);
+        toast.success("Message sent successfully");
+        onClose();
+      })
+      .catch((error) => {
+        console.log(error.text);
+        toast.error("Message sending failed");
+        onClose();
+      });
   };
 
   if (!isOpen) return null;

@@ -45,6 +45,7 @@ import Slider from 'react-slick';
 import { MdOutlinePlayCircle } from 'react-icons/md';
 import { useState } from 'react';
 import PostJobModal from '../../components/Modals/PostJobModal/PostJobModal';
+import GetInTouchModal from '../../components/Modals/GetInTouchModal/GetInTouchModal';
 
 const data = [
   {
@@ -186,6 +187,8 @@ const HomePage = () => {
     carouselData,
     isPostJobModalOpen,
     setIsPostJobModalOpen,
+    isGetInTouchModalOpen,
+    setIsGetInTouchModalOpen,
   } = useAppContext();
   const [playVideo, setPlayVideo] = useState(false);
 
@@ -417,13 +420,17 @@ const HomePage = () => {
                       <li key={text}>{text}</li>
                     ))}
                   </ul>
-                  <button className='contract-btn'>GET STARTED</button>
+                  <button className='contract-btn' onClick={() => setIsGetInTouchModalOpen(!isGetInTouchModalOpen)}>GET STARTED</button>
                 </div>
               );
             })}
           </Slider>
         </div>
       </div>
+      <GetInTouchModal
+        isOpen={isGetInTouchModalOpen}
+        onClose={() => setIsGetInTouchModalOpen(false)}
+      />
       <div className='home-page-testimonial-container'>
         <div className='home-page-testimonial-header'>
           <h2 className='testimonial-heading'>Testimonials</h2>
