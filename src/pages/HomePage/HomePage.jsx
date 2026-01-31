@@ -20,9 +20,8 @@ import message from '../../assets/message.png';
 import search from '../../assets/search.png';
 import wechat from '../../assets/wechat.png';
 import logo from '../../assets/logo.png';
-import alma from '../../assets/image1.jpg';
-import santos from '../../assets/image2.jpg';
-import rita from '../../assets/image3.jpg';
+import santos from '../../assets/sowmya.jpeg';
+import rita from '../../assets/vijaykumar.jpeg';
 
 import video from '../../assets/SakSamSol.mp4';
 
