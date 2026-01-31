@@ -2,7 +2,7 @@ import MeetingCard from '../../components/MeetingCard/MeetingCard';
 import './AboutPage.css';
 
 import sowmya from '../../assets/sowmya.jpeg';
-import vijayKumar from '../../assets/vijayKumar.jpeg';
+import vijayKumar from '../../assets/vijaykumar.jpeg';
 
 import aboutImg from '../../assets/about.png';
 import useAppContext from '../../context/AppContext';
