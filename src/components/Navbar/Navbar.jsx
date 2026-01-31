@@ -40,8 +40,8 @@ const Navbar = () => {
                     : 'services-links-container'
                 }
               >
-                <NavLink to='/services/continget-staffing'>
-                  <span>Continget Staffing</span>
+                <NavLink to='/services/staff-augmentation'>
+                  <span>Staff Augmentation</span>
                 </NavLink>
                 <NavLink to='/services/permenant-staffing'>
                   <span>Permenant Staffing</span>
@@ -97,9 +97,9 @@ const Navbar = () => {
                     : 'services-links-container'
                 }
               >
-                <NavLink to='/services/continget-staffing'>
+                <NavLink to='/services/staff-augmentation'>
                   <span onClick={() => setIsHamburgerOpen(false)}>
-                    Continget Staffing
+                    Staff Augmentation
                   </span>
                 </NavLink>
                 <NavLink to='/services/permenant-staffing'>

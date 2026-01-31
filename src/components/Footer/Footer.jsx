@@ -24,23 +24,23 @@ const Footer = () => {
     e.preventDefault();
     const templateParams = {
       email: formData.email,
-      name: "NA",
-      phone: "NA",
-      message: "NA",
+      name: 'NA',
+      phone: 'NA',
+      message: 'NA',
       time: new Date().toLocaleString(),
-      reference: "Footer Email Subscription",
+      reference: 'Footer Email Subscription',
     };
     emailjs
-      .send("default_service", "template_jyvqfum", templateParams)
+      .send('default_service', 'template_jyvqfum', templateParams)
       .then((result) => {
         console.log(result.text);
-        toast.success("Email subscribed successfully");
-        setFormData({ email: "" });
+        toast.success('Email subscribed successfully');
+        setFormData({ email: '' });
       })
       .catch((error) => {
         console.log(error.text);
-        toast.error("Email subscription failed");
-        setFormData({ email: "" });
+        toast.error('Email subscription failed');
+        setFormData({ email: '' });
       });
   };
 
@@ -92,8 +92,8 @@ const Footer = () => {
                 <Link to='about-us'>About Us</Link>
               </span>
               <span>
-                <Link to='/services/continget-staffing'>
-                  Contingent Staffing
+                <Link to='/services/staff-augmentation'>
+                  Staff Augmentation
                 </Link>
               </span>
               <span>
@@ -121,9 +121,9 @@ const Footer = () => {
           <div className='footer-two-social-media-container'>
             <h3 className='footer-two-social-media-heading'>Follow Us</h3>
             <div className='footer-two-social-media-links-container'>
-              <PiLinkedinLogoBold className='footer-two-icon' />
-              <BsInstagram className='footer-two-icon' />
-              <RiFacebookCircleLine className='footer-two-icon' />
+              <Link to='https://www.linkedin.com/company/saksam-sol/'>
+                <PiLinkedinLogoBold className='footer-two-icon' />
+              </Link>
             </div>
           </div>
         </div>

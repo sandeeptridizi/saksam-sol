@@ -9,8 +9,8 @@ import BulkHiring from './pages/ServicesPage/BulkHiring/BulkHiring';
 import PayrollServices from './pages/ServicesPage/PayrollServices/PayrollServices';
 import RecruitmentProcess from './pages/ServicesPage/RecruitmentProcess/RecruitmentProcess';
 // import CareersPage from './pages/CareersPage/CareersPage';
-import Careers from "./components/Career/Careers";
-// import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
+import Careers from './components/Career/Careers';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions/TermsConditions';
 import ContactPage from './pages/ContactPage/ContactPage';
 import Login from './pages/Login/Login';
@@ -18,16 +18,16 @@ import Login from './pages/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
-import CareerCreation from "./components/careerCreation/careerCreation";
-import SmallCard from "./components/managingCareers/managingCareers";
-import CareerUpdate from "./components/careerCreation/updationCareerpage";
+import CareerCreation from './components/careerCreation/careerCreation';
+import SmallCard from './components/managingCareers/managingCareers';
+import CareerUpdate from './components/careerCreation/updationCareerpage';
 import { initEmailjs } from './lib';
 import { useEffect } from 'react';
 
 export default function App() {
   const openContact = () => {
     // Implement your contact popup logic here
-    console.log("Contact form opened");
+    console.log('Contact form opened');
   };
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function App() {
           <Route path='about-us' element={<AboutPage />} />
 
           <Route
-            path='/services/continget-staffing'
+            path='/services/staff-augmentation'
             element={<ContingetStaffing />}
           />
           <Route
@@ -60,10 +60,10 @@ export default function App() {
           />
 
           {/* <Route path='careers' element={<CareersPage />} /> */}
-          {/* <Route path='privacy-policy' element={<PrivacyPolicy />} /> */}
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
 
           <Route
-            path="/careers"
+            path='/careers'
             element={<Careers onOpenContact={openContact} />}
           />
           <Route path='terms-conditions' element={<TermsConditions />} />
@@ -71,10 +71,10 @@ export default function App() {
         </Route>
         <Route path='/login' element={<Login />} />
         <Route element={<AdminLayout />}>
-            <Route path="/createCareer" element={<CareerCreation />} />
-            <Route path="/managecareers" element={<SmallCard />} />
-            <Route path="/career-update" element={<CareerUpdate />} />
-          </Route>
+          <Route path='/createCareer' element={<CareerCreation />} />
+          <Route path='/managecareers' element={<SmallCard />} />
+          <Route path='/career-update' element={<CareerUpdate />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
@@ -82,7 +82,7 @@ export default function App() {
 
 const AdminLayout = () => {
   return (
-    <div style={{ }}>
+    <div style={{}}>
       <Outlet />
     </div>
   );

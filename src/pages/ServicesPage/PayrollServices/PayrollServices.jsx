@@ -13,6 +13,7 @@ import payrollsub from '../../../assets/payrollsub.png';
 import { IoMdCheckmark } from 'react-icons/io';
 import GetInTouchModal from '../../../components/Modals/GetInTouchModal/GetInTouchModal';
 import PostJobModal from '../../../components/Modals/PostJobModal/PostJobModal';
+import { Link } from 'react-router-dom';
 
 const PayrollServices = () => {
   const {
@@ -231,7 +232,7 @@ const PayrollServices = () => {
         <div className='home-page-services-grid-container'>
           <Slider {...settings}>
             {carouselData.map((item) => {
-              const { id, title, list } = item;
+              const { id, title, list, link } = item;
               return (
                 <div className='home-page-services-contract-container' key={id}>
                   <h3 className='home-page-contract-heading'>{title}</h3>
@@ -240,7 +241,9 @@ const PayrollServices = () => {
                       <li key={text}>{text}</li>
                     ))}
                   </ul>
-                  <button className='contract-btn'>GET STARTED</button>
+                  <button className='contract-btn'>
+                    <Link to={link}>Learn More</Link>
+                  </button>
                 </div>
               );
             })}

@@ -10,6 +10,8 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { ImTwitter } from 'react-icons/im';
 import { FaInstagram } from 'react-icons/fa6';
 import { FaDiscord } from 'react-icons/fa6';
+import { PiLinkedinLogoBold } from 'react-icons/pi';
+import { Link } from 'react-router-dom';
 
 const ContactPage = () => {
   const { faqsData, handleAccordion } = useAppContext();
@@ -33,21 +35,20 @@ const ContactPage = () => {
       phone: formData.phone,
       message: formData.message,
       time: new Date().toLocaleString(),
-      reference: "Contact Page Form Submission",
+      reference: 'Contact Page Form Submission',
     };
-    emailjs.send(
-      "default_service",
-      "template_jyvqfum",
-      templateParams,
-    ).then((result) => {
-      console.log(result.text);
-      toast.success('Message sent successfully');
-    }).catch((error) => {
-      console.log(error.text);
-      toast.error('Message sending failed');
-    });
+    emailjs
+      .send('default_service', 'template_jyvqfum', templateParams)
+      .then((result) => {
+        console.log(result.text);
+        toast.success('Message sent successfully');
+      })
+      .catch((error) => {
+        console.log(error.text);
+        toast.error('Message sending failed');
+      });
   };
-    
+
   return (
     <div>
       <div className='foundersheading'>
@@ -84,15 +85,11 @@ const ContactPage = () => {
               </li>
             </ul>
             <ul className='socialmedia'>
-              <li className='socialmediaicon1'>
-                <ImTwitter />
-              </li>
-              <li className='socialmediaicon2'>
-                <FaInstagram />
-              </li>
-              <li className='socialmediaicon1'>
-                <FaDiscord />
-              </li>
+              <Link to='https://www.linkedin.com/company/saksam-sol/'>
+                <li className='socialmediaicon1'>
+                  <PiLinkedinLogoBold />
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -100,24 +97,48 @@ const ContactPage = () => {
           <div className='contactrow'>
             <div className='input-box'>
               <label>First Name</label>
-              <input type='text' placeholder='Enter your First Name' name='name' value={formData.name} onChange={handleChange} />
+              <input
+                type='text'
+                placeholder='Enter your First Name'
+                name='name'
+                value={formData.name}
+                onChange={handleChange}
+              />
             </div>
 
             <div className='input-box'>
               <label>Last Name</label>
-              <input type='text' placeholder='Enter your Last Name' name='name' value={formData.name} onChange={handleChange} />
+              <input
+                type='text'
+                placeholder='Enter your Last Name'
+                name='name'
+                value={formData.name}
+                onChange={handleChange}
+              />
             </div>
           </div>
 
           <div className='contactrow'>
             <div className='input-box'>
               <label>Email Address</label>
-              <input type='text' placeholder='Enter your Email Address' name='email' value={formData.email} onChange={handleChange} />
+              <input
+                type='text'
+                placeholder='Enter your Email Address'
+                name='email'
+                value={formData.email}
+                onChange={handleChange}
+              />
             </div>
 
             <div className='input-box'>
               <label>Phone Number</label>
-              <input type='text' placeholder='Enter your Phone Number' name='phone' value={formData.phone} onChange={handleChange} />
+              <input
+                type='text'
+                placeholder='Enter your Phone Number'
+                name='phone'
+                value={formData.phone}
+                onChange={handleChange}
+              />
             </div>
           </div>
 
@@ -136,7 +157,8 @@ const ContactPage = () => {
               </li>{' '}
               <br></br>
               <li className='subjectname'>
-                <input type='radio'></input> Recruitment Process Oursourcing{' '}
+                <input type='radio'></input> Recruitment Process
+                Oursourcing{' '}
               </li>
               <li className='subjectname'>
                 <input type='radio'></input> Bulk Hiring{' '}
@@ -145,7 +167,13 @@ const ContactPage = () => {
           </div>
           <div className='message-box'>
             <label>Message</label>
-            <input type='text' placeholder='Write your Message..' name='message' value={formData.message} onChange={handleChange} />
+            <input
+              type='text'
+              placeholder='Write your Message..'
+              name='message'
+              value={formData.message}
+              onChange={handleChange}
+            />
           </div>
 
           <button className='submitbutton'>Send Message</button>

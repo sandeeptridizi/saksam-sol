@@ -12,6 +12,7 @@ import recruitsub from '../../../assets/recruitsub.png';
 import { IoMdCheckmark } from 'react-icons/io';
 import GetInTouchModal from '../../../components/Modals/GetInTouchModal/GetInTouchModal';
 import PostJobModal from '../../../components/Modals/PostJobModal/PostJobModal';
+import { Link } from 'react-router-dom';
 
 const RecruitmentProcess = () => {
   const {
@@ -234,7 +235,7 @@ const RecruitmentProcess = () => {
         <div className='home-page-services-grid-container'>
           <Slider {...settings}>
             {carouselData.map((item) => {
-              const { id, title, list } = item;
+              const { id, title, list, link } = item;
               return (
                 <div className='home-page-services-contract-container' key={id}>
                   <h3 className='home-page-contract-heading'>{title}</h3>
@@ -243,7 +244,9 @@ const RecruitmentProcess = () => {
                       <li key={text}>{text}</li>
                     ))}
                   </ul>
-                  <button className='contract-btn'>GET STARTED</button>
+                  <button className='contract-btn'>
+                    <Link to={link}>Learn More</Link>
+                  </button>
                 </div>
               );
             })}

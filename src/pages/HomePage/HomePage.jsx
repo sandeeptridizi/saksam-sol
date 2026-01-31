@@ -45,6 +45,7 @@ import { MdOutlinePlayCircle } from 'react-icons/md';
 import { useState } from 'react';
 import PostJobModal from '../../components/Modals/PostJobModal/PostJobModal';
 import GetInTouchModal from '../../components/Modals/GetInTouchModal/GetInTouchModal';
+import { Link } from 'react-router-dom';
 
 const data = [
   {
@@ -403,7 +404,7 @@ const HomePage = () => {
         <div className='home-page-services-grid-container'>
           <Slider {...settings}>
             {carouselData.map((item) => {
-              const { id, title, list } = item;
+              const { id, title, list, link } = item;
               return (
                 <div className='home-page-services-contract-container' key={id}>
                   <h3 className='home-page-contract-heading'>{title}</h3>
@@ -412,7 +413,9 @@ const HomePage = () => {
                       <li key={text}>{text}</li>
                     ))}
                   </ul>
-                  <button className='contract-btn' onClick={() => setIsGetInTouchModalOpen(!isGetInTouchModalOpen)}>GET STARTED</button>
+                  <button className='contract-btn'>
+                    <Link to={link}>Learn More</Link>
+                  </button>
                 </div>
               );
             })}

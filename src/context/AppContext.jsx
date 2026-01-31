@@ -50,7 +50,7 @@ const faqs = [
 const carouselData = [
   {
     id: 1,
-    title: 'Contigent Staffing',
+    title: 'Staff Augmentation',
     list: [
       'On-demand workforce support.',
       'Flexible contract durations.',
@@ -58,6 +58,7 @@ const carouselData = [
       'Compliance and payroll handled',
       'Ideal for project-based or peak workload needs',
     ],
+    link: '/services/staff-augmentation',
   },
   {
     id: 2,
@@ -66,9 +67,8 @@ const carouselData = [
       'Focuses on delivering long-term employees who align with both skill expectations and organizational culture..',
       'Provides a structured hiring process with expert sourcing, screening, interviews, and final coordination.',
       'Uses strong industry networks to speed up closures across IT, Non-IT, and niche roles',
-      'Dedicated recruiters for each domain.',
-      'Strong talent pipeline for all industries.',
     ],
+    link: '/services/permenant-staffing',
   },
   {
     id: 3,
@@ -78,6 +78,7 @@ const carouselData = [
       'Improves hiring efficiency with scalable support for volume, niche, and multi-level recruitment.',
       'Reduces overall hiring costs through streamlined processes and consistent talent delivery.',
     ],
+    link: '/services/recruitment-process',
   },
   {
     id: 4,
@@ -89,6 +90,7 @@ const carouselData = [
       'Compliance and payroll handled',
       'Ideal for project-based or peak workload needs',
     ],
+    link: '/services/bulk-hiring',
   },
   {
     id: 5,
@@ -100,6 +102,7 @@ const carouselData = [
       'Compliance and payroll handled',
       'Ideal for project-based or peak workload needs',
     ],
+    link: '/services/payroll-services',
   },
 ];
 
@@ -111,7 +114,7 @@ export const AppContextProvider = ({ children }) => {
 
   const handleAccordion = (id) => {
     const filteredData = faqsData.map((item) =>
-      item.id === id ? { ...item, isOpen: !item.isOpen } : item
+      item.id === id ? { ...item, isOpen: !item.isOpen } : item,
     );
     setfaqsData(filteredData);
   };
