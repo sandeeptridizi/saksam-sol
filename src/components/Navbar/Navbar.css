@@ -40,9 +40,9 @@
   color: #fff;
 }
 
-/* a.active {
-  color: #028d89;
-} */
+.contact-link a {
+  color: #fff;
+}
 
 .services-links-container {
   padding: 0;

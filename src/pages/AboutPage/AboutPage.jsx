@@ -1,9 +1,8 @@
 import MeetingCard from '../../components/MeetingCard/MeetingCard';
 import './AboutPage.css';
 
-import alma from '../../assets/image1.jpg';
-import santos from '../../assets/image2.jpg';
-import rita from '../../assets/image3.jpg';
+import sowmya from '../../assets/sowmya.jpeg';
+import vijayKumar from '../../assets/vijayKumar.jpeg';
 
 import aboutImg from '../../assets/about.png';
 import useAppContext from '../../context/AppContext';
@@ -12,24 +11,17 @@ import GetQuoteModal from '../../components/Modals/GetQuoteModal/GetQuoteModal';
 const meetingData = [
   {
     id: 1,
-    image: alma,
-    name: 'Raghavendra Chary',
-    role: 'Founder & Managing Director',
-    text: 'With over 10 years of experience in recruitment and talent management, Raghavendra leads SakSam Sol with a vision to deliver quality staffing solutions across industries.',
+    image: sowmya,
+    name: 'Sowmya P',
+    role: 'Partner | Leadership Team',
+    text: 'Sowmya K P has 18 years of leadership experience in the staffing industry, with strong expertise in P&L management, revenue growth, and business operations. She has led organizations across recruitment, business, and marketing functions, giving her a well-rounded, end-to-end understanding of staffing operations.',
   },
   {
     id: 2,
-    image: santos,
-    name: 'Sowmya P',
-    role: 'Co Founder & CHRO',
-    text: 'Sowmya brings expertise in operations and workforce strategy, ensuring seamless execution of recruitment processes and client satisfaction.',
-  },
-  {
-    id: 3,
-    image: rita,
-    name: 'Rajesh Verma',
-    role: 'Co Founder & COO',
-    text: 'Rajesh drives innovation through technology-driven recruitment solutions, optimizing sourcing, screening, and talent management workflows.',
+    image: vijayKumar,
+    name: 'Vijaykumar P',
+    role: 'Partner | Leadership Team',
+    text: 'Vijayakumar P brings over 25 years of rich experience in setting up and scaling Small and Medium Enterprises (SMEs), with deep expertise in financial advisory, consulting, and organizational transformation. He has played a pivotal role in establishing new businesses, designing robust Standard Operating Procedures (SOPs), and implementing innovative methods to improve overall company performance and operational efficiency.',
   },
 ];
 
