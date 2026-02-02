@@ -173,7 +173,7 @@
   }
 
   .serviceheronotes {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -195,19 +195,19 @@
   }
 
   .servicepoint {
-    width: 90%;
+    width: fit-content;
+    margin-left: 0;
   }
 
   .servicetitle {
-    font-size: 20px;
+    font-size: 18px;
     color: black;
   }
 
   .servicedesc {
-    font-size: 14px;
+    font-size: 12px;
     color: #666266;
-    margin-top: 2px;
-    width: 90%;
+    width: 80%;
   }
 
   .serviceherobutton {
