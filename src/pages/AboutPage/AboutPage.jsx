@@ -7,6 +7,7 @@ import vijayKumar from '../../assets/vijaykumar.jpeg';
 import aboutImg from '../../assets/about.png';
 import useAppContext from '../../context/AppContext';
 import GetQuoteModal from '../../components/Modals/GetQuoteModal/GetQuoteModal';
+import { useEffect } from 'react';
 
 const meetingData = [
   {
@@ -27,6 +28,10 @@ const meetingData = [
 
 const AboutPage = () => {
   const { isGetQuoteModalOpen, setIsGetQuoteModalOpen } = useAppContext();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

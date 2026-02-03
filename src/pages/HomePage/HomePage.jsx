@@ -1,10 +1,10 @@
 import './HomePage.css';
 
 import like from '../../assets/like.png';
-import euro from '../../assets/euro.png';
 import fluentPerson from '../../assets/fluent-person.png';
 import clockFast from '../../assets/clock-fast.png';
 
+import groupImg from '../../assets/group.png';
 import library from '../../assets/library.png';
 import monster from '../../assets/monster.png';
 import indeed from '../../assets/indeed.png';
@@ -42,10 +42,11 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
 import { MdOutlinePlayCircle } from 'react-icons/md';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import PostJobModal from '../../components/Modals/PostJobModal/PostJobModal';
 import GetInTouchModal from '../../components/Modals/GetInTouchModal/GetInTouchModal';
 import { Link } from 'react-router-dom';
+import { BiDollar } from 'react-icons/bi';
 
 const data = [
   {
@@ -56,7 +57,7 @@ const data = [
   },
   {
     id: 2,
-    icon: euro,
+    icon: '',
     title: 'Value That Pays Off',
     text: 'Smart staffing solutions designed to save costs and maximize ROI.',
   },
@@ -185,6 +186,10 @@ const HomePage = () => {
   } = useAppContext();
   const [playVideo, setPlayVideo] = useState(false);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const settings = {
     infinite: true,
     slidesToShow: 3,
@@ -257,7 +262,14 @@ const HomePage = () => {
           const { id, icon, title, text } = item;
           return (
             <div className='home-page-item-container' key={id}>
-              <img src={icon} alt='icon' className='item-icon' />
+              {icon ? (
+                <img src={icon} alt='icon' className='item-icon' />
+              ) : (
+                <div className='home-page-item-img-container'>
+                  <BiDollar />
+                </div>
+              )}
+
               <h2 className='item-title'>{title}</h2>
               <p className='item-text'>{text}</p>
             </div>

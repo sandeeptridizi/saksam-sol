@@ -53,7 +53,7 @@ const Navbar = () => {
                   <span>Payroll Services</span>
                 </NavLink>
                 <NavLink to='/services/recruitment-process'>
-                  <span>Recruitment Process</span>
+                  <span>Recruitment Process Outsourcing</span>
                 </NavLink>
               </div>
             )}
@@ -119,7 +119,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink to='/services/recruitment-process'>
                   <span onClick={() => setIsHamburgerOpen(false)}>
-                    Recruitment Process
+                    Recruitment Process Outsourcing
                   </span>
                 </NavLink>
               </div>

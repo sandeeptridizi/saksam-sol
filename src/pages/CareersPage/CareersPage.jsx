@@ -3,9 +3,14 @@ import useAppContext from '../../context/AppContext';
 import './CareersPage.css';
 
 import career from '../../assets/career.png';
+import { useEffect } from 'react';
 
 const CareersPage = () => {
   const { faqsData, handleAccordion } = useAppContext();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

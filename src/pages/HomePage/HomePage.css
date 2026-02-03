@@ -75,7 +75,7 @@
   background-image: url('../../assets/layer.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
 }
 
 .home-page-profile-video {
@@ -667,6 +667,18 @@
   width: 60%;
 }
 
+.home-page-item-img-container {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: #028d89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #fff;
+}
+
 @media (max-width: 600px) {
   * {
     margin: 0;
@@ -681,7 +693,7 @@
 
   .home-page-main-container {
     width: 100%;
-    padding: 32px 18px;
+    padding: 0px 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -723,17 +735,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
   }
 
   .home-page-profile-video {
     width: 100%;
     margin: 0 auto;
-    height: auto;
+    height: 350px;
     border-radius: 28px;
     overflow: hidden;
     border: 2px solid #028d89;
     position: absolute;
-    top: 40%;
+    top: 24%;
   }
 
   .play-icon {
@@ -873,14 +886,14 @@
     height: fit-content;
   }
 
-  .slick-prev {
+  /* .slick-prev {
     left: -5px !important;
   }
 
   .slick-next {
     right: -5px !important;
     z-index: 9999;
-  }
+  } */
 
   .home-page-contract-heading {
     font-size: 24px;
@@ -919,6 +932,7 @@
   .home-page-testimonial-container {
     width: 100%;
     padding: 16px;
+    margin-top: 0;
   }
 
   .home-page-testimonial-carousel-container {
@@ -1063,6 +1077,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-top: 0;
   }
 
   .home-page-faqs-content-container {

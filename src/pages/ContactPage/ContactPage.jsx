@@ -1,7 +1,7 @@
 import Accordion from '../../components/Accordion/Accordion';
 import useAppContext from '../../context/AppContext';
 import './ContactPage.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import { FaPhoneVolume } from 'react-icons/fa6';
@@ -21,6 +21,10 @@ const ContactPage = () => {
     phone: '',
     message: '',
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

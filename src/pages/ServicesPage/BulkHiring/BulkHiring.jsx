@@ -14,6 +14,7 @@ import { IoMdCheckmark } from 'react-icons/io';
 import GetInTouchModal from '../../../components/Modals/GetInTouchModal/GetInTouchModal';
 import PostJobModal from '../../../components/Modals/PostJobModal/PostJobModal';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const BulkHiring = () => {
   const {
@@ -23,6 +24,10 @@ const BulkHiring = () => {
     isPostJobModalOpen,
     setIsPostJobModalOpen,
   } = useAppContext();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const settings = {
     infinite: true,
