@@ -668,14 +668,14 @@
 }
 
 .home-page-item-img-container {
-  width: 27px;
-  height: 27px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #028d89;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 13px;
+  font-size: 15px;
   color: #fff;
 }
 
