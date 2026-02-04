@@ -98,7 +98,7 @@ const carouselData = [
     id: 5,
     title: 'Payroll Services',
     list: [
-      '* End-to-end payroll processing and workforce management.',
+      'End-to-end payroll processing and workforce management.',
       'Employer of Record (EoR) with complete statutory compliance.',
       'Management of PF, ESI, PT, TDS, and labor law requirements.',
       'Fast onboarding, bulk payroll support, and accurate salary disbursement.',

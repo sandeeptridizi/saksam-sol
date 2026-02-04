@@ -883,17 +883,8 @@
 
   .home-page-services-contract-container {
     width: 100%;
-    height: fit-content;
+    min-height: 550px;
   }
-
-  /* .slick-prev {
-    left: -5px !important;
-  }
-
-  .slick-next {
-    right: -5px !important;
-    z-index: 9999;
-  } */
 
   .home-page-contract-heading {
     font-size: 24px;
