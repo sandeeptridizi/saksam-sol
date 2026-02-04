@@ -17,18 +17,19 @@ import Login from './pages/Login/Login';
 
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import GetInTouchModal from './components/Modals/GetInTouchModal/GetInTouchModal';
 
 import CareerCreation from './components/careerCreation/careerCreation';
 import SmallCard from './components/managingCareers/managingCareers';
 import CareerUpdate from './components/careerCreation/updationCareerpage';
 import { initEmailjs } from './lib';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function App() {
-  const openContact = () => {
-    // Implement your contact popup logic here
-    console.log('Contact form opened');
-  };
+  const [showContact, setShowContact] = useState(false);
+
+  const openContact = () => setShowContact(true);
+  const closeContact = () => setShowContact(false);
 
   useEffect(() => {
     initEmailjs();
@@ -76,6 +77,7 @@ export default function App() {
           <Route path='/career-update' element={<CareerUpdate />} />
         </Route>
       </Routes>
+      <GetInTouchModal isOpen={showContact} onClose={closeContact} />
     </BrowserRouter>
   );
 }

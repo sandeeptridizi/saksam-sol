@@ -19,13 +19,16 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const { name, email, phone, message } = formData;
+    const formattedBody = `Get in touch with us\nWe strive to respond to all inquiries within 48 hours.\n\nYour name: ${name}\nEmail: ${email}\nPhone Number: ${phone}\nYour message: ${message}`;
     const templateParams = {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      message: formData.message,
+      name,
+      email,
+      phone,
+      message,
+      formattedBody,
       time: new Date().toLocaleString(),
-      reference: "Get In Touch Modal",
+      reference: "Careers - Get in touch",
     };
 
     emailjs
@@ -33,6 +36,7 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
       .then((result) => {
         console.log(result.text);
         toast.success("Message sent successfully");
+        setFormData({ name: '', email: '', phone: '', message: '' });
         onClose();
       })
       .catch((error) => {
@@ -53,15 +57,16 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
             <FaRegCircleXmark />
           </button>
         </div>
-        <h2 className='overlay-heading'>Get In Touch</h2>
+        <h2 className='overlay-heading'>Get in touch with us</h2>
+        <p className='overlay-subtitle'>We strive to respond to all inquiries within 48 hours.</p>
         <form className='modal-form' onSubmit={handleSubmit}>
           <div className='modal-label-input-container'>
-            <label className='label'>Name</label>
+            <label className='label'>Your name</label>
             <input
               type='text'
               name='name'
               value={formData.name}
-              placeholder='Enter Your Name'
+              placeholder='Your name'
               className='modal-input'
               onChange={handleChange}
             />
@@ -72,36 +77,36 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
               type='email'
               name='email'
               value={formData.email}
-              placeholder='Enter Your Email'
+              placeholder='Email'
               className='modal-input'
               onChange={handleChange}
             />
           </div>
           <div className='modal-label-input-container'>
-            <label className='label'>Phone</label>
+            <label className='label'>Phone Number</label>
             <input
               type='text'
               name='phone'
               value={formData.phone}
-              placeholder='Enter Your Phone Number'
+              placeholder='Phone Number'
               className='modal-input'
               onChange={handleChange}
             />
           </div>
           <div className='modal-label-input-container'>
-            <label className='label'>Message</label>
+            <label className='label'>Your message</label>
             <textarea
               rows={6}
               type='text'
               name='message'
               value={formData.message}
-              placeholder='Enter Your Message'
+              placeholder='Your message'
               className='modal-text-input'
               onChange={handleChange}
             ></textarea>
           </div>
           <button type='submit' className='submit-btn'>
-            Submit
+            Submit form
           </button>
         </form>
       </div>
