@@ -90,7 +90,7 @@ const carouselData = [
       'Ideal for BPOs, call centers, operations, and large-scale projects.',
       'Rapid workforce deployment for short-term, long-term, or seasonal needs.',
       'End-to-end hiring, onboarding, and workforce coordination handled seamlessly.',
-      'Scalable hiring model to meet aggressive growth and business demands.',
+
     ],
     link: '/services/bulk-hiring',
   },
