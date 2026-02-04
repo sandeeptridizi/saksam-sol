@@ -179,3 +179,15 @@
     display: flex;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .services-links-container {
+    width: 90%;
+    position: absolute;
+    left: 30px;
+  }
+
+  .services-links-container span {
+    font-size: 13px;
+  }
+}

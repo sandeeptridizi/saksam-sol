@@ -427,9 +427,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 5px;
     width: auto;
-    margin-top: 14px;
   }
 
   .subjectname {
@@ -439,10 +437,12 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-top: 0px;
   }
 
   .message-box {
     width: 100%;
+    margin-top: -50px;
   }
 
   .message-box label {
@@ -462,6 +462,7 @@
     border-color: #028d89;
     color: #ffffff;
     font-size: 14px;
+    margin-top: -30px;
   }
 
   .career-page-faqs-container {

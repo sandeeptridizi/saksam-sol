@@ -55,7 +55,7 @@ const ContingetStaffing = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 430,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

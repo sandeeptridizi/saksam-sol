@@ -165,49 +165,50 @@
   .servicehero {
     width: 100%;
     height: auto;
-    padding: 32px 16px;
+    padding: 32px 18px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    margin: 0;
+    gap: 0;
   }
 
   .serviceheronotes {
     width: 90%;
     display: flex;
     flex-direction: column;
-    height: auto;
-    margin-bottom: 32px;
+    margin-left: -120px;
   }
 
   .serviceherotitle {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .serivcehighlight {
     width: 100%;
+    margin-top: 0;
+    display: flex;
   }
 
   .serviceicon {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     background-color: #028d89;
+    font-size: 15px;
   }
 
   .servicepoint {
     width: fit-content;
-    margin-left: 0;
+    margin-left: -20px;
   }
 
   .servicetitle {
-    font-size: 18px;
+    font-size: 16px;
     color: black;
   }
 
   .servicedesc {
-    font-size: 12px;
+    font-size: 10px;
     color: #666266;
-    width: 80%;
+    width: 300px;
   }
 
   .serviceherobutton {
@@ -237,9 +238,10 @@
 
   .servicebodydesc {
     width: 90%;
-    margin: 48px auto;
+    margin: 0 auto;
     padding: 12px;
     height: auto;
+    margin-top: -100px;
   }
 
   .servicebodynote {
