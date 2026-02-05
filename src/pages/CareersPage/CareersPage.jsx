@@ -2,7 +2,7 @@ import Accordion from '../../components/Accordion/Accordion';
 import useAppContext from '../../context/AppContext';
 import './CareersPage.css';
 
-import career from '../../assets/career.png';
+import career from '../../assets/careerimage.jpg';
 import { useEffect } from 'react';
 
 const CareersPage = () => {

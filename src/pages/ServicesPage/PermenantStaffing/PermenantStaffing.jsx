@@ -93,7 +93,7 @@ const PermenantStaffing = () => {
               </span>{' '}
               <br></br>
               <span className='servicedesc'>
-                From sourcing to shortlisting and final onboarding, we manage
+                From sourcing, Validation to shortlisting and final onboarding, we manage
                 the hiring process end-to-end.
               </span>
             </div>
@@ -131,11 +131,11 @@ const PermenantStaffing = () => {
           understanding your hiring needs, sourcing and screening candidates,
           conducting assessments and interviews, to coordinating smooth
           onboarding. By leveraging our extensive talent network and industry
-          expertise, we ensure faster time-to-hire while maintaining high
+          expertise, we ensure faster time-to-hire and lower cost-to-hire while maintaining high
           quality. Our services span across IT, Non-IT, Healthcare,
           Manufacturing, BFSI, Retail, and more, delivering professionals who
           contribute to long-term business growth. We focus on candidate
-          alignment, retention, and efficiency, providing staffing solutions
+          alignment, retention, and efficiency, providing permenant staffing solutions
           that are reliable, scalable, and tailored to your organization’s
           goals. With SakSam Sol, you can build teams that drive performance and
           support your strategic objectives effectively.
@@ -202,12 +202,20 @@ const PermenantStaffing = () => {
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.
           </p>
-          <button
-            className='home-page-money-btn'
-            onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-          >
-            Post a Job
-          </button>
+          <div className='howitoworksbuttons'>
+        <button
+          className='steps-btn'
+          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+        >
+          Post a Job
+        </button>
+
+        <button
+          className='steps-btn'
+          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+        >
+          Apply Now
+        </button></div>
         </div>
         <div className='home-page-money-grid-container'>
           <div className='home-page-money-item-one-container'>

@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import recruitmain from '../../../assets/recruitmain.png';
-import recruitsub from '../../../assets/recruitsub.png';
+import recruitsub from '../../../assets/rpoimage.jpg';
 
 import { IoMdCheckmark } from 'react-icons/io';
 import GetInTouchModal from '../../../components/Modals/GetInTouchModal/GetInTouchModal';
@@ -201,12 +201,20 @@ const RecruitmentProcess = () => {
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.
           </p>
-          <button
-            className='home-page-money-btn'
-            onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-          >
-            Post a Job
-          </button>
+          <div className='howitoworksbuttons'>
+        <button
+          className='steps-btn'
+          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+        >
+          Post a Job
+        </button>
+
+        <button
+          className='steps-btn'
+          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+        >
+          Apply Now
+        </button></div>
         </div>
         <div className='home-page-money-grid-container'>
           <div className='home-page-money-item-one-container'>

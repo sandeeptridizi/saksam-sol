@@ -142,13 +142,11 @@
 .advantagepoint {
   width: 600px;
   height: 450px;
-  padding: 36px;
+  padding: 16px;
   margin-left: 65px;
 }
 
-.home-page-money-container {
-  margin-top: 180px;
-}
+
 
 @media screen and (max-width: 600px) {
   * {

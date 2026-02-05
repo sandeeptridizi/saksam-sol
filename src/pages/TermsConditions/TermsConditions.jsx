@@ -152,7 +152,7 @@ const TermsConditions = () => {
                 <li>Saksam Sol</li>
                 <li>Email: info@saksamsol.com</li>
                 <li>Phone: +91 9398906639</li>
-                <li>Address: Hyderabad, India</li>
+                <li>Address: Nallagandla, Hyderabad, India</li>
               </ul>
             </div>
             <div className='bottomline'></div>

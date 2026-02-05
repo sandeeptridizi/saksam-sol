@@ -18,10 +18,9 @@
 .aboutmedia {
   height: 800px;
   width: 800px;
-  padding: 100px;
   color: #244d4d;
   font-size: 50px;
-  margin-top: 50px;
+  margin: 50px 20px 0 0;
 }
 
 .main-img {
@@ -62,9 +61,10 @@
 }
 
 .aboutrow {
-  height: auto;
+  height: 265px;
   width: 650px;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .abouthighlight {
@@ -72,7 +72,7 @@
   width: 320px;
   text-align: left;
   list-style: none;
-  padding: 20px;
+  padding: 10px;
 }
 
 .highlightnum {
@@ -85,11 +85,13 @@
   font-size: 30px;
   color: #244d4d;
   margin-bottom: 10px;
+  width: 310px;
 }
 
 .highlightdesc {
   font-size: 16px;
   color: #64717c;
+  width: 300px;
 }
 
 .visionmission {
@@ -116,6 +118,9 @@
   background-color: #122134;
   border-radius: 10px;
   border-color: #122134;
+  color: #ffffff;
+  font-size: 48px;
+  padding: 6px;
   height: 64px;
   width: 64px;
   margin-bottom: 15px;
@@ -130,7 +135,7 @@
 .visiondesc {
   font-size: 16px;
   color: #4a5565;
-  width: 345px;
+  width: 480px;
 }
 
 @media screen and (max-width: 600px) {

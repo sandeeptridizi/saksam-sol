@@ -85,6 +85,11 @@
   margin-bottom: 40px;
 }
 
+.contactplace a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .socialmedia {
   list-style: none;
   height: 30px;

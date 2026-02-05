@@ -32,7 +32,7 @@
   font-size: 32px;
   font-weight: 400;
   text-align: center;
-  width: 100%;
+  width: auto;
 }
 
 .home-page-email-btn-container {
@@ -71,7 +71,6 @@
   width: 100%;
   height: 600px;
   position: relative;
-  margin: 64px auto;
   background-image: url('../../assets/layer.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -81,7 +80,7 @@
 .home-page-profile-video {
   width: 55%;
   height: 70%;
-  margin: 0 auto;
+  margin: 115px auto 0 400px;
   border-radius: 16px;
   overflow: hidden;
   border: 2px solid #028d89;
@@ -144,44 +143,57 @@
 }
 
 .home-page-company-text {
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 24px;
+  font-weight: bold;
   color: #3a3a3a;
 }
 
 .home-page-company-title {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 300;
   color: #3a3a3a;
 }
 
 .home-page-company-logos-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-page-company-logos-track {
   display: flex;
-  flex-direction: column;
+  width: max-content;
+  animation: logoScroll 30s linear infinite;
 }
 
 .home-page-company-logos-one-grid-container {
-  margin: 32px auto 16px auto;
-  display: grid;
+  display: flex;              
   align-items: center;
-  grid-template-columns: repeat(7, 1fr);
-  align-items: center;
-  column-gap: 24px;
-}
-
-.home-page-company-logos-two-grid-container {
-  width: 100%;
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(7, 1fr);
-  column-gap: 24px;
+  gap: 36px;                   
+  padding: 32px 0 16px 0;
 }
 
 .grid-image {
-  opacity: 0.4;
-  color: grey;
-  height: auto;
-  width: 150px;
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  margin-left: 24px;         
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.grid-image:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .home-page-how-it-works-section {
@@ -220,7 +232,7 @@
 .home-page-steps-grid-container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 24px;
   z-index: 9;
 }
@@ -262,6 +274,28 @@
   cursor: pointer;
 }
 
+.steps-btn {
+  background: #028d89;
+  padding: 10px 38px;
+  border-radius: 29px;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+
+.homepagebutton {
+  background: #ffffff;
+  padding: 16px 51px;
+  border-radius: 29px;
+  border: 3px solid #028d89;
+  font-size: 14px;
+  font-weight: 600;
+  color: #028d89;
+  cursor: pointer;
+}
+
 .home-page-services-container {
   width: 85%;
   margin: 80px auto;
@@ -281,14 +315,15 @@
 
 .home-page-services-heading {
   font-family: 'Abhaya Libre';
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 34px;
+  font-weight: bold;
   color: #3a3a3a;
 }
 
 .home-page-services-text {
   font-size: 14px;
   font-weight: 300;
+  text-align: center;
   color: #3a3a3a;
 }
 
@@ -416,7 +451,24 @@
 .testimonial-text {
   font-size: 14px;
   font-weight: 300;
+  width: 500px;
   color: #3a3a3a;
+}
+
+.howitoworksbuttons{
+  display: flex;
+  gap: 24px;
+}
+
+.homepagebuttons{
+  position: fixed;
+  top: 160px;        
+  right: 24px;       
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 1000;
+
 }
 
 .home-page-testimonial-carousel-container {
@@ -440,7 +492,7 @@
   background: #122134;
   width: 85%;
   border-radius: 24px;
-  margin: 64px auto;
+  margin: 105px auto;
   padding: 48px 48px 48px 80px;
   display: flex;
   align-items: center;
@@ -476,7 +528,7 @@
 
 .home-page-money-btn {
   background: #028d89;
-  padding: 16px 51px;
+  padding: 16px 48px;
   width: 174px;
   height: 42px;
   display: flex;

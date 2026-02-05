@@ -103,6 +103,21 @@
   display: none;
 }
 
+.nav-active {
+  color: #028d89 !important;
+  font-weight: 600;
+}
+
+.services-links-container .nav-active span {
+  background-color: #028d89;
+  color: #fff;
+}
+
+.nav-mobile-links-container .nav-active {
+  color: #028d89;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 600px) {
   .navbar-container {
     width: 100%;

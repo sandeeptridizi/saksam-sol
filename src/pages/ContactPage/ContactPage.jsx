@@ -68,24 +68,31 @@ const ContactPage = () => {
             <span className='contacctdesc'>
               Say Something to connect with us directly
             </span>
-            <ul className='contactdetails'>
-              <li className='contactplace'>
-                <div className='contacticon'>
-                  <FaPhoneVolume />
-                </div>{' '}
-                <span>+91 9398906639 | +91 9849668819</span>
+            <ul className="contactdetails">
+              <li className="contactplace">
+                <div className="contacticon">
+                <FaPhoneVolume />
+                </div>
+                <span>
+                <a href="tel:+919398906639">+91 9398906639</a> |{' '}
+                <a href="tel:+919849668819">+91 9849668819</a>
+                </span>
               </li>
-              <li className='contactplace'>
-                <div className='contacticon'>
+
+              <li className="contactplace">
+                <div className="contacticon">
                   <MdMail />
-                </div>{' '}
-                <span>info@saksamsol.com</span>
+                  </div>
+                <span>
+                <a href="mailto:info@saksamsol.com">info@saksamsol.com</a>
+                </span>
               </li>
-              <li className='contactplace'>
-                <div className='contacticon'>
-                  <FaLocationDot />
-                </div>{' '}
-                <span>Hitech City, Madhapur, Hyderabad - 500084</span>
+
+              <li className="contactplace">
+               <div className="contacticon">
+               <FaLocationDot />
+                </div>
+                <span>Nallagandla, Hyderabad - 500084</span>
               </li>
             </ul>
             <ul className='socialmedia'>

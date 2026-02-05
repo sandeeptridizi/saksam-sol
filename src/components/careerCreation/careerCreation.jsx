@@ -121,7 +121,6 @@ const CareerCreation = () => {
         <form className="career_creation_form" onSubmit={handleSubmit}>
           <div className="career_creation_form_container">
             <div className="input_container">
-              {/* <div className="input_container"> */}
               <label htmlFor="JobTitle" className="career_labels">
                 Title
               </label>
@@ -158,7 +157,7 @@ const CareerCreation = () => {
 
             <div className="input_container">
               <label htmlFor="FieldOfJob" className="career_labels">
-                Deportment
+                Department
               </label>
               <input
                 type="text"
@@ -167,7 +166,7 @@ const CareerCreation = () => {
                 className="career_input"
                 onChange={formHandlerOnChange}
                 value={formData.FieldOfJob}
-                placeholder="Enter Deportment"
+                placeholder="Enter Department"
               />
 
               <label htmlFor="Category" className="career_labels">

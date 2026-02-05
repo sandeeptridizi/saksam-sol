@@ -200,12 +200,20 @@ const BulkHiring = () => {
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.
           </p>
-          <button
-            className='home-page-money-btn'
-            onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-          >
-            Post a Job
-          </button>
+          <div className='howitoworksbuttons'>
+        <button
+          className='steps-btn'
+          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+        >
+          Post a Job
+        </button>
+
+        <button
+          className='steps-btn'
+          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+        >
+          Apply Now
+        </button></div>
         </div>
         <div className='home-page-money-grid-container'>
           <div className='home-page-money-item-one-container'>

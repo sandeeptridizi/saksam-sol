@@ -21,14 +21,14 @@ const faqs = [
     id: 3,
     question: 'How quickly can you provide candidates?',
     answer:
-      'Depending on the role, we can deliver pre-screened candidates within days for urgent hiring and within weeks for niche positions.',
+      'Depending on the role, we can deliver pre-screened candidates within hours for urgent hiring and within days for niche positions.',
     isOpen: false,
   },
   {
     id: 4,
-    question: 'Do you handle compliance and payroll for contract staff?',
+    question: 'Do you handle compliance and payroll for contigent staff?',
     answer:
-      'Yes, we manage payroll, statutory compliance, and documentation for contingent and contract staffing, ensuring a hassle-free process.',
+      'Yes, we manage payroll, statutory compliance, and documentation for contingent staff, ensuring a hassle-free process.',
     isOpen: false,
   },
   {

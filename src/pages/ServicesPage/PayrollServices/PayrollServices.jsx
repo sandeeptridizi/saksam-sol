@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
 import payrollmain from '../../../assets/payrollmain.png';
-import payrollsub from '../../../assets/payrollsub.png';
+import payrollsub from '../../../assets/payroll.jpg';
 
 import { IoMdCheckmark } from 'react-icons/io';
 import GetInTouchModal from '../../../components/Modals/GetInTouchModal/GetInTouchModal';
@@ -127,7 +127,7 @@ const PayrollServices = () => {
           streamline your payroll management, ensuring accuracy, compliance, and
           efficiency. We handle salary calculations, statutory deductions, tax
           filings, and employee records for organizations of all sizes. Our team
-          ensures that employees are paid on time, every time, while keeping you
+          ensures that employees are paid on time, while keeping you
           compliant with all local and national regulations. By leveraging
           technology-driven solutions and industry expertise, we reduce errors,
           save time, and eliminate administrative burdens. Our payroll services
@@ -198,12 +198,20 @@ const PayrollServices = () => {
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.
           </p>
-          <button
-            className='home-page-money-btn'
-            onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-          >
-            Post a Job
-          </button>
+          <div className='howitoworksbuttons'>
+        <button
+          className='steps-btn'
+          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+        >
+          Post a Job
+        </button>
+
+        <button
+          className='steps-btn'
+          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+        >
+          Apply Now
+        </button></div>
         </div>
         <div className='home-page-money-grid-container'>
           <div className='home-page-money-item-one-container'>

@@ -52,12 +52,12 @@ export default function App() {
           />
           <Route path='/services/bulk-hiring' element={<BulkHiring />} />
           <Route
-            path='/services/payroll-services'
-            element={<PayrollServices />}
-          />
-          <Route
             path='/services/recruitment-process'
             element={<RecruitmentProcess />}
+          />
+          <Route
+            path='/services/payroll-services'
+            element={<PayrollServices />}
           />
 
           {/* <Route path='careers' element={<CareersPage />} /> */}

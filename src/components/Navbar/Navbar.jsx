@@ -1,45 +1,66 @@
 import './Navbar.css';
 
 import companyLogo from '../../assets/company-logo.png';
-import { Link, NavLink } from 'react-router-dom';
-
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Navbar = () => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
-  const [link, setLink] = useState('');
-  const [isLinkOpen, setIsLinkOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+
+  const servicesRef = useRef(null);
+  const location = useLocation();
+
+  /* Close dropdown on outside click */
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (
+        servicesRef.current &&
+        !servicesRef.current.contains(e.target)
+      ) {
+        setIsServicesOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  /* Close menus on route change */
+  useEffect(() => {
+    setIsHamburgerOpen(false);
+    setIsServicesOpen(false);
+  }, [location.pathname]);
 
   return (
     <div className='navbar-container'>
       <Link to='/'>
         <img src={companyLogo} alt='company logo' className='navbar-logo' />
       </Link>
+
       <div className='nav-container'>
         <ul className='nav-links-container'>
-          <li onClick={() => setLink('home')}>
-            <NavLink to='/'>Home</NavLink>
+          <li>
+            <NavLink to='/' className={({ isActive }) => isActive ? 'nav-active' : ''}>
+              Home
+            </NavLink>
           </li>
-          <li onClick={() => setLink('about-us')}>
-            <NavLink to='about-us'>About Us</NavLink>
+
+          <li>
+            <NavLink to='/about-us' className={({ isActive }) => isActive ? 'nav-active' : ''}>
+              About Us
+            </NavLink>
           </li>
-          <li
-            className='services-link'
-            onClick={() => {
-              setLink('services');
-              setIsLinkOpen(!isLinkOpen);
-            }}
-          >
-            Services
-            {isLinkOpen && (
-              <div
-                className={
-                  link === 'services'
-                    ? 'services-links-container show-links'
-                    : 'services-links-container'
-                }
-              >
+
+          {/* SERVICES */}
+          <li className='services-link' ref={servicesRef}>
+            <span onClick={() => setIsServicesOpen(!isServicesOpen)}>
+              Services
+            </span>
+
+            {isServicesOpen && (
+              <div className='services-links-container show-links'>
                 <NavLink to='/services/staff-augmentation'>
                   <span>Staff Augmentation</span>
                 </NavLink>
@@ -49,22 +70,30 @@ const Navbar = () => {
                 <NavLink to='/services/bulk-hiring'>
                   <span>Bulk Hiring</span>
                 </NavLink>
-                <NavLink to='/services/payroll-services'>
-                  <span>Payroll Services</span>
-                </NavLink>
                 <NavLink to='/services/recruitment-process'>
                   <span>Recruitment Process Outsourcing</span>
+                </NavLink>
+                <NavLink to='/services/payroll-services'>
+                  <span>Payroll Services</span>
                 </NavLink>
               </div>
             )}
           </li>
-          <li onClick={() => setLink('careers')}>
-            <NavLink to='careers'>Careers</NavLink>
+
+          <li>
+            <NavLink to='/careers' className={({ isActive }) => isActive ? 'nav-active' : ''}>
+              Careers
+            </NavLink>
           </li>
-          <li className='contact-link' onClick={() => setLink('contact-us')}>
-            <NavLink to='contact-us'>Contact Us</NavLink>
+
+          <li className='contact-link'>
+            <NavLink to='/contact-us'>
+              Contact Us
+            </NavLink>
           </li>
         </ul>
+
+        {/* HAMBURGER */}
         <div
           className='hamburger-container'
           onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}
@@ -73,65 +102,49 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* MOBILE MENU */}
       {isHamburgerOpen && (
         <ul className='nav-mobile-links-container'>
-          <NavLink to='/' onClick={() => setIsHamburgerOpen(false)}>
-            <li onClick={() => setLink('/')}>Home</li>
+          <NavLink to='/' className={({ isActive }) => isActive ? 'nav-active' : ''}>
+            <li>Home</li>
           </NavLink>
-          <NavLink to='about-us' onClick={() => setIsHamburgerOpen(false)}>
-            <li onClick={() => setLink('about-us')}>About Us</li>
+
+          <NavLink to='/about-us' className={({ isActive }) => isActive ? 'nav-active' : ''}>
+            <li>About Us</li>
           </NavLink>
-          <li
-            className='services-link'
-            onClick={() => {
-              setLink('services');
-              setIsLinkOpen(!isLinkOpen);
-            }}
-          >
-            Services
-            {isLinkOpen ? (
-              <div
-                className={
-                  link === 'services'
-                    ? 'services-links-container show-links'
-                    : 'services-links-container'
-                }
-              >
+
+          <li className='services-link'>
+            <span onClick={() => setIsServicesOpen(!isServicesOpen)}>
+              Services
+            </span>
+
+            {isServicesOpen && (
+              <div className='services-links-container show-links'>
                 <NavLink to='/services/staff-augmentation'>
-                  <span onClick={() => setIsHamburgerOpen(false)}>
-                    Staff Augmentation
-                  </span>
+                  <span>Staff Augmentation</span>
                 </NavLink>
                 <NavLink to='/services/permenant-staffing'>
-                  <span onClick={() => setIsHamburgerOpen(false)}>
-                    Permenant Staffing
-                  </span>
+                  <span>Permenant Staffing</span>
                 </NavLink>
                 <NavLink to='/services/bulk-hiring'>
-                  <span onClick={() => setIsHamburgerOpen(false)}>
-                    Bulk Hiring
-                  </span>
-                </NavLink>
-                <NavLink to='/services/payroll-services'>
-                  <span onClick={() => setIsHamburgerOpen(false)}>
-                    Payroll Services
-                  </span>
+                  <span>Bulk Hiring</span>
                 </NavLink>
                 <NavLink to='/services/recruitment-process'>
-                  <span onClick={() => setIsHamburgerOpen(false)}>
-                    Recruitment Process Outsourcing
-                  </span>
+                  <span>Recruitment Process Outsourcing</span>
+                </NavLink>
+                <NavLink to='/services/payroll-services'>
+                  <span>Payroll Services</span>
                 </NavLink>
               </div>
-            ) : null}
+            )}
           </li>
-          <NavLink to='careers' onClick={() => setIsHamburgerOpen(false)}>
-            <li onClick={() => setLink('careers')}>Careers</li>
+
+          <NavLink to='/careers' className={({ isActive }) => isActive ? 'nav-active' : ''}>
+            <li>Careers</li>
           </NavLink>
-          <NavLink to='contact-us' onClick={() => setIsHamburgerOpen(false)}>
-            <li className='contact-link' onClick={() => setLink('contact-us')}>
-              Contact Us
-            </li>
+
+          <NavLink to='/contact-us'>
+            <li className='contact-link'>Contact Us</li>
           </NavLink>
         </ul>
       )}

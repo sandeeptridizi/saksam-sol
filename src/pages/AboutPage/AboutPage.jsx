@@ -8,6 +8,9 @@ import aboutImg from '../../assets/about.png';
 import useAppContext from '../../context/AppContext';
 import GetQuoteModal from '../../components/Modals/GetQuoteModal/GetQuoteModal';
 import { useEffect } from 'react';
+import { HiClipboardDocumentCheck } from "react-icons/hi2";
+import { AiOutlineSafety } from "react-icons/ai";
+
 
 const meetingData = [
   {
@@ -96,7 +99,7 @@ const AboutPage = () => {
       <div className='visionmission'>
         <div>
           <ul className='vision'>
-            <li className='visionicon'></li>
+            <li className='visionicon'><HiClipboardDocumentCheck /></li>
             <li className='visionheading'>Vision</li>
             <li className='visiondesc'>
               To become India’s most trusted and innovative staffing partner,
@@ -107,12 +110,12 @@ const AboutPage = () => {
         </div>
         <div>
           <ul className='vision'>
-            <li className='visionicon'></li>
+            <li className='visionicon'><AiOutlineSafety /></li>
             <li className='visionheading'>Mission</li>
             <li className='visiondesc'>
               To provide businesses with efficient, reliable, and customized
               staffing solutions that connect the right talent with the right
-              opportunities, enabling organizational growth and success.
+              opportunities, enabling organizational growth and success as an extended talent partner.
             </li>
           </ul>
         </div>
@@ -120,8 +123,8 @@ const AboutPage = () => {
       <div className='home-page-meeting-container'>
         <h3 className='home-page-meeting-heading'>Our Success Founders</h3>
         <p className='home-page-meeting-text'>
-          At Saksam Sol, we take pride in offering more than just products; we
-          offer an experience. Here's what makes us unique:
+          Our Dedicated Team Is Always On Hand To Help Your Business Succeed. We
+          Aim To Fill Your Roles Quickly And Efficiently.
         </p>
         <div className='home-page-meeting-grid-container'>
           {meetingData.map((item) => (

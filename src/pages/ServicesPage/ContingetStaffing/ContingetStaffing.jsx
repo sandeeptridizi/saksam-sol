@@ -134,9 +134,9 @@ const ContingetStaffing = () => {
           skilled professionals who are ready to contribute immediately to your
           projects, seasonal demands, or short-term assignments. From sourcing
           and screening candidates to handling payroll, statutory compliance,
-          and documentation, our team manages every step of the process so you
+          and documentation, our team manages every step of the process. You
           can focus on core business operations. Our flexible staffing models
-          allow you to hire on a full-time contract, part-time, or
+          allow you to hire on a contract, part-time, or
           project-specific basis, ensuring cost-effective and agile workforce
           solutions. Trusted by companies across IT, Non-IT, Healthcare,
           Manufacturing, BFSI, Retail, and Logistics, our contingent staffing
@@ -212,12 +212,20 @@ const ContingetStaffing = () => {
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.
           </p>
-          <button
-            className='home-page-money-btn'
-            onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-          >
-            Post a Job
-          </button>
+          <div className='howitoworksbuttons'>
+        <button
+          className='steps-btn'
+          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+        >
+          Post a Job
+        </button>
+
+        <button
+          className='steps-btn'
+          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+        >
+          Apply Now
+        </button></div>
         </div>
         <div className='home-page-money-grid-container'>
           <div className='home-page-money-item-one-container'>
