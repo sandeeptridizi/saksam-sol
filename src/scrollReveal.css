@@ -1,0 +1,48 @@
+/* Base hidden */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+  will-change: transform, opacity;
+}
+
+/* Active */
+.reveal.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variants */
+.reveal-left {
+  transform: translateX(-50px);
+}
+
+.reveal-right {
+  transform: translateX(50px);
+}
+
+.reveal-zoom {
+  transform: scale(0.9);
+}
+
+.reveal.reveal-active.reveal-left,
+.reveal.reveal-active.reveal-right {
+  transform: translateX(0);
+}
+
+.reveal.reveal-active.reveal-zoom {
+  transform: scale(1);
+}
+
+/* Delay helpers */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+
+/* Mobile tuning */
+@media (max-width: 600px) {
+  .reveal {
+    transition-duration: 0.6s;
+    transform: translateY(25px);
+  }
+}
