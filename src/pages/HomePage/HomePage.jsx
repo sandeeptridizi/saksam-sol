@@ -345,7 +345,6 @@ const HomePage = () => {
           <img src={ichorLogo} alt="company" className="grid-image" />
         </div>
 
-        {/* DUPLICATE SET (for seamless scroll) */}
         <div className="home-page-company-logos-one-grid-container">
           <img
             src="https://www.greatplacetowork.in/great/api/assets/uploads/9708/logo/logo.jpg"
