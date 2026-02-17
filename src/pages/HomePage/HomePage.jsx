@@ -13,7 +13,7 @@ import rita from '../../assets/vijaykumar.jpeg';
 import successcopy from '../../assets/successcopy.png';
 
 import video from '../../assets/SakSamSol.mp4';
-import headerVideo from '../../assets/SakSam Sol.mp4';
+import headerVideo from '../../assets/Saksam Sol.mp4';
 
 import leftRectangle from '../../assets/right-rectangle (1).png';
 import rightRectangle from '../../assets/right-rectangle (3).png';
