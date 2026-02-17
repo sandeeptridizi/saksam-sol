@@ -64,10 +64,10 @@ const RecruitmentProcess = () => {
   };
 
   return (
-    <div>
+    <div className='servicepagecontainer'>
       <div className='servicehero'>
         <div className='serviceheronotes'>
-          <h1 className='serviceherotitle'>Recruiment Process</h1>
+          <h1 className='serviceherotitle'>Recruitment Process Outsourcing</h1>
           <div className='serivcehighlight'>
             <div className='serviceicon'>
               <IoMdCheckmark />

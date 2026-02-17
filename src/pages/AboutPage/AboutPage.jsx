@@ -93,7 +93,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className='aboutmedia'>
-          <img src={aboutImg} alt='about image' className='main-img' />
+          <img src={aboutImg} alt='about image' className='main-img1' />
         </div>
       </div>
       <div className='visionmission'>

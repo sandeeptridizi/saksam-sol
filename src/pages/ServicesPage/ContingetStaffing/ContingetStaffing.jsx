@@ -64,7 +64,7 @@ const ContingetStaffing = () => {
     ],
   };
   return (
-    <div>
+    <div className='servicepagecontainer'>
       <div className='servicehero'>
         <div className='serviceheronotes'>
           <h1 className='serviceherotitle'>Staff Augmentation</h1>

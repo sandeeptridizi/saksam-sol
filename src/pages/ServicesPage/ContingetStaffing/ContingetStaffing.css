@@ -1,5 +1,12 @@
+.servicepagecontainer {
+  width: 100%;
+  max-width: 1440px;  
+  margin: 0 auto;   
+  padding: 0 20px;   
+}
+
 .servicehero {
-  height: 610px;
+  height: 700px;
   display: flex;
   padding: 40px;
   width: auto;
@@ -72,15 +79,25 @@
 }
 
 .serviceimage {
-  height: 530px;
-  width: 490px;
-  background-color: #028d89;
+  width: 100%;
+  max-width: 490px; 
+  height: 530px; 
   margin-top: 80px;
+  overflow: hidden; 
+  border-radius: 12px;
+}
+
+.serviceimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  display: block;
 }
 
 .main-img {
   width: 100%;
-  height: 100%;
+  height: auto;      
+  display: block;
 }
 
 .servicebodydesc {

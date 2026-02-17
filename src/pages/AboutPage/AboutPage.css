@@ -16,16 +16,16 @@
 }
 
 .aboutmedia {
-  height: 800px;
-  width: 800px;
-  color: #244d4d;
-  font-size: 50px;
-  margin: 50px 20px 0 0;
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  overflow: hidden;
 }
 
-.main-img {
+.main-img1 {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .aboutinfo {

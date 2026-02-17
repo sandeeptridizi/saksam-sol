@@ -64,7 +64,7 @@ const BulkHiring = () => {
     ],
   };
   return (
-    <div>
+    <div className='servicepagecontainer'>
       <div className='servicehero'>
         <div className='serviceheronotes'>
           <h1 className='serviceherotitle'>Bulk Hiring</h1>

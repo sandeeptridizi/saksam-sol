@@ -65,7 +65,7 @@ const PayrollServices = () => {
   };
 
   return (
-    <div>
+    <div className='servicepagecontainer'>
       <div className='servicehero'>
         <div className='serviceheronotes'>
           <h1 className='serviceherotitle'>Payroll Services</h1>
