@@ -15,10 +15,7 @@ const Navbar = () => {
   /* Close dropdown on outside click */
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (
-        servicesRef.current &&
-        !servicesRef.current.contains(e.target)
-      ) {
+      if (servicesRef.current && !servicesRef.current.contains(e.target)) {
         setIsServicesOpen(false);
       }
     };
@@ -42,13 +39,19 @@ const Navbar = () => {
       <div className='nav-container'>
         <ul className='nav-links-container'>
           <li>
-            <NavLink to='/' className={({ isActive }) => isActive ? 'nav-active' : ''}>
+            <NavLink
+              to='/'
+              className={({ isActive }) => (isActive ? 'nav-active' : '')}
+            >
               Home
             </NavLink>
           </li>
 
           <li>
-            <NavLink to='/about-us' className={({ isActive }) => isActive ? 'nav-active' : ''}>
+            <NavLink
+              to='/about-us'
+              className={({ isActive }) => (isActive ? 'nav-active' : '')}
+            >
               About Us
             </NavLink>
           </li>
@@ -61,19 +64,19 @@ const Navbar = () => {
 
             {isServicesOpen && (
               <div className='services-links-container show-links'>
-                <NavLink to='/services/staff-augmentation'>
+                <NavLink to='services/staff-augmentation'>
                   <span>Staff Augmentation</span>
                 </NavLink>
-                <NavLink to='/services/permenant-staffing'>
+                <NavLink to='services/permenant-staffing'>
                   <span>Permenant Staffing</span>
                 </NavLink>
-                <NavLink to='/services/bulk-hiring'>
+                <NavLink to='services/bulk-hiring'>
                   <span>Bulk Hiring</span>
                 </NavLink>
-                <NavLink to='/services/recruitment-process'>
+                <NavLink to='services/recruitment-process'>
                   <span>Recruitment Process Outsourcing</span>
                 </NavLink>
-                <NavLink to='/services/payroll-services'>
+                <NavLink to='services/payroll-services'>
                   <span>Payroll Services</span>
                 </NavLink>
               </div>
@@ -81,15 +84,16 @@ const Navbar = () => {
           </li>
 
           <li>
-            <NavLink to='/careers' className={({ isActive }) => isActive ? 'nav-active' : ''}>
+            <NavLink
+              to='/careers'
+              className={({ isActive }) => (isActive ? 'nav-active' : '')}
+            >
               Careers
             </NavLink>
           </li>
 
           <li className='contact-link'>
-            <NavLink to='/contact-us'>
-              Contact Us
-            </NavLink>
+            <NavLink to='/contact-us'>Contact Us</NavLink>
           </li>
         </ul>
 
@@ -105,45 +109,54 @@ const Navbar = () => {
       {/* MOBILE MENU */}
       {isHamburgerOpen && (
         <ul className='nav-mobile-links-container'>
-          <NavLink to='/' className={({ isActive }) => isActive ? 'nav-active' : ''}>
+          <NavLink
+            to='/'
+            className={({ isActive }) => (isActive ? 'nav-active' : '')}
+          >
             <li>Home</li>
           </NavLink>
 
-          <NavLink to='/about-us' className={({ isActive }) => isActive ? 'nav-active' : ''}>
+          <NavLink
+            to='about-us'
+            className={({ isActive }) => (isActive ? 'nav-active' : '')}
+          >
             <li>About Us</li>
           </NavLink>
 
-          <li className='services-link'>
+          <li className='services-link' ref={servicesRef}>
             <span onClick={() => setIsServicesOpen(!isServicesOpen)}>
               Services
             </span>
 
             {isServicesOpen && (
               <div className='services-links-container show-links'>
-                <NavLink to='/services/staff-augmentation'>
+                <NavLink to='services/staff-augmentation'>
                   <span>Staff Augmentation</span>
                 </NavLink>
-                <NavLink to='/services/permenant-staffing'>
+                <NavLink to='services/permenant-staffing'>
                   <span>Permenant Staffing</span>
                 </NavLink>
-                <NavLink to='/services/bulk-hiring'>
+                <NavLink to='services/bulk-hiring'>
                   <span>Bulk Hiring</span>
                 </NavLink>
-                <NavLink to='/services/recruitment-process'>
+                <NavLink to='services/recruitment-process'>
                   <span>Recruitment Process Outsourcing</span>
                 </NavLink>
-                <NavLink to='/services/payroll-services'>
+                <NavLink to='services/payroll-services'>
                   <span>Payroll Services</span>
                 </NavLink>
               </div>
             )}
           </li>
 
-          <NavLink to='/careers' className={({ isActive }) => isActive ? 'nav-active' : ''}>
+          <NavLink
+            to='careers'
+            className={({ isActive }) => (isActive ? 'nav-active' : '')}
+          >
             <li>Careers</li>
           </NavLink>
 
-          <NavLink to='/contact-us'>
+          <NavLink to='contact-us'>
             <li className='contact-link'>Contact Us</li>
           </NavLink>
         </ul>

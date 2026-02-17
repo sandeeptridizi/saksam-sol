@@ -22,7 +22,6 @@ import ichorLogo from '../../assets/ichorLogo.jpeg';
 import EQLogo from '../../assets/EQLogo.jpeg';
 import FAQs from '../../assets/FAQs.jpg';
 
-
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 
 import Accordion from '../../components/Accordion/Accordion';
@@ -38,7 +37,6 @@ import PostJobModal from '../../components/Modals/PostJobModal/PostJobModal';
 import GetInTouchModal from '../../components/Modals/GetInTouchModal/GetInTouchModal';
 import { Link } from 'react-router-dom';
 import { BiDollar } from 'react-icons/bi';
-
 
 const data = [
   {
@@ -113,7 +111,6 @@ const testimonialsData = [
     text: 'Sowmya brings expertise in operations and workforce strategy, ensuring seamless execution of recruitment processes and client satisfaction.',
     name: 'Kabir Singh',
     role: 'Co Founder & CHRO, a Manufacturing Firm',
-
   },
   {
     id: 4,
@@ -219,19 +216,26 @@ const HomePage = () => {
 
   return (
     <div className='home-page-main-container'>
-      <div className="home-page-header-wrapper">
-      <video className="background-video" src={headerVideo} autoPlay muted loop playsInline />
+      <div className='home-page-header-wrapper'>
+        <video
+          className='background-video'
+          src={headerVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
 
-      <div className="video-overlay"></div>
-      <div className='home-page-header-container'>
-        <h1 className='home-page-heading'>
-          India's most trusted talent power house.{' '}
-        </h1>
-        <span className='headerline'>
-          Building careers. Delivering talent. Powering growth for your
-          business.
-        </span>
-      </div>
+        <div className='video-overlay'></div>
+        <div className='home-page-header-container'>
+          <h1 className='home-page-heading'>
+            India's most trusted talent power house.{' '}
+          </h1>
+          <span className='headerline'>
+            Building careers. Delivering talent. Powering growth for your
+            business.
+          </span>
+        </div>
       </div>
       <div className='homepagebuttons'>
         <button
@@ -247,7 +251,7 @@ const HomePage = () => {
         >
           Apply a Job
         </button>
-        </div>
+      </div>
       <div className='home-page-grid-container'>
         {data.map((item) => {
           const { id, icon, title, text } = item;
@@ -275,131 +279,129 @@ const HomePage = () => {
             scale their teams with speed and precision.
           </p>
         </div>
-        <div className="home-page-company-logos-container">
-       <div className="home-page-company-logos-track">
+        <div className='home-page-company-logos-container'>
+          <div className='home-page-company-logos-track'>
+            <div className='home-page-company-logos-one-grid-container'>
+              <img
+                src='https://www.greatplacetowork.in/great/api/assets/uploads/9708/logo/logo.jpg'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://tse3.mm.bing.net/th/id/OIP.B86i8wYYoQOrm-KLUIpwDAHaBe?pid=Api&P=0&h=180'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://g.foolcdn.com/art/companylogos/square/prft.png'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://tse2.mm.bing.net/th/id/OIP.-mHDgxmP3V_YAJPUtgEKXwHaBO?pid=Api&P=0&h=180'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://dynamic.exportersindia.com/company_logo/6638845.jpg'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://tse1.mm.bing.net/th/id/OIP.SWQ9tBc7e6bwXye9FQc3jAHaEK?pid=Api&P=0&h=180'
+                alt='company'
+                className='grid-image'
+              />
+              <img src={EQLogo} alt='company' className='grid-image' />
+              <img
+                src='https://tse1.mm.bing.net/th/id/OIP.kDEaWkJlrgUwPL8jhoU0AgAAAA?pid=Api&P=0&h=180'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://nestaway-website-kkv4x6ba3-nestaway.vercel.app/images/logo.png'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://mir-s3-cdn-cf.behance.net/projects/404/72ff0271081123.Y3JvcCw1NTMsNDMyLDYwMCwxOTE.jpg'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://companieslogo.com/img/orig/RCM_BIG-d0c11098.png?t=1602007417'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://av-eks-jobs.s3.amazonaws.com/media/company_logo/2019/10/17/saven_tech_M8j2lfO.jpeg'
+                alt='company'
+                className='grid-image'
+              />
+              <img src={ichorLogo} alt='company' className='grid-image' />
+            </div>
 
-        <div className="home-page-company-logos-one-grid-container">
-          <img
-            src="https://www.greatplacetowork.in/great/api/assets/uploads/9708/logo/logo.jpg"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://tse3.mm.bing.net/th/id/OIP.B86i8wYYoQOrm-KLUIpwDAHaBe?pid=Api&P=0&h=180"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://g.foolcdn.com/art/companylogos/square/prft.png"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://tse2.mm.bing.net/th/id/OIP.-mHDgxmP3V_YAJPUtgEKXwHaBO?pid=Api&P=0&h=180"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://dynamic.exportersindia.com/company_logo/6638845.jpg"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://tse1.mm.bing.net/th/id/OIP.SWQ9tBc7e6bwXye9FQc3jAHaEK?pid=Api&P=0&h=180"
-            alt="company"
-            className="grid-image"
-          />
-          <img src={EQLogo} alt="company" className="grid-image" />
-          <img
-            src="https://tse1.mm.bing.net/th/id/OIP.kDEaWkJlrgUwPL8jhoU0AgAAAA?pid=Api&P=0&h=180"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://nestaway-website-kkv4x6ba3-nestaway.vercel.app/images/logo.png"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://mir-s3-cdn-cf.behance.net/projects/404/72ff0271081123.Y3JvcCw1NTMsNDMyLDYwMCwxOTE.jpg"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://companieslogo.com/img/orig/RCM_BIG-d0c11098.png?t=1602007417"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://av-eks-jobs.s3.amazonaws.com/media/company_logo/2019/10/17/saven_tech_M8j2lfO.jpeg"
-            alt="company"
-            className="grid-image"
-          />
-          <img src={ichorLogo} alt="company" className="grid-image" />
+            <div className='home-page-company-logos-one-grid-container'>
+              <img
+                src='https://www.greatplacetowork.in/great/api/assets/uploads/9708/logo/logo.jpg'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://tse3.mm.bing.net/th/id/OIP.B86i8wYYoQOrm-KLUIpwDAHaBe?pid=Api&P=0&h=180'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://g.foolcdn.com/art/companylogos/square/prft.png'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://tse2.mm.bing.net/th/id/OIP.-mHDgxmP3V_YAJPUtgEKXwHaBO?pid=Api&P=0&h=180'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://dynamic.exportersindia.com/company_logo/6638845.jpg'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://tse1.mm.bing.net/th/id/OIP.SWQ9tBc7e6bwXye9FQc3jAHaEK?pid=Api&P=0&h=180'
+                alt='company'
+                className='grid-image'
+              />
+              <img src={EQLogo} alt='company' className='grid-image' />
+              <img
+                src='https://tse1.mm.bing.net/th/id/OIP.kDEaWkJlrgUwPL8jhoU0AgAAAA?pid=Api&P=0&h=180'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://nestaway-website-kkv4x6ba3-nestaway.vercel.app/images/logo.png'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://mir-s3-cdn-cf.behance.net/projects/404/72ff0271081123.Y3JvcCw1NTMsNDMyLDYwMCwxOTE.jpg'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://companieslogo.com/img/orig/RCM_BIG-d0c11098.png?t=1602007417'
+                alt='company'
+                className='grid-image'
+              />
+              <img
+                src='https://av-eks-jobs.s3.amazonaws.com/media/company_logo/2019/10/17/saven_tech_M8j2lfO.jpeg'
+                alt='company'
+                className='grid-image'
+              />
+              <img src={ichorLogo} alt='company' className='grid-image' />
+            </div>
+          </div>
         </div>
-
-        <div className="home-page-company-logos-one-grid-container">
-          <img
-            src="https://www.greatplacetowork.in/great/api/assets/uploads/9708/logo/logo.jpg"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://tse3.mm.bing.net/th/id/OIP.B86i8wYYoQOrm-KLUIpwDAHaBe?pid=Api&P=0&h=180"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://g.foolcdn.com/art/companylogos/square/prft.png"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://tse2.mm.bing.net/th/id/OIP.-mHDgxmP3V_YAJPUtgEKXwHaBO?pid=Api&P=0&h=180"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://dynamic.exportersindia.com/company_logo/6638845.jpg"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://tse1.mm.bing.net/th/id/OIP.SWQ9tBc7e6bwXye9FQc3jAHaEK?pid=Api&P=0&h=180"
-            alt="company"
-            className="grid-image"
-          />
-          <img src={EQLogo} alt="company" className="grid-image" />
-          <img
-            src="https://tse1.mm.bing.net/th/id/OIP.kDEaWkJlrgUwPL8jhoU0AgAAAA?pid=Api&P=0&h=180"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://nestaway-website-kkv4x6ba3-nestaway.vercel.app/images/logo.png"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://mir-s3-cdn-cf.behance.net/projects/404/72ff0271081123.Y3JvcCw1NTMsNDMyLDYwMCwxOTE.jpg"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://companieslogo.com/img/orig/RCM_BIG-d0c11098.png?t=1602007417"
-            alt="company"
-            className="grid-image"
-          />
-          <img
-            src="https://av-eks-jobs.s3.amazonaws.com/media/company_logo/2019/10/17/saven_tech_M8j2lfO.jpeg"
-            alt="company"
-            className="grid-image"
-          />
-          <img src={ichorLogo} alt="company" className="grid-image" />
-        </div>
-
-        </div>
-      </div>
       </div>
       <div className='home-page-how-it-works-section'>
         <h2 className='home-page-working-heading'>How It Works</h2>
@@ -416,19 +418,20 @@ const HomePage = () => {
           })}
         </div>
         <div className='howitoworksbuttons'>
-        <button
-          className='step-btn'
-          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-        >
-          Post a Job
-        </button>
+          <button
+            className='step-btn'
+            onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+          >
+            Post a Job
+          </button>
 
-        <button
-          className='step-btn'
-          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-        >
-          Apply Now
-        </button></div>
+          <button
+            className='step-btn'
+            onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+          >
+            Apply Now
+          </button>
+        </div>
         <img
           src={leftRectangle}
           alt='left rectangle'
@@ -443,24 +446,40 @@ const HomePage = () => {
       <div className='home-page-profile-container'>
         <div className='videocontent'>
           <h2>Powering Smarter Hiring. Delivering Scalable Growth.</h2>
-          <p>SaksamSol helps organizations hire faster, deploy smarter, and scale confidently through reliable end-to-end staffing solutions designed for performance and continuity.</p>
+          <p>
+            SaksamSol helps organizations hire faster, deploy smarter, and scale
+            confidently through reliable end-to-end staffing solutions designed
+            for performance and continuity.
+          </p>
           <h2>What We Deliver</h2>
           <ul className='videocontentpoints'>
             <li>
               <h3>Deep Requirement Understanding</h3>
-              <p>We align with your goals, timelines, and team culture to ensure the right talent fit from day one.</p>
+              <p>
+                We align with your goals, timelines, and team culture to ensure
+                the right talent fit from day one.
+              </p>
             </li>
             <li>
               <h3>Strategic Hiring & Smart Selection</h3>
-              <p>Data-driven hiring plans with thoroughly evaluated, job-ready candidates, so you interview only the best.</p>
+              <p>
+                Data-driven hiring plans with thoroughly evaluated, job-ready
+                candidates, so you interview only the best.
+              </p>
             </li>
             <li>
               <h3>Seamless Deployment</h3>
-              <p>Smooth offer management, documentation, and onboarding aligned with your project schedules.</p>
+              <p>
+                Smooth offer management, documentation, and onboarding aligned
+                with your project schedules.
+              </p>
             </li>
             <li>
               <h3>Ongoing Workforce Support</h3>
-              <p>Continuous performance tracking, compliance handling, and fast replacement support to keep projects on track.</p>
+              <p>
+                Continuous performance tracking, compliance handling, and fast
+                replacement support to keep projects on track.
+              </p>
             </li>
           </ul>
         </div>
@@ -533,18 +552,19 @@ const HomePage = () => {
             staffing industry.
           </p>
           <div className='howitoworksbuttons'>
-          <button
-            className='home-page-money-btn'
-            onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-          >
-            Post a Job
-          </button>
-          <button
-            className='home-page-money-btn'
-            onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-          >
-            Apply a Job
-          </button></div>
+            <button
+              className='home-page-money-btn'
+              onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+            >
+              Post a Job
+            </button>
+            <button
+              className='home-page-money-btn'
+              onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+            >
+              Apply a Job
+            </button>
+          </div>
         </div>
         <div className='home-page-money-grid-container'>
           <div className='home-page-money-item-one-container'>
@@ -581,7 +601,7 @@ const HomePage = () => {
             Helping you understand how SakSam Sol makes hiring seamless and
             efficient.
           </p>
-          <img src={FAQs} alt='FAQ'/>
+          <img src={FAQs} alt='FAQ' />
         </div>
         <div className='home-page-faqs'>
           {faqsData.map((item) => (

@@ -43,34 +43,34 @@ export default function App() {
           <Route path='about-us' element={<AboutPage />} />
 
           <Route
-            path='/services/staff-augmentation'
+            path='services/staff-augmentation'
             element={<ContingetStaffing />}
           />
           <Route
-            path='/services/permenant-staffing'
+            path='services/permenant-staffing'
             element={<PermenantStaffing />}
           />
-          <Route path='/services/bulk-hiring' element={<BulkHiring />} />
+          <Route path='services/bulk-hiring' element={<BulkHiring />} />
           <Route
-            path='/services/recruitment-process'
+            path='services/recruitment-process'
             element={<RecruitmentProcess />}
           />
           <Route
-            path='/services/payroll-services'
+            path='services/payroll-services'
             element={<PayrollServices />}
           />
 
           {/* <Route path='careers' element={<CareersPage />} /> */}
-          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+          <Route path='privacy-policy' element={<PrivacyPolicy />} />
 
           <Route
-            path='/careers'
+            path='careers'
             element={<Careers onOpenContact={openContact} />}
           />
           <Route path='terms-conditions' element={<TermsConditions />} />
           <Route path='contact-us' element={<ContactPage />} />
         </Route>
-        <Route path='/login' element={<Login />} />
+        <Route path='login' element={<Login />} />
         <Route element={<AdminLayout />}>
           <Route path='/createCareer' element={<CareerCreation />} />
           <Route path='/managecareers' element={<SmallCard />} />
