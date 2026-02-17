@@ -84,9 +84,9 @@ const CareerHero = ({ onSearch, locations = [], titles = [] }) => {
             </h1>
 
             <p className="career-hero__subtitle">
-              Innovate, create, and shape the future of
+              Innovate, create, and shape the future of 
               <br />
-              Staffing solutions
+              where innovation meets reliability
             </p>
 
              </div>

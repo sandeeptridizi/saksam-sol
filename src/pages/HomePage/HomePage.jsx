@@ -13,6 +13,7 @@ import rita from '../../assets/vijaykumar.jpeg';
 import successcopy from '../../assets/successcopy.png';
 
 import video from '../../assets/SakSamSol.mp4';
+import headerVideo from '../../assets/SakSam Sol.mp4';
 
 import leftRectangle from '../../assets/right-rectangle (1).png';
 import rightRectangle from '../../assets/right-rectangle (3).png';
@@ -218,6 +219,10 @@ const HomePage = () => {
 
   return (
     <div className='home-page-main-container'>
+      <div className="home-page-header-wrapper">
+      <video className="background-video" src={headerVideo} autoPlay muted loop playsInline />
+
+      <div className="video-overlay"></div>
       <div className='home-page-header-container'>
         <h1 className='home-page-heading'>
           India's most trusted talent power house.{' '}
@@ -226,6 +231,7 @@ const HomePage = () => {
           Building careers. Delivering talent. Powering growth for your
           business.
         </span>
+      </div>
       </div>
       <div className='homepagebuttons'>
         <button
@@ -239,22 +245,9 @@ const HomePage = () => {
           className='homepagebutton'
           onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
         >
-          Apply Now
+          Apply a Job
         </button>
         </div>
-      <div className='home-page-profile-container'>
-        <div
-          className={
-            playVideo
-              ? 'home-page-profile-video play-video'
-              : 'home-page-profile-video'
-          }
-        >
-          <video controls width='100%' height='100%' autoPlay>
-            <source src={video} type='video/mp4' />
-          </video>
-        </div>
-      </div>
       <div className='home-page-grid-container'>
         {data.map((item) => {
           const { id, icon, title, text } = item;
@@ -446,6 +439,42 @@ const HomePage = () => {
           alt='left rectangle'
           className='right-rectangle'
         />
+      </div>
+      <div className='home-page-profile-container'>
+        <div className='videocontent'>
+          <h2>Powering Smarter Hiring. Delivering Scalable Growth.</h2>
+          <p>SaksamSol helps organizations hire faster, deploy smarter, and scale confidently through reliable end-to-end staffing solutions designed for performance and continuity.</p>
+          <h2>What We Deliver</h2>
+          <ul className='videocontentpoints'>
+            <li>
+              <h3>Deep Requirement Understanding</h3>
+              <p>We align with your goals, timelines, and team culture to ensure the right talent fit from day one.</p>
+            </li>
+            <li>
+              <h3>Strategic Hiring & Smart Selection</h3>
+              <p>Data-driven hiring plans with thoroughly evaluated, job-ready candidates, so you interview only the best.</p>
+            </li>
+            <li>
+              <h3>Seamless Deployment</h3>
+              <p>Smooth offer management, documentation, and onboarding aligned with your project schedules.</p>
+            </li>
+            <li>
+              <h3>Ongoing Workforce Support</h3>
+              <p>Continuous performance tracking, compliance handling, and fast replacement support to keep projects on track.</p>
+            </li>
+          </ul>
+        </div>
+        <div
+          className={
+            playVideo
+              ? 'home-page-profile-video play-video'
+              : 'home-page-profile-video'
+          }
+        >
+          <video controls width='100%' height='100%' autoPlay>
+            <source src={video} type='video/mp4' />
+          </video>
+        </div>
       </div>
       <div className='home-page-services-container'>
         <div className='home-page-services-header'>
