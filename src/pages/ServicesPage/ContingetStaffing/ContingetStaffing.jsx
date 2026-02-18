@@ -134,14 +134,14 @@ const ContingetStaffing = () => {
           skilled professionals who are ready to contribute immediately to your
           projects, seasonal demands, or short-term assignments. From sourcing
           and screening candidates to handling payroll, statutory compliance,
-          and documentation, our team manages every step of the process. You
-          can focus on core business operations. Our flexible staffing models
-          allow you to hire on a contract, part-time, or
-          project-specific basis, ensuring cost-effective and agile workforce
-          solutions. Trusted by companies across IT, Non-IT, Healthcare,
-          Manufacturing, BFSI, Retail, and Logistics, our contingent staffing
-          solutions deliver speed, reliability, and high-quality talent, helping
-          your business meet deadlines and scale seamlessly.
+          and documentation, our team manages every step of the process. You can
+          focus on core business operations. Our flexible staffing models allow
+          you to hire on a contract, part-time, or project-specific basis,
+          ensuring cost-effective and agile workforce solutions. Trusted by
+          companies across IT, Non-IT, Healthcare, Manufacturing, BFSI, Retail,
+          and Logistics, our contingent staffing solutions deliver speed,
+          reliability, and high-quality talent, helping your business meet
+          deadlines and scale seamlessly.
         </span>
       </div>
       <div className='serviceadvantages'>
@@ -213,19 +213,20 @@ const ContingetStaffing = () => {
             staffing industry.
           </p>
           <div className='howitoworksbuttons'>
-        <button
-          className='steps-btn'
-          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-        >
-          Post a Job
-        </button>
+            <button
+              className='steps-btn'
+              onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+            >
+              Post a Job
+            </button>
 
-        <button
-          className='steps-btn'
-          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-        >
-          Apply Now
-        </button></div>
+            <button
+              className='steps-btn'
+              onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+            >
+              Apply Now
+            </button>
+          </div>
         </div>
         <div className='home-page-money-grid-container'>
           <div className='home-page-money-item-one-container'>
@@ -275,6 +276,26 @@ const ContingetStaffing = () => {
               );
             })}
           </Slider>
+        </div>
+        <div className='mobile-home-page-services-grid-container'>
+          <div className='mobile-home-page-services-group'>
+            {carouselData.map((item) => {
+              const { id, title, list, link } = item;
+              return (
+                <div className='home-page-services-contract-container' key={id}>
+                  <h3 className='home-page-contract-heading'>{title}</h3>
+                  <ul className='home-page-contract-list-container'>
+                    {list.map((text) => (
+                      <li key={text}>{text}</li>
+                    ))}
+                  </ul>
+                  <button className='contract-btn'>
+                    <Link to={link}>Learn More</Link>
+                  </button>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
       <GetInTouchModal

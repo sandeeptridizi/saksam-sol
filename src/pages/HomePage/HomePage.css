@@ -806,6 +806,10 @@
   color: #fff;
 }
 
+.mobile-home-page-services-grid-container {
+  display: none;
+}
+
 @media (max-width: 600px) {
   * {
     margin: 0;
@@ -1032,15 +1036,41 @@
 
   .home-page-services-grid-container {
     width: 100%;
+    display: none;
+  }
+
+  .mobile-home-page-services-grid-container {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+  }
+
+  .mobile-home-page-services-grid-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-home-page-services-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    animation: autoScroll 8s infinite linear;
   }
 
   .home-page-services-contract-container {
-    width: 100%;
-    min-height: 50px;
+    flex: 0 0 350px;
+    padding: 16px;
+    height: 400px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .home-page-contract-heading {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     font-family: 'Abhaya Libre';
     color: #fff;
@@ -1055,6 +1085,11 @@
     gap: 8px;
     color: #b5b5b5;
     text-align: left;
+    margin-bottom: 100px;
+  }
+
+  .home-page-contract-list-container li {
+    font-size: 14px;
   }
 
   .contract-btn {
@@ -1071,6 +1106,16 @@
     font-size: 12px;
     font-weight: 400;
     color: #fff;
+    /* margin-top: 50px; */
+  }
+
+  @keyframes autoScroll {
+    from {
+      translate: 0%;
+    }
+    to {
+      translate: -100%;
+    }
   }
 
   .home-page-testimonial-container {

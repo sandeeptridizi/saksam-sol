@@ -305,5 +305,14 @@
   .home-page-money-container {
     width: 90%;
     margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .highlightdesc {
+    margin-top: 20px;
+  }
+
+  .aboutrow {
+    margin-bottom: 120px;
   }
 }

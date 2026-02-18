@@ -524,6 +524,26 @@ const HomePage = () => {
             })}
           </Slider>
         </div>
+        <div className='mobile-home-page-services-grid-container'>
+          <div className='mobile-home-page-services-group'>
+            {carouselData.map((item) => {
+              const { id, title, list, link } = item;
+              return (
+                <div className='home-page-services-contract-container' key={id}>
+                  <h3 className='home-page-contract-heading'>{title}</h3>
+                  <ul className='home-page-contract-list-container'>
+                    {list.map((text) => (
+                      <li key={text}>{text}</li>
+                    ))}
+                  </ul>
+                  <button className='contract-btn'>
+                    <Link to={link}>Learn More</Link>
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
       <GetInTouchModal
         isOpen={isGetInTouchModalOpen}

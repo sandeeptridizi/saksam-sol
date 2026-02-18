@@ -93,8 +93,8 @@ const PermenantStaffing = () => {
               </span>{' '}
               <br></br>
               <span className='servicedesc'>
-                From sourcing, Validation to shortlisting and final onboarding, we manage
-                the hiring process end-to-end.
+                From sourcing, Validation to shortlisting and final onboarding,
+                we manage the hiring process end-to-end.
               </span>
             </div>
           </div>
@@ -131,14 +131,14 @@ const PermenantStaffing = () => {
           understanding your hiring needs, sourcing and screening candidates,
           conducting assessments and interviews, to coordinating smooth
           onboarding. By leveraging our extensive talent network and industry
-          expertise, we ensure faster time-to-hire and lower cost-to-hire while maintaining high
-          quality. Our services span across IT, Non-IT, Healthcare,
-          Manufacturing, BFSI, Retail, and more, delivering professionals who
-          contribute to long-term business growth. We focus on candidate
-          alignment, retention, and efficiency, providing permenant staffing solutions
-          that are reliable, scalable, and tailored to your organization’s
-          goals. With SakSam Sol, you can build teams that drive performance and
-          support your strategic objectives effectively.
+          expertise, we ensure faster time-to-hire and lower cost-to-hire while
+          maintaining high quality. Our services span across IT, Non-IT,
+          Healthcare, Manufacturing, BFSI, Retail, and more, delivering
+          professionals who contribute to long-term business growth. We focus on
+          candidate alignment, retention, and efficiency, providing permenant
+          staffing solutions that are reliable, scalable, and tailored to your
+          organization’s goals. With SakSam Sol, you can build teams that drive
+          performance and support your strategic objectives effectively.
         </span>
       </div>
       <div className='serviceadvantages'>
@@ -203,19 +203,20 @@ const PermenantStaffing = () => {
             staffing industry.
           </p>
           <div className='howitoworksbuttons'>
-        <button
-          className='steps-btn'
-          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-        >
-          Post a Job
-        </button>
+            <button
+              className='steps-btn'
+              onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+            >
+              Post a Job
+            </button>
 
-        <button
-          className='steps-btn'
-          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-        >
-          Apply Now
-        </button></div>
+            <button
+              className='steps-btn'
+              onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+            >
+              Apply Now
+            </button>
+          </div>
         </div>
         <div className='home-page-money-grid-container'>
           <div className='home-page-money-item-one-container'>
@@ -265,6 +266,26 @@ const PermenantStaffing = () => {
               );
             })}
           </Slider>
+        </div>
+        <div className='mobile-home-page-services-grid-container'>
+          <div className='mobile-home-page-services-group'>
+            {carouselData.map((item) => {
+              const { id, title, list, link } = item;
+              return (
+                <div className='home-page-services-contract-container' key={id}>
+                  <h3 className='home-page-contract-heading'>{title}</h3>
+                  <ul className='home-page-contract-list-container'>
+                    {list.map((text) => (
+                      <li key={text}>{text}</li>
+                    ))}
+                  </ul>
+                  <button className='contract-btn'>
+                    <Link to={link}>Learn More</Link>
+                  </button>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
       <GetInTouchModal

@@ -127,8 +127,8 @@ const PayrollServices = () => {
           streamline your payroll management, ensuring accuracy, compliance, and
           efficiency. We handle salary calculations, statutory deductions, tax
           filings, and employee records for organizations of all sizes. Our team
-          ensures that employees are paid on time, while keeping you
-          compliant with all local and national regulations. By leveraging
+          ensures that employees are paid on time, while keeping you compliant
+          with all local and national regulations. By leveraging
           technology-driven solutions and industry expertise, we reduce errors,
           save time, and eliminate administrative burdens. Our payroll services
           are tailored to your organization, whether you have a small team, bulk
@@ -199,19 +199,20 @@ const PayrollServices = () => {
             staffing industry.
           </p>
           <div className='howitoworksbuttons'>
-        <button
-          className='steps-btn'
-          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-        >
-          Post a Job
-        </button>
+            <button
+              className='steps-btn'
+              onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+            >
+              Post a Job
+            </button>
 
-        <button
-          className='steps-btn'
-          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-        >
-          Apply Now
-        </button></div>
+            <button
+              className='steps-btn'
+              onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
+            >
+              Apply Now
+            </button>
+          </div>
         </div>
         <div className='home-page-money-grid-container'>
           <div className='home-page-money-item-one-container'>
@@ -261,6 +262,26 @@ const PayrollServices = () => {
               );
             })}
           </Slider>
+        </div>
+        <div className='mobile-home-page-services-grid-container'>
+          <div className='mobile-home-page-services-group'>
+            {carouselData.map((item) => {
+              const { id, title, list, link } = item;
+              return (
+                <div className='home-page-services-contract-container' key={id}>
+                  <h3 className='home-page-contract-heading'>{title}</h3>
+                  <ul className='home-page-contract-list-container'>
+                    {list.map((text) => (
+                      <li key={text}>{text}</li>
+                    ))}
+                  </ul>
+                  <button className='contract-btn'>
+                    <Link to={link}>Learn More</Link>
+                  </button>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
       <GetInTouchModal
