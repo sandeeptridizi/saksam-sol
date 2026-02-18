@@ -175,10 +175,14 @@
     overflow-x: hidden;
   }
 
+  .servicepagecontainer {
+    width: 100%;
+    padding: 0;
+  }
+
   .servicehero {
     width: 100%;
     height: auto;
-    padding: 32px 18px;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -188,11 +192,15 @@
     width: 90%;
     display: flex;
     flex-direction: column;
-    margin-left: -120px;
+    margin-left: -130px;
+  }
+
+  .servicepoint {
+    width: 100%;
   }
 
   .serviceherotitle {
-    font-size: 21px;
+    font-size: 18px;
   }
 
   .serivcehighlight {
@@ -221,7 +229,7 @@
   .servicedesc {
     font-size: 10px;
     color: #666266;
-    width: 300px;
+    width: 50%;
   }
 
   .serviceherobutton {
