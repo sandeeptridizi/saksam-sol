@@ -876,6 +876,13 @@
     top: 30%;
   }
 
+  .home-page-money-btn {
+    background: #028d89;
+    padding: 8px 16px;
+    width: fit-content;
+    font-size: 14px;
+  }
+
   .videocontent {
     width: 100%;
     height: auto;
@@ -949,6 +956,11 @@
 
   .home-page-company-logos-track {
     animation: logoScroll 40s linear infinite;
+  }
+
+  .howitoworksbuttons {
+    display: flex;
+    gap: 12px;
   }
 
   .home-page-company-logos-one-grid-container {
