@@ -451,7 +451,7 @@ const HomePage = () => {
             confidently through reliable end-to-end staffing solutions designed
             for performance and continuity.
           </p>
-          <h2>What We Deliver</h2>
+          <h2 className='what-we-deliver'>What We Deliver</h2>
           <ul className='videocontentpoints'>
             <li>
               <h3>Deep Requirement Understanding</h3>
