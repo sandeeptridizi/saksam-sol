@@ -45,6 +45,7 @@
 }
 
 .home-page-header-container {
+  width: 100%;
   position: relative;
   z-index: 3;
   padding: 40px 60px;
@@ -69,7 +70,7 @@
   font-size: 28px;
   font-weight: 400;
   text-align: center;
-  max-width: 900px;
+  width: 100%;
   margin-top: 16px;
   text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
 }
@@ -239,7 +240,7 @@
 }
 
 .grid-image {
-  height: 70px;
+  height: 100px;
   width: auto;
   max-width: 180px;
   object-fit: contain;
@@ -362,6 +363,11 @@
   font-weight: 600;
   color: #028d89;
   cursor: pointer;
+}
+
+.homepagebutton a {
+  text-decoration: none;
+  color: #028d89;
 }
 
 .home-page-services-container {
@@ -539,11 +545,24 @@
 }
 
 .home-page-testimonial-carousel-container {
-  width: 85%;
+  width: 95%;
   display: flex;
   align-items: center;
   gap: 16px;
-  animation: testimonial 5s linear infinite;
+  overflow-x: auto;
+}
+
+.home-page-testimonial-carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  animation: testimonial 7s linear infinite;
 }
 
 @keyframes testimonial {
@@ -551,7 +570,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
@@ -606,6 +625,11 @@
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
+  color: #fff;
+}
+
+.home-page-money-btn a {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -824,7 +848,6 @@
 
   .home-page-main-container {
     width: 100%;
-    padding: 0px 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -861,16 +884,16 @@
 
   .home-page-profile-container {
     width: 100%;
-    height: fit-content;
+    height: auto;
     position: relative;
     background-image: url('../../assets/layer.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     margin-top: -30px;
+    padding: 32px 18px;
   }
 
   .home-page-profile-video {
@@ -880,8 +903,6 @@
     border-radius: 28px;
     overflow: hidden;
     border: 2px solid #028d89;
-    position: absolute;
-    top: 30%;
   }
 
   .home-page-money-btn {
@@ -891,10 +912,15 @@
     font-size: 14px;
   }
 
+  .home-page-grid-container {
+    padding: 0px 12px;
+  }
+
   .videocontent {
     width: 100%;
     height: auto;
-    padding: 32px 18px;
+    margin-bottom: 16px;
+    margin-left: 0;
   }
 
   .videocontentpoints {
@@ -983,7 +1009,8 @@
   }
 
   .home-page-how-it-works-section {
-    width: 100%;
+    width: 95%;
+    margin: 0px auto 48px auto;
     background: #122134;
     padding: 31px 18px;
     border-radius: 24px;
@@ -1130,23 +1157,17 @@
     margin-top: 0;
   }
 
-  .home-page-testimonial-carousel-container {
+  .testimonial-group {
     width: 100%;
-    animation: testimonial 4s linear 2s infinite;
   }
 
-  @keyframes testimonial {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
+  .home-page-testimonial-carousel-container {
+    width: 100%;
   }
 
   .home-page-money-container {
     width: 100%;
-    padding: 32px 18px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
     position: relative;

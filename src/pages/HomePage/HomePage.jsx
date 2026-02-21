@@ -245,11 +245,8 @@ const HomePage = () => {
           Post a Job
         </button>
 
-        <button
-          className='homepagebutton'
-          onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-        >
-          Apply a Job
+        <button className='homepagebutton'>
+          <Link to='careers'>Apply a Job</Link>
         </button>
       </div>
       <div className='home-page-grid-container'>
@@ -451,37 +448,6 @@ const HomePage = () => {
             confidently through reliable end-to-end staffing solutions designed
             for performance and continuity.
           </p>
-          <h2 className='what-we-deliver'>What We Deliver</h2>
-          <ul className='videocontentpoints'>
-            <li>
-              <h3>Deep Requirement Understanding</h3>
-              <p>
-                We align with your goals, timelines, and team culture to ensure
-                the right talent fit from day one.
-              </p>
-            </li>
-            <li>
-              <h3>Strategic Hiring & Smart Selection</h3>
-              <p>
-                Data-driven hiring plans with thoroughly evaluated, job-ready
-                candidates, so you interview only the best.
-              </p>
-            </li>
-            <li>
-              <h3>Seamless Deployment</h3>
-              <p>
-                Smooth offer management, documentation, and onboarding aligned
-                with your project schedules.
-              </p>
-            </li>
-            <li>
-              <h3>Ongoing Workforce Support</h3>
-              <p>
-                Continuous performance tracking, compliance handling, and fast
-                replacement support to keep projects on track.
-              </p>
-            </li>
-          </ul>
         </div>
         <div
           className={
@@ -490,7 +456,7 @@ const HomePage = () => {
               : 'home-page-profile-video'
           }
         >
-          <video controls width='100%' height='100%' autoPlay>
+          <video controls width='100%' height='100%' autoPlay muted>
             <source src={video} type='video/mp4' />
           </video>
         </div>
@@ -557,9 +523,11 @@ const HomePage = () => {
           </p>
         </div>
         <div className='home-page-testimonial-carousel-container'>
-          {testimonialsData.map((item) => (
-            <TestimonialCard key={item.id} {...item} />
-          ))}
+          <div className='testimonial-group'>
+            {testimonialsData.map((item) => (
+              <TestimonialCard key={item.id} {...item} />
+            ))}
+          </div>
         </div>
       </div>
       <div className='home-page-money-container'>
@@ -578,11 +546,8 @@ const HomePage = () => {
             >
               Post a Job
             </button>
-            <button
-              className='home-page-money-btn'
-              onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
-            >
-              Apply a Job
+            <button className='home-page-money-btn'>
+              <Link to='careers'>Apply a Job</Link>
             </button>
           </div>
         </div>

@@ -1,5 +1,6 @@
 .testimonial-card-container {
-  background: linear-gradient(0deg, #122134, #122134),
+  background:
+    linear-gradient(0deg, #122134, #122134),
     radial-gradient(
       50% 106.45% at 100% 100%,
       rgba(57, 100, 182, 0.2) 0%,
@@ -7,7 +8,7 @@
     );
   padding: 26px 30px;
   border-radius: 16px;
-  width: 498px;
+  flex: 0 0 450px;
   height: auto;
   display: flex;
   flex-direction: column;
