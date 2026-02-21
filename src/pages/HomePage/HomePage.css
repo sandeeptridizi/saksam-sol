@@ -250,6 +250,11 @@
   transition: transform 0.3s ease;
 }
 
+.company-img {
+  width: auto;
+  height: 180px;
+}
+
 .grid-image:hover {
   filter: grayscale(0%);
   opacity: 1;
@@ -570,7 +575,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 

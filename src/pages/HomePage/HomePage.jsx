@@ -292,7 +292,7 @@ const HomePage = () => {
               <img
                 src='https://g.foolcdn.com/art/companylogos/square/prft.png'
                 alt='company'
-                className='grid-image'
+                className='company-img'
               />
               <img
                 src='https://tse2.mm.bing.net/th/id/OIP.-mHDgxmP3V_YAJPUtgEKXwHaBO?pid=Api&P=0&h=180'
@@ -313,7 +313,7 @@ const HomePage = () => {
               <img
                 src='https://tse1.mm.bing.net/th/id/OIP.kDEaWkJlrgUwPL8jhoU0AgAAAA?pid=Api&P=0&h=180'
                 alt='company'
-                className='grid-image'
+                className='company-img'
               />
               <img
                 src='https://nestaway-website-kkv4x6ba3-nestaway.vercel.app/images/logo.png'
