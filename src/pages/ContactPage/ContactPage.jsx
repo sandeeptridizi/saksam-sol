@@ -10,6 +10,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { ImTwitter } from 'react-icons/im';
 import { FaInstagram } from 'react-icons/fa6';
 import { FaDiscord } from 'react-icons/fa6';
+import { FaFacebook } from "react-icons/fa6";
 import { PiLinkedinLogoBold } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
 
@@ -99,6 +100,11 @@ const ContactPage = () => {
               <Link to='https://www.linkedin.com/company/Saksam-sol/'>
                 <li className='socialmediaicon1'>
                   <PiLinkedinLogoBold />
+                </li>
+              </Link>
+              <Link to='https://www.facebook.com/profile.php?id=61552252253137&sk=directory_intro'>
+                <li className='socialmediaicon1'>
+                  <FaFacebook  />
                 </li>
               </Link>
             </ul>

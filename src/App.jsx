@@ -8,17 +8,14 @@ import PermenantStaffing from './pages/ServicesPage/PermenantStaffing/PermenantS
 import BulkHiring from './pages/ServicesPage/BulkHiring/BulkHiring';
 import PayrollServices from './pages/ServicesPage/PayrollServices/PayrollServices';
 import RecruitmentProcess from './pages/ServicesPage/RecruitmentProcess/RecruitmentProcess';
-// import CareersPage from './pages/CareersPage/CareersPage';
 import Careers from './components/Career/Careers';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions/TermsConditions';
 import ContactPage from './pages/ContactPage/ContactPage';
 import Login from './pages/Login/Login';
 
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
 import GetInTouchModal from './components/Modals/GetInTouchModal/GetInTouchModal';
-
+import ScrollToTop from "./pages/ScrollToTop";
 import CareerCreation from './components/careerCreation/careerCreation';
 import SmallCard from './components/managingCareers/managingCareers';
 import CareerUpdate from './components/careerCreation/updationCareerpage';
@@ -37,6 +34,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<LandingPage />}>
           <Route index element={<HomePage />} />

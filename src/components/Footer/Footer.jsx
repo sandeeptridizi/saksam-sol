@@ -10,6 +10,7 @@ import { toast } from 'react-toastify';
 import rectangle11 from '../../assets/left-rectangle11.png';
 import rectangle88 from '../../assets/rectangle88.png';
 import { useState } from 'react';
+import { FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -123,6 +124,9 @@ const Footer = () => {
             <div className='footer-two-social-media-links-container'>
               <Link to='https://www.linkedin.com/company/Saksam-sol/'>
                 <PiLinkedinLogoBold className='footer-two-icon' />
+              </Link>
+               <Link to='https://www.facebook.com/profile.php?id=61552252253137&sk=directory_intro'>
+                <FaFacebook className='footer-two-icon' />
               </Link>
             </div>
           </div>

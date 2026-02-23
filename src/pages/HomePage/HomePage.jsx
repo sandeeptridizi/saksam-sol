@@ -132,7 +132,7 @@ const testimonialsData = [
   },
   {
     id: 7,
-    text: 'Sandeep brings expertise in operations and workforce strategy, ensuring seamless execution of recruitment processes and client satisfaction.',
+    text: 'Saksam Sol brings expertise in operations and workforce strategy, ensuring seamless execution of recruitment processes and client satisfaction.',
     name: 'Sandeep K',
     role: 'Co Founder & CHRO, a Consultancy Firm',
   },
@@ -532,6 +532,9 @@ const HomePage = () => {
             {testimonialsData.map((item) => (
               <TestimonialCard key={item.id} {...item} />
             ))}
+            {[...testimonialsData, ...testimonialsData].map((item, index) => (
+               <TestimonialCard key={index} {...item} />
+              ))}
           </div>
         </div>
       </div>

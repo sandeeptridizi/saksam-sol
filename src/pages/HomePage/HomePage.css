@@ -559,10 +559,7 @@
 
 .home-page-testimonial-carousel-container {
   width: 95%;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  overflow-x: auto;
+  overflow: hidden;   /* IMPORTANT */
 }
 
 .home-page-testimonial-carousel-container::-webkit-scrollbar {
@@ -570,12 +567,14 @@
 }
 
 .testimonial-group {
-  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 16px;
-  animation: testimonial 7s linear infinite;
+  width: max-content;  /* VERY IMPORTANT */
+  animation: testimonial 30s linear infinite;
+}
+
+.testimonial-card {
+  min-width: 320px;
 }
 
 @keyframes testimonial {
