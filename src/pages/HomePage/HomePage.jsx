@@ -448,6 +448,12 @@ const HomePage = () => {
             confidently through reliable end-to-end staffing solutions designed
             for performance and continuity.
           </p>
+          <ul className='advantagespoints'>
+            <li>Expert-led hiring backed by real-time market and skill intelligence</li>
+            <li>Predictable hiring through plan-vs-actual tracking and milestone monitoring</li>
+            <li>Additional candidate buffer to eliminate delivery risks</li>
+            <li>Consistently low hire-loss rate below 10%, ensuring dependable workforce continuity</li>
+          </ul>
         </div>
         <div
           className={

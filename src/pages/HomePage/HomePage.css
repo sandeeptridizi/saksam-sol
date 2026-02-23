@@ -722,6 +722,13 @@
   cursor: pointer;
 }
 
+.advantagespoints{
+  padding: 24px;
+  line-height: 24px;
+  display: block;
+  width: 600px;
+}
+
 .home-page-meeting-container {
   width: 85%;
   margin: 32px auto;
