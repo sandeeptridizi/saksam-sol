@@ -12,7 +12,7 @@ import santos from '../../assets/sowmya.jpeg';
 import rita from '../../assets/vijaykumar.jpeg';
 import successcopy from '../../assets/successcopy.png';
 
-import video from '../../assets/SaksamSol.mp4';
+import video from '../../assets/SakSamSol.mp4';
 import headerVideo from '../../assets/Saksam Sol.mp4';
 
 import leftRectangle from '../../assets/right-rectangle (1).png';
