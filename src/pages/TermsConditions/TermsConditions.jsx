@@ -15,8 +15,8 @@ const TermsConditions = () => {
             <div className='introduction'>
               <span> Introduction</span> <br></br>
               <span className='privacybrief'>
-                Welcome to SakSam Sol (“we,” “our,” or “us”). By accessing or
-                using our website (www.saksamsol.com ) or our services, you
+                Welcome to Saksam Sol (“we,” “our,” or “us”). By accessing or
+                using our website (www.Saksamsol.com ) or our services, you
                 agree to comply with and be bound by the following Terms &
                 Conditions. Please read them carefully.
               </span>
@@ -39,7 +39,7 @@ const TermsConditions = () => {
               <span>Services</span> <br></br>
               <ul className='privacynotes'>
                 <li>
-                  SakSam Sol provides staffing, recruitment, payroll, RPO, bulk
+                  Saksam Sol provides staffing, recruitment, payroll, RPO, bulk
                   hiring, and related services.
                 </li>
                 <li>
@@ -75,7 +75,7 @@ const TermsConditions = () => {
               <ul className='privacynotes'>
                 <li>
                   All content on this website, including text, images, logos,
-                  graphics, and software, is the property of SakSam Sol or its
+                  graphics, and software, is the property of Saksam Sol or its
                   licensors.
                 </li>
                 <li>
@@ -88,7 +88,7 @@ const TermsConditions = () => {
               <span> Limitation of Liability</span> <br></br>
               <ul className='privacynotes'>
                 <li>
-                  SakSam Sol is not liable for any direct, indirect, incidental,
+                  Saksam Sol is not liable for any direct, indirect, incidental,
                   or consequential damages arising from the use of our website
                   or services.
                 </li>
@@ -150,7 +150,7 @@ const TermsConditions = () => {
               </span>
               <ul className='privacynotes'>
                 <li>Saksam Sol</li>
-                <li>Email: info@saksamsol.com</li>
+                <li>Email: info@Saksamsol.com</li>
                 <li>Phone: +91 9398906639</li>
                 <li>Address: Nallagandla, Hyderabad, India</li>
               </ul>

@@ -128,7 +128,7 @@ const ContingetStaffing = () => {
       </div>
       <div className='servicebodydesc'>
         <span className='servicebodynote'>
-          At SakSam Sol, our Contingent Staffing services are designed to help
+          At Saksam Sol, our Contingent Staffing services are designed to help
           businesses scale their workforce quickly and efficiently without the
           long-term commitments of permanent hiring. We provide pre-screened,
           skilled professionals who are ready to contribute immediately to your
@@ -149,7 +149,7 @@ const ContingetStaffing = () => {
           <span className='advantagetitle'>Advantages</span> <br></br>
           <span className='advantagedesc'>
             Unlock the benefits of flexible, fast, and cost-effective staffing
-            with SakSam Sol. We provide skilled professionals, hassle-free
+            with Saksam Sol. We provide skilled professionals, hassle-free
             compliance, and scalable workforce solutions tailored to your
             business needs.
           </span>
@@ -207,7 +207,7 @@ const ContingetStaffing = () => {
         <div className='home-page-money-content-container'>
           <h3 className='home-page-money-heading'>Our Success in Numbers </h3>
           <p className='home-page-money-text'>
-            At SakSam Sol, our growth and impact are measured not just by the
+            At Saksam Sol, our growth and impact are measured not just by the
             clients we serve but by the results we deliver. These numbers
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.

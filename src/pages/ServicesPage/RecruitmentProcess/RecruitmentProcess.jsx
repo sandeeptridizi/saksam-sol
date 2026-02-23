@@ -120,7 +120,7 @@ const RecruitmentProcess = () => {
       </div>
       <div className='servicebodydesc'>
         <span className='servicebodynote'>
-          At SakSam Sol, our Recruitment Process Outsourcing (RPO) services
+          At Saksam Sol, our Recruitment Process Outsourcing (RPO) services
           provide organizations with a dedicated recruitment team to manage the
           entire hiring lifecycle efficiently. We offer end-to-end recruitment
           solutions, including candidate sourcing, screening, assessments,
@@ -130,7 +130,7 @@ const RecruitmentProcess = () => {
           multi-location operations. By leveraging our industry expertise,
           structured processes, and technology-driven recruitment tools, we
           deliver high-quality candidates quickly while reducing recruitment
-          costs and administrative burdens. With SakSam Sol, you gain
+          costs and administrative burdens. With Saksam Sol, you gain
           consistent, reliable, and transparent hiring support, allowing your HR
           team to focus on strategic initiatives while we handle the operational
           aspects of recruitment.
@@ -196,7 +196,7 @@ const RecruitmentProcess = () => {
         <div className='home-page-money-content-container'>
           <h3 className='home-page-money-heading'>Our Success in Numbers </h3>
           <p className='home-page-money-text'>
-            At SakSam Sol, our growth and impact are measured not just by the
+            At Saksam Sol, our growth and impact are measured not just by the
             clients we serve but by the results we deliver. These numbers
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.

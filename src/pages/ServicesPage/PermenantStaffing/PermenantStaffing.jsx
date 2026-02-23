@@ -124,7 +124,7 @@ const PermenantStaffing = () => {
       </div>
       <div className='servicebodydesc'>
         <span className='servicebodynote'>
-          At SakSam Sol, our Permanent Staffing services are designed to help
+          At Saksam Sol, our Permanent Staffing services are designed to help
           businesses build strong, high-performing teams by hiring skilled
           full-time professionals who fit both the role requirements and company
           culture. We manage the entire recruitment lifecycle, from
@@ -137,7 +137,7 @@ const PermenantStaffing = () => {
           professionals who contribute to long-term business growth. We focus on
           candidate alignment, retention, and efficiency, providing permenant
           staffing solutions that are reliable, scalable, and tailored to your
-          organization’s goals. With SakSam Sol, you can build teams that drive
+          organization’s goals. With Saksam Sol, you can build teams that drive
           performance and support your strategic objectives effectively.
         </span>
       </div>
@@ -197,7 +197,7 @@ const PermenantStaffing = () => {
         <div className='home-page-money-content-container'>
           <h3 className='home-page-money-heading'>Our Success in Numbers </h3>
           <p className='home-page-money-text'>
-            At SakSam Sol, our growth and impact are measured not just by the
+            At Saksam Sol, our growth and impact are measured not just by the
             clients we serve but by the results we deliver. These numbers
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.

@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
             <div className='introduction'>
               <span> Introduction</span> <br></br>
               <span className='privacybrief'>
-                At SakSam Sol (“we,” “our,” or “us”), your privacy is important
+                At Saksam Sol (“we,” “our,” or “us”), your privacy is important
                 to us. This Privacy Policy explains how we collect, use, store,
                 and protect your personal information when you visit our website
                 or use our services. By using our website or services, you agree
@@ -121,7 +121,7 @@ const PrivacyPolicy = () => {
               </ul>
               <span className='privacybrief'>
                 To exercise your rights, please contact us at
-                info@saksamsol.com.
+                info@Saksamsol.com.
               </span>
             </div>
             <div className='introduction'>
@@ -148,7 +148,7 @@ const PrivacyPolicy = () => {
               </span>
               <ul className='privacynotes'>
                 <li>Saksam Sol</li>
-                <li>Email: info@saksamsol.com</li>
+                <li>Email: info@Saksamsol.com</li>
                 <li>Phone: +91 9398906639</li>
                 <li>Address: Nallagandla, Hyderabad, India</li>
               </ul>

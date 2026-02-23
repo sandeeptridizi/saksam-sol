@@ -18,10 +18,10 @@ import {
 
 const firebaseConfig = {
   apiKey: "AIzaSyCTrW9Vw7xCuxm0iaNPisLOLUF46_gJXf0",
-  authDomain: "saksam-sol.firebaseapp.com",
-  projectId: "saksam-sol",
-  databaseURL: "https://saksam-sol-default-rtdb.asia-southeast1.firebasedatabase.app",
-  storageBucket: "saksam-sol.firebasestorage.app",
+  authDomain: "Saksam-sol.firebaseapp.com",
+  projectId: "Saksam-sol",
+  databaseURL: "https://Saksam-sol-default-rtdb.asia-southeast1.firebasedatabase.app",
+  storageBucket: "Saksam-sol.firebasestorage.app",
   messagingSenderId: "395312148433",
   appId: "1:395312148433:web:389f76cce158ad6d533af0",
   measurementId: "G-TTLQ5DSDMR",

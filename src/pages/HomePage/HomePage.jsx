@@ -12,7 +12,7 @@ import santos from '../../assets/sowmya.jpeg';
 import rita from '../../assets/vijaykumar.jpeg';
 import successcopy from '../../assets/successcopy.png';
 
-import video from '../../assets/SakSamSol.mp4';
+import video from '../../assets/SaksamSol.mp4';
 import headerVideo from '../../assets/Saksam Sol.mp4';
 
 import leftRectangle from '../../assets/right-rectangle (1).png';
@@ -96,13 +96,13 @@ const stepsData = [
 const testimonialsData = [
   {
     id: 1,
-    text: 'SakSam Sol helped us close multiple niche positions within tight deadlines. Their process is smooth, transparent, and extremely professional. They understand exactly what the business needs and deliver candidates who fit perfectly.',
+    text: 'Saksam Sol helped us close multiple niche positions within tight deadlines. Their process is smooth, transparent, and extremely professional. They understand exactly what the business needs and deliver candidates who fit perfectly.',
     name: 'Pravallika',
     role: 'HR Manager, a IT Services Firm',
   },
   {
     id: 2,
-    text: 'With over 10 years of experience in recruitment and talent management, Raghavendra leads SakSam Sol with a vision to deliver quality staffing solutions across industries.',
+    text: 'With over 10 years of experience in recruitment and talent management, Raghu leads Saksam Sol with a vision to deliver quality staffing solutions across industries.',
     name: 'Amit Kumar',
     role: 'Founder & Managing Director, a Fintech Firm',
   },
@@ -120,13 +120,13 @@ const testimonialsData = [
   },
   {
     id: 5,
-    text: 'SakSam Sol helped us close multiple niche positions within tight deadlines. Their process is smooth, transparent, and extremely professional. They understand exactly what the business needs and deliver candidates who fit perfectly.',
+    text: 'Saksam Sol helped us close multiple niche positions within tight deadlines. Their process is smooth, transparent, and extremely professional. They understand exactly what the business needs and deliver candidates who fit perfectly.',
     name: 'Rohit Sharma',
     role: 'HR Manager, a Software Firm',
   },
   {
     id: 6,
-    text: 'With over 10 years of experience in recruitment and talent management, Raghavendra leads SakSam Sol with a vision to deliver quality staffing solutions across industries.',
+    text: 'With over 10 years of experience in recruitment and talent management, Raghu leads Saksam Sol with a vision to deliver quality staffing solutions across industries.',
     name: 'Mamata Sri',
     role: 'Founder & Managing Director, a Marketing Firm',
   },
@@ -442,7 +442,7 @@ const HomePage = () => {
       </div>
       <div className='home-page-profile-container'>
         <div className='videocontent'>
-          <h2>Powering Smarter Hiring. Delivering Scalable Growth.</h2>
+          <h2>Powering Smarter Hiring. <br></br>Delivering Scalable Growth.</h2>
           <p>
             SaksamSol helps organizations hire faster, deploy smarter, and scale
             confidently through reliable end-to-end staffing solutions designed
@@ -525,7 +525,7 @@ const HomePage = () => {
         <div className='home-page-testimonial-header'>
           <h2 className='testimonial-heading'>Testimonials</h2>
           <p className='testimonial-text'>
-            Don’t take our word for it, see what our clients have to say.
+            Don’t just take our word for it, see what our clients have to say.
           </p>
         </div>
         <div className='home-page-testimonial-carousel-container'>
@@ -540,7 +540,7 @@ const HomePage = () => {
         <div className='home-page-money-content-container'>
           <h3 className='home-page-money-heading'>Our Success in Numbers </h3>
           <p className='home-page-money-text'>
-            At SakSam Sol, our growth and impact are measured not just by the
+            At Saksam Sol, our growth and impact are measured not just by the
             clients we serve but by the results we deliver. These numbers
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.
@@ -589,7 +589,7 @@ const HomePage = () => {
         <div className='home-page-faqs-content-container'>
           <h3 className='faqs-heading'>Frequently Asked Questions</h3>
           <p className='faqs-text'>
-            Helping you understand how SakSam Sol makes hiring seamless and
+            Helping you understand how Saksam Sol makes hiring seamless and
             efficient.
           </p>
           <img src={FAQs} alt='FAQ' />

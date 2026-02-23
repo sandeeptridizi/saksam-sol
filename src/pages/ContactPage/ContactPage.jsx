@@ -84,7 +84,7 @@ const ContactPage = () => {
                   <MdMail />
                   </div>
                 <span>
-                <a href="mailto:info@saksamsol.com">info@saksamsol.com</a>
+                <a href="mailto:info@Saksamsol.com">info@Saksamsol.com</a>
                 </span>
               </li>
 
@@ -96,7 +96,7 @@ const ContactPage = () => {
               </li>
             </ul>
             <ul className='socialmedia'>
-              <Link to='https://www.linkedin.com/company/saksam-sol/'>
+              <Link to='https://www.linkedin.com/company/Saksam-sol/'>
                 <li className='socialmediaicon1'>
                   <PiLinkedinLogoBold />
                 </li>

@@ -123,7 +123,7 @@ const PayrollServices = () => {
       </div>
       <div className='servicebodydesc'>
         <span className='servicebodynote'>
-          At SakSam Sol, our Payroll Services are designed to simplify and
+          At Saksam Sol, our Payroll Services are designed to simplify and
           streamline your payroll management, ensuring accuracy, compliance, and
           efficiency. We handle salary calculations, statutory deductions, tax
           filings, and employee records for organizations of all sizes. Our team
@@ -132,7 +132,7 @@ const PayrollServices = () => {
           technology-driven solutions and industry expertise, we reduce errors,
           save time, and eliminate administrative burdens. Our payroll services
           are tailored to your organization, whether you have a small team, bulk
-          employees, or multi-location operations. With SakSam Sol, you get
+          employees, or multi-location operations. With Saksam Sol, you get
           transparent, reliable, and end-to-end payroll management that allows
           you to focus on your core business activities.
         </span>
@@ -193,7 +193,7 @@ const PayrollServices = () => {
         <div className='home-page-money-content-container'>
           <h3 className='home-page-money-heading'>Our Success in Numbers </h3>
           <p className='home-page-money-text'>
-            At SakSam Sol, our growth and impact are measured not just by the
+            At Saksam Sol, our growth and impact are measured not just by the
             clients we serve but by the results we deliver. These numbers
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.

@@ -121,7 +121,7 @@ const BulkHiring = () => {
       </div>
       <div className='servicebodydesc'>
         <span className='servicebodynote'>
-          At SakSam Sol, our Bulk Hiring services are designed to help
+          At Saksam Sol, our Bulk Hiring services are designed to help
           organizations meet high-volume recruitment needs efficiently and
           effectively. Whether you are staffing BPOs, retail chains,
           manufacturing units, or logistics operations, we provide pre-screened,
@@ -130,7 +130,7 @@ const BulkHiring = () => {
           onboarding coordination. By leveraging our extensive talent network
           and structured recruitment strategies, we ensure fast turnaround times
           while maintaining high standards of candidate quality. Bulk hiring
-          with SakSam Sol reduces recruitment bottlenecks, saves time, and
+          with Saksam Sol reduces recruitment bottlenecks, saves time, and
           ensures your workforce is ready to support business operations. Our
           services are flexible, scalable, and tailored to your organization’s
           unique requirements, helping you achieve rapid growth without
@@ -195,7 +195,7 @@ const BulkHiring = () => {
         <div className='home-page-money-content-container'>
           <h3 className='home-page-money-heading'>Our Success in Numbers </h3>
           <p className='home-page-money-text'>
-            At SakSam Sol, our growth and impact are measured not just by the
+            At Saksam Sol, our growth and impact are measured not just by the
             clients we serve but by the results we deliver. These numbers
             reflect our commitment to excellence, speed, and trust in the
             staffing industry.

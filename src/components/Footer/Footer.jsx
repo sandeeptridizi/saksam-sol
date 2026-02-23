@@ -53,7 +53,7 @@ const Footer = () => {
           </h3>
           <p className='footer-one-text'>
             Whether you’re looking to hire top talent, scale your workforce
-            quickly, or streamline recruitment processes, SakSam Sol is your
+            quickly, or streamline recruitment processes, Saksam Sol is your
             trusted staffing partner. Stay updated with the latest hiring
             solutions, industry insights, and workforce strategies by
             subscribing to our newsletter.
@@ -121,7 +121,7 @@ const Footer = () => {
           <div className='footer-two-social-media-container'>
             <h3 className='footer-two-social-media-heading'>Follow Us</h3>
             <div className='footer-two-social-media-links-container'>
-              <Link to='https://www.linkedin.com/company/saksam-sol/'>
+              <Link to='https://www.linkedin.com/company/Saksam-sol/'>
                 <PiLinkedinLogoBold className='footer-two-icon' />
               </Link>
             </div>
