@@ -4,7 +4,7 @@ import rectangle22 from '../../../assets/rectangle22.png';
 import useAppContext from '../../../context/AppContext';
 
 import permanantmain from '../../../assets/permanantmain.jpg';
-import permanantsub from '../../../assets/permanantsub.png';
+import permanantsub from '../../../assets/permenantstaffing sub.jpeg';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';

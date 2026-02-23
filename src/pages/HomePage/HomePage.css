@@ -108,9 +108,11 @@
 }
 
 .home-page-profile-container {
-  width: 98%;
+  width: 90%;
   height: 350px;
   position: relative;
+  margin: auto;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -132,6 +134,7 @@
   font-size: 16px;
   font-weight: 400;
   margin-top: 30px;
+  width: 700px;
 }
 
 .videocontent h3 {
@@ -346,6 +349,11 @@
   font-weight: 400;
   color: #fff;
   cursor: pointer;
+}
+
+.step-btn a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .steps-btn {
@@ -744,7 +752,7 @@
 }
 
 .home-page-meeting-text {
-  width: 560px;
+  width: 510px;
   font-size: 14px;
   font-weight: 300;
   color: #3a3a3a;

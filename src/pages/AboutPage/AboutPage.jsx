@@ -123,8 +123,8 @@ const AboutPage = () => {
       <div className='home-page-meeting-container'>
         <h3 className='home-page-meeting-heading'>Our Success Founders</h3>
         <p className='home-page-meeting-text'>
-          Our Dedicated Team Is Always On Hand To Help Your Business Succeed. We
-          Aim To Fill Your Roles Quickly And Efficiently.
+          Our Dedicated Team Is Always On Hand To Help Your Business Succeed. 
+          We Aim To Fill Your Roles Quickly And Efficiently.
         </p>
         <div className='home-page-meeting-grid-container'>
           {meetingData.map((item) => (

@@ -229,7 +229,7 @@ const HomePage = () => {
         <div className='video-overlay'></div>
         <div className='home-page-header-container'>
           <h1 className='home-page-heading'>
-            India's most trusted talent power house.{' '}
+            India's most trusted talent power house{' '}
           </h1>
           <span className='headerline'>
             Building careers. Delivering talent. Powering growth for your
@@ -424,9 +424,8 @@ const HomePage = () => {
 
           <button
             className='step-btn'
-            onClick={() => setIsPostJobModalOpen(!isPostJobModalOpen)}
           >
-            Apply Now
+            <Link to='careers'>Apply a Job</Link>
           </button>
         </div>
         <img
